@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 # Automatically sync Virtualbox guest additions
-Vagrant.require_plugin "vagrant-vbguest"
+#Vagrant.require_plugin "vagrant-vbguest" #depricated
 
 # Ubuntu Cloud image already contains guest additions, which are out of date,
 # uninstall them and let the vbguest plugin handle this
