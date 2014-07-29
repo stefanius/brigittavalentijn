@@ -1,6 +1,6 @@
 <?php
 
-namespace Stef\QuickCmsBundle\DependencyInjection;
+namespace Stef\BrigittaValentijn\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class StefQuickCmsExtension extends Extension
+class StefBrigittaValentijnExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -24,6 +24,5 @@ class StefQuickCmsExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
-        $loader->load('admin.yml');
     }
 }

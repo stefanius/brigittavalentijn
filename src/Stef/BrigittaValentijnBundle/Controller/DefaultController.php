@@ -1,10 +1,7 @@
 <?php
 
-namespace Stef\QuickCmsBundle\Controller;
+namespace Stef\BrigittaValentijn\Controller;
 
-use Stef\QuickCmsBundle\Entity\BaseTemplate;
-use Stef\QuickCmsBundle\Entity\Page;
-use Stef\QuickCmsBundle\Services\PageLoader;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
