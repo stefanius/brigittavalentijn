@@ -1,5 +1,3 @@
-stef_quick_cms:
-    resource: "@StefBrigittaValentijnBundle/Controller/"
-    type:     annotation
+stef_bv:
+    resource: "@StefBVBundle/Resources/config/routing.yml"
     prefix:   /
-

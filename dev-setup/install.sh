@@ -2,8 +2,6 @@
 sudo apt-get update
 
 sudo apt-get install -y git
-git clone https://github.com/stefanius/shellscripts-installer.git ~/shellscripts-installer
-bash ~/shellscripts-installer/installer/shellscript-installer
 
 sudo usermod -a -G vagrant www-data
 sudo usermod -a -G www-data vagrant
@@ -34,6 +32,7 @@ sudo apt-get -y install libapr1 libaprutil1 libdbd-mysql-perl libdbi-perl libnet
 
 sudo apt-get -y remove apache2
 sudo apt-get -y autoremove
+sudo mkdir /var/log/nginx
 sudo mkdir /var/log/nginx/brigittavalentijn
 
 sudo cp /vagrant/dev-setup/dev.vhost /etc/nginx/sites-available/dev.vhost
