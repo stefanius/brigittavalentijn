@@ -1,0 +1,7 @@
+parameters:
+#    stef_bv.example.class: Stef\BVBundle\Example
+
+services:
+#    stef_bv.example:
+#        class: %stef_bv.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

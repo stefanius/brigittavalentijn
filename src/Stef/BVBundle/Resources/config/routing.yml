@@ -1,0 +1,5 @@
+stef_bvbundle_homepage:
+    pattern:  /
+    defaults: { _controller: StefBVBundle:Page:index }
+    requirements:
+        _method:  GET
