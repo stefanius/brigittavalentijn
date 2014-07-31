@@ -3,3 +3,15 @@ stef_bvbundle_homepage:
     defaults: { _controller: StefBVBundle:Page:index }
     requirements:
         _method:  GET
+
+stef_bvbundle_about:
+    pattern:  /about
+    defaults: { _controller: StefBVBundle:Page:about }
+    requirements:
+        _method:  GET
+
+stef_bvbundle_contact:
+    pattern:  /contact
+    defaults: { _controller: StefBVBundle:Page:contact }
+    requirements:
+        _method:  GET
