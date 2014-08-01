@@ -14,4 +14,4 @@ stef_bvbundle_contact:
     pattern:  /contact
     defaults: { _controller: StefBVBundle:Page:contact }
     requirements:
-        _method:  GET
+        _method:  GET|POST

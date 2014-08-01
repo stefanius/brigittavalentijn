@@ -2,6 +2,10 @@
 
 namespace Stef\BVBundle\Entity;
 
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\Email;
+
 class Enquiry
 {
     protected $name;
@@ -50,5 +54,16 @@ class Enquiry
     public function setBody($body)
     {
         $this->body = $body;
+    }
+
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
+    {
+        $metadata->addPropertyConstraint('name', new NotBlank());
+
+        $metadata->addPropertyConstraint('email', new Email());
+
+        $metadata->addPropertyConstraint('subject', new NotBlank());
+
+        $metadata->addPropertyConstraint('body', new NotBlank());
     }
 }
