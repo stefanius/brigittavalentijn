@@ -35,9 +35,7 @@ sudo apt-get -y autoremove
 sudo mkdir /var/log/nginx
 sudo mkdir /var/log/nginx/brigittavalentijn
 
-sudo cp /vagrant/dev-setup/dev.vhost /etc/nginx/sites-available/dev.vhost
-sudo cp /vagrant/dev-setup/dev.vhost /etc/nginx/sites-enabled/dev.vhost
-sudo cp /vagrant/dev-setup/hosts /etc/hosts
+bash /vagrant/dev-setup/copy-vhosts.sh
 
 sudo service nginx stop
 sudo service nginx start
