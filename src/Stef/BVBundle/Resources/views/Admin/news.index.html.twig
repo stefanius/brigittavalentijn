@@ -1,0 +1,15 @@
+{% extends 'StefBVBundle::layout.html.twig' %}
+
+{% block title %}Contact{% endblock%}
+
+{% block body %}
+    <header>
+        <h1>Contact symblog</h1>
+    </header>
+
+    <ul>
+        {% for news in newsitems %}
+            <li><a href="{{ path('stef_bvbundle_admin_edit_news', { 'id': news.id }) }}">{{ news.title|e }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

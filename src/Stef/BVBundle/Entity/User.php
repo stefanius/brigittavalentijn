@@ -2,7 +2,7 @@
 
 namespace Stef\BVBundle\Entity;
 
-use FOS\UserBundle\Model\User as BaseUser;
+use FOS\UserBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -18,9 +18,10 @@ class User extends BaseUser
      */
     protected $id;
 
+    protected $roles = array();
+
     public function __construct()
     {
         parent::__construct();
-        // your own logic
     }
 }

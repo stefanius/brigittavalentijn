@@ -1,0 +1,12 @@
+{% extends 'StefBVBundle::layout.html.twig' %}
+
+
+
+{% block body %}
+    <h1>Nieuwsarchief {{ year }}</h1>
+    <ul>
+        {% for news in newsitems %}
+            <li><a href="{{ path('stef_bvbundle_news_show', { 'slug': news.slug }) }}">{{ news.title|e }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

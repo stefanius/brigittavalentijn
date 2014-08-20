@@ -1,3 +1,4 @@
+#temperoy
 stef_bvbundle_homepage:
     pattern:  /
     defaults: { _controller: StefBVBundle:Page:index }
@@ -15,3 +16,95 @@ stef_bvbundle_contact:
     defaults: { _controller: StefBVBundle:Page:contact }
     requirements:
         _method:  GET|POST
+
+stef_bvbundle_blog_show:
+    pattern:  /{id}
+    defaults: { _controller: StefBVBundle:Blog:show }
+    requirements:
+        _method:  GET
+        id: \d+
+
+#user mgmt
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+
+#Webpages - News
+stef_bvbundle_news_archive_current_year_show:
+    pattern:  /nieuws/archief
+    defaults: { _controller: StefBVBundle:News:showArchive }
+    requirements:
+        _method:  GET
+
+stef_bvbundle_news_archive_show:
+    pattern:  /nieuws/archief/{year}
+    defaults: { _controller: StefBVBundle:News:showArchive }
+    requirements:
+        _method:  GET
+
+stef_bvbundle_news_show:
+    pattern:  /nieuws/{slug}
+    defaults: { _controller: StefBVBundle:News:show }
+    requirements:
+        _method:  GET
+
+#Admin page
+stef_bvbundle_admin_add_page:
+    pattern:  /cms/pages/add
+    defaults: { _controller: StefBVBundle:AdminPage:add }
+    requirements:
+        _method:  GET|POST
+
+stef_bvbundle_admin_edit_page:
+    pattern:  /cms/pages/{id}
+    defaults: { _controller: StefBVBundle:AdminPage:edit }
+    requirements:
+        _method:  GET|POST
+
+stef_bvbundle_admin_index_page:
+    pattern:  /cms/pages
+    defaults: { _controller: StefBVBundle:AdminPage:index }
+    requirements:
+        _method:  GET
+
+#Admin news
+stef_bvbundle_admin_add_news:
+    pattern:  /cms/news/add
+    defaults: { _controller: StefBVBundle:AdminNews:add }
+    requirements:
+        _method:  GET|POST
+
+stef_bvbundle_admin_edit_news:
+    pattern:  /cms/news/{id}
+    defaults: { _controller: StefBVBundle:AdminNews:edit }
+    requirements:
+        _method:  GET|POST
+
+stef_bvbundle_admin_index_news:
+    pattern:  /cms/news
+    defaults: { _controller: StefBVBundle:AdminNews:index }
+    requirements:
+        _method:  GET
+
+#Webpages - Pages (last resort, if anything else is not true)
+stef_bvbundle_view_page:
+    pattern:  /{slug}
+    defaults: { _controller: StefBVBundle:Page:viewPage }
+    requirements:
+        _method:  GET
+        slug: .+

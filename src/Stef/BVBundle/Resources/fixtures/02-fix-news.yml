@@ -1,0 +1,323 @@
+DateTime (local):
+    news-date-01:
+        __construct: ['2012-08-25']
+    news-date-02:
+        __construct: ['2012-08-25']
+    news-date-03:
+        __construct: ['2012-09-29']
+    news-date-04:
+        __construct: ['2013-02-12']
+    news-date-05:
+        __construct: ['2013-02-21']
+    news-date-06:
+        __construct: ['2013-02-23']
+    news-date-07:
+        __construct: ['2013-03-10']
+    news-date-08:
+        __construct: ['2013-03-10']
+    news-date-09:
+        __construct: ['2013-03-13']
+    news-date-10:
+        __construct: ['2013-03-20']
+    news-date-11:
+        __construct: ['2013-04-03']
+    news-date-12:
+        __construct: ['2013-04-03']
+    news-date-13:
+        __construct: ['2013-04-03']
+    news-date-14:
+        __construct: ['2013-04-17']
+    news-date-15:
+        __construct: ['2013-04-15']
+    news-date-16:
+        __construct: ['2013-04-21']
+    news-date-17:
+        __construct: ['2013-04-24']
+    news-date-18:
+        __construct: ['2013-05-12']
+    news-date-19:
+        __construct: ['2013-05-14']
+    news-date-20:
+        __construct: ['2013-05-14']
+    news-date-21:
+        __construct: ['2013-06-23']
+    news-date-22:
+        __construct: ['2013-08-29']
+    news-date-23:
+        __construct: ['2013-09-08']
+    news-date-24:
+        __construct: ['2013-09-23']
+    news-date-25:
+        __construct: ['2013-10-06']
+    news-date-26:
+        __construct: ['2013-10-19']
+    news-date-27:
+        __construct: ['2013-10-27']
+    news-date-28:
+        __construct: ['2013-10-30']
+    news-date-29:
+        __construct: ['2013-11-03']
+    news-date-30:
+        __construct: ['2013-12-15']
+    news-date-31:
+        __construct: ['2014-02-01']
+    news-date-32:
+        __construct: ['2014-03-02']
+    news-date-33:
+        __construct: ['2014-03-13']
+    news-date-34:
+        __construct: ['2014-05-05']
+    news-date-35:
+        __construct: ['2014-05-16']
+    news-date-36:
+        __construct: ['2014-05-16']
+    news-date-37:
+        __construct: ['2014-05-20']
+    news-date-38:
+        __construct: ['2014-05-26']
+    news-date-39:
+        __construct: ['2014-05-29']
+    news-date-40:
+        __construct: ['2014-07-04']
+
+Stef\BVBundle\Entity\News:
+    news-01: #author: 1
+        title: 'Overvliegen 2012'
+        bodytext: '<p>Een nieuw seizoen betekent ook dat er een aantal kinderen gaat overvliegen en ook een aantal staf- en bestuursleden van plek verschuift. De oudste kinderen veranderen van leeftijdsgroep. Dit wordt met de hele groep gevierd. Dit jaar vierde we het overvliegspektakel op 8 september op het strand bij La Cantina. Was een warme, zanderige maar zeer mooie dag!</p>\r\n<p>Ouders/verzorgers, familie, vriendjes en vriendinnetjes, stafleden, leden en andere vrijwilligers die hierbij aanwezig waren</p>'
+        slug: 'overvliegen-2012'
+        created: @news-date-01
+        modified: @news-date-01
+    news-02: #author: 1
+        title: 'Nieuwe website!'
+        bodytext: '<p>Een nieuw jaar, een nieuwe website. De website van de Brigitta Valentijn heeft een totaal nieuwe look gekregen. We hopen hiermee dat de website uitvoeriger word gebruikt. Onder andere het foto systeem is een stuk makkelijker geworden. We zullen later dit jaar de website nog uitbreide met vele handige functies. Maar voor nu, kijk rond en ontdek!</p>\r\n<p>ps. Komt u spelfouten of schoonheids foutjes tegen. of heb je een gouden tip! mail dan naar beheer@brigittavalentijn.nl</p>'
+        slug: 'nieuwe-website-2012'
+        created: @news-date-02
+        modified: @news-date-02
+    news-03: #author: 1
+        title: 'Rommelmarkt - 20 oktober 2012'
+        bodytext: '<p>Spullen voor goed-doel verkoop Op zaterdag 20 oktober organiseert scoutingroep Brigitta Valentijn een rommelmarkt in de Lijsterbes. De rommelmarkt is van 10.00-14.30 uur in Lijsterbesstraat 61 en de opbrengst is voor het zomerkamp.</p>\r\n<p>Heeft u nog kasten, een zolder of schuur die moet worden opgeruimd? U kunt spullen die voor verkoop op de rommelmarkt geschikt zijn (geen kleding en meubilair) afgeven bij de Lijsterbes op zaterdagen tussen 12.00-15.00 uur. Als u het niet zelf kunt vervoeren kunt u bellen met 06-53352237 of 070-3292650.</p>\r\n<p>En u bent natuurlijk van harte welkom om op 20 oktober langs te komen en rond te neuzen.</p>\r\n<p>Wij, Brigitta Valentijn, zijn een eigentijdse scoutinggroep zonder uniform. We organiseren iedere zaterdag leuke, gevarieerde activiteiten voor mensen vanaf 5 jaar in wijkgebouw De Lijsterbes. Kinderen kunnen altijd langskomen om een keer te kijken en mee te doen. Ook nieuwe vrijwilligers zijn altijd welkom.</p>'
+        slug: 'rommelmarkt-20-oktober-2012'
+        created: @news-date-03
+        modified: @news-date-03
+    news-04: #author: 1
+        title: 'Playbackshow 2013'
+        bodytext: '<p><span><span class="fsl">Ja ja, hij komt er weer aan de <strong>Playbackshow</strong> van 2013. Helaas door locatie technische problemen is het dit jaar <strong>niet</strong> in ons oude vertrouwde grote zaal van de Lijsterbes.<br />Waar is het dan? Bij de <strong>gymzaal</strong> van <strong>Basisschool de Drie Linde</strong>. Deze is te vinden op het volgende adres:<br /><em>Verlengde 2de Braamstraat 5 in Den Haag</em></span></span></p>\r\n<p><span><span class="fsl">Om de kosten te dekken moeten wij helaas aan <strong>niet-leden</strong> </span></span><span><span class="fsl"><span><span class="fsl">&euro;1,50 vragen. De entree voor leden is gratis.</span></span></span></span></p>\r\n<p><span><span class="fsl">Het tijdstip waarop dit moois allemaal gaat plaats vinden is:<br />aanvang <strong>19.00</strong> uur, <strong>19.30 uur start</strong><br /> Alle leden, oud leden, vrienden van de BV, familie en kennissen zijn welkom!!<br /><br />Wilt u voortaan nog sneller up to date zijn van onze evenementen? Word dan vrienden met ons <a title="Facebook account" href="https://www.facebook.com/profile.php?id=100002487223676" target="_blank">Facebook account</a>, dan wordt u standaard uitgenodigt voor al onze evenementen.<br /></span></span></p>'
+        slug: 'playbackshow-2013'
+        created: @news-date-04
+        modified: @news-date-04
+    news-05: #author: 1
+        title: 'Huisvesting'
+        bodytext: '<p class="MsoNormal">De plannen voor nieuwe huisvesting gaan de goede kant op. Sinds voorjaar 2012 zijn gemeente Den Haag en Brigitta Valentijn samen aan het zoeken naar een andere huisvesting voor onze scoutinggroep in de directe omgeving.</p>\r\n<p class="MsoNormal">De Lijsterbes was jarenlang een goed onderkomen, maar nu is de tijd gekomen voor verandering. Er is een nieuwe locatie op het oog, en op dit moment vindt overleg plaats over praktische zaken. Zodra er meer bekend is, zal dat op deze site te lezen zijn.</p>'
+        slug: 'huisvesting-2013'
+        created: @news-date-05
+        modified: @news-date-05
+    news-06: #author: 1
+        title: 'Grandioze pleebeksjow'
+        bodytext: '<p>Zaterdag 23 februari was het weer het moment voor de jaarlijkse optredens bij Brigitta Valentijn. En het werd een TOP-avond, zoals eigenlijk ook in eerdere jaren.</p>\r\n<p>Dit jaar vond de avond plaats in de gymzaal van de bijzonder gastvrije basisschool De Drie Linden. Het thema van de avond was Survival in de breedste zin van het woord en dat was zichtbaar in de aankleding, presentatie en ook in de zeer diverse en mooie acts.</p>\r\n<p>Want alle leden van 5 tot ca 25 jaar lieten zich op het podium van hun beste kant zien. De zaal vol met ouders, vrienden en familieleden was zeer enthousiast. De bekwame jury, bestaande uit de familie van Houten, had het er moeilijk mee om de winnaars te kiezen.</p>\r\n<p>De eerste prijs is gewonnen door Alexander, Rutger en Marlon. Robin kreeg de tweede prijs en Lennart werd derde. De bevers wonnen de prijs voor de beste groepsact. Conclusie: een hele leuke avond die voor herhaling vatbaar is.</p>'
+        slug: 'grandioze-pleebeksjow-2013'
+        created: @news-date-06
+        modified: @news-date-06
+    news-07: #author: 1
+        title: 'Website update'
+        bodytext: '<p>Zoals misschien al is opgevallen is de website wat veranderd. Er zijn sinds de website online is al aardig wat updates geweest namelijk. Sommige waren voor de grote update bewaard. <br /><br /><strong>Hieronder een aantal nieuwe functies:</strong><br />- Mogelijkheid tot navigeren met pijltjes toetsen bij het fotoboek.<br /><br />- Onze libdup van GGW 2011 is nu ook te bekijken op de plek waar onze slider staat door op het video knopje te drukken.<br /><br />- Er zijn nu directe links te vinden naar onze nieuwsberichten op deze manier is het mogelijk om een nieuwsbericht ook via Twitter en Facebook te verspreiden.<br /><br />- Het gastenboek heeft minder berichten per pagina om zo een hele lange pagina met berichten te voorkomen.<br /><br />- Elke zondag om 15:00 wordt nu gechecked of er nieuwe foto albums zijn, zo ja dan worden de laatste 3 albums geTwittert.<br /><br />- Onder de slider staat nu een promotie balkje<br /><br /><strong>De minst opvallende:</strong><br />- Het foto verklein script is aangepast. Deze werkt nu nog sneller en zorgt ervoor dat er heel wat minder ruimte op de server gebruikt wordt.<br /><br /><strong>En de meest opvallende:</strong><br />- De website heeft een wat meer zomers uiterlijk gekregen.<br /><br />Maar we zijn nog niet klaar hoor, er komt namelijk nog eind van de week een update waarbij per groep te zien is wie de stafleden zijn. Zo wordt de website wat persoonlijker.</p>'
+        slug: 'website-update-2013'
+        created: @news-date-07
+        modified: @news-date-07
+    news-08: #author: 1
+        title: 'Aanmelden GGW'
+        bodytext: '<p>We gaan dit jaar weer op GGW! Het weekend is van 9 t/m 12 mei (tijdens hemelvaart) op het Solleveld in Den Haag. We hopen dat jullie je allemaal in grote getale inschrijven! Meld je voor 23 maart aan via ggw@brigittavalentijn.nl (zie aanmeld formulier).</p>\r\n<p><a title="Aanmeld formulier GGW" href="../../../uploads/Brief_inschrijven_GGW%202013%20(1).doc">Klik HIER om het aanmeld formulier te downloaden.</a></p>'
+        slug: 'aanmelden-ggw-2013'
+        created: @news-date-08
+        modified: @news-date-08
+    news-09: #author: 1
+        title: 'Aanstaande zaterdag: NL doet'
+        bodytext: '<p>Aanstaande zaterdag (16 Maart) doet onze scoutinggroep de Brigitta Valentijn mee met de grootste vrijwilligers actie van het land.</p>\r\n<p>Op deze dag zullen vrijwilligers, in heel Nederland, zich bezig houden met elkaar ondersteunen in het doen van klussen, grote schoonmaak of op een andere manier een ander persoon of organisatie steunen.</p>\r\n<p>Dit jaar hebben wij als scouting groep ons hierbij aangesloten. Wij zullen ons zaterdag bezighouden met het opknappen van de kampkisten voor ons zomerkamp. Kort gezegd houd dit in: schuren, verven en vervangen van evt. schroeven en scharnieren.</p>\r\n<p>Wij hebben al een aantal aanmeldingen, maar zijn nog hard op zoek om met een gezellige groep mensen de handen uit de mouwen te steken.</p>\r\n<p>Datum: as. zaterdag 16 maart<br />Locatie: het plein achter de lijsterbes<br />Tijdstip: vanaf 14:30 tot een uur of 18:00</p>\r\n<p>Voor materiaal en versnaperingen zal worden gezorgd!</p>'
+        slug: 'aanstaande-zaterdag-nl-doet-2013'
+        created: @news-date-09
+        modified: @news-date-09
+    news-10: #author: 1
+        title: 'Opbrengst Jantje Beton'
+        bodytext: '<p>Na een week de buurten rond te gaan met de stafleden, Pivo''s en de R/S om geld op te halen voor Jantje Beton hebben wij te horen gekregen hoeveel wij als vereniging in totaal hebben opgehaald.<br /><br />Dit was maar liefst: <strong>&euro; 4156.88</strong>&nbsp; Dit is gemiddeld per bus: <strong>&euro; 129.90<br /></strong>Met dit bedrag hebben wij binnen Den Haag het meeste opgehaald van alle groepen.</p>'
+        slug: 'opbrengst-jantje-beton-2013'
+        created: @news-date-10
+        modified: @news-date-10
+    news-11: #author: 1
+        title: 'Ook de BV deed mee met NL-Doet'
+        bodytext: '<p>Op 16 maart hebben we flink de handen uit de mouwen gestoken om de kampkisten op te knappen. In deze kisten vervoeren we alle materialen voor weekenden en zomerkamp. Er is geschuurd en gelakt, hang- en sluitwerk is gerepareerd. Helaas zonder vrijwilligers van buiten, maar veel hulde aan de R/S-ers die het meeste werk hebben verricht.</p>'
+        slug: 'ook-de-bv-deed-mee-met-nl-Doet-2013'
+        created: @news-date-11
+        modified: @news-date-11
+    news-12: #author: 1
+        title: 'Kabouter Wouter is weer bereikbaar'
+        bodytext: '<p>Hebben jullie deze geweldige website al bekeken? Inmiddels weer bereikbaar.&nbsp;</p>\r\n<p><a href="http://www.kabouter-wouter.nl/" rel="nofollow" target="_blank">www.kabouter-wouter.nl</a></p>'
+        slug: 'kabouter-wouter-is-weer-bereikbaar-2013'
+        created: @news-date-12
+        modified: @news-date-12
+    news-13: #author: 1
+        title: 'Kabouter Wouter journaal'
+        bodytext: '<p>Hebben jullie uitzending van het Kabouter Wouter journaal in Rusland al gezien? De RS hebben het op Youtube gezet!&nbsp;</p>\r\n<p><a href="http://youtu.be/QjbO3rRQEJI">http://youtu.be/QjbO3rRQEJI</a></p>'
+        slug: 'kabouter-wouter-journaal-rusland-2013'
+        created: @news-date-13
+        modified: @news-date-13
+    news-14: #author: 1
+        title: 'Wethouder opent ons nieuwe pand'
+        bodytext: '<p>Op zaterdag 20 april verhuizen we van wijk- en dienstencentrum ''De Lijsterbes'' naar&nbsp;het noodgebouw op het binnenterrein bij basisschool De Vlierboom. Wethouder Karsten Klein opent het pand en de BV viert het met een feest voor alle leden, ouders, vrienden en buurtbewoners.</p>\r\n<p>We starten als altijd om 12.30 uur bij de Lijsterbes. Met alle groepen gaan we dan gezamenlijk op weg naar het nieuwe pand. Hemelsbreed is het maar een paar honderd meter, dus goed te bereiken. Hoe we precies deze tocht gaan maken blijft nog even een verrassing, maar we nodigen ook alle ouders van harte uit om eraan deel te nemen.</p>\r\n<p>Om 13.30 zal dan de offici&euml;le opening plaatsvinden. Deze wordt verricht door wethouder Karsten Klein. Uiteraard is iedereen hierbij welkom. Hierna gaat het activiteitenprogramma van start waar de kinderen aan deel kunnen nemen.</p>\r\n<p>Dit is in en rond het nieuwe pand.</p>\r\n<p>We nodigen hierbij ook alle kinderen uit de nieuwe buurt uit, en net als ouders zijn ook volwassen buurtbewoners welkom om te kijken naar de activiteiten.</p>\r\n<p>Om half 3 ronden we de openingsdag af met een hapje en een drankje en toosten we samen op de nieuwe locatie.</p>\r\n<p>Vanaf 27 april vindt het gebruikelijke draaien dan plaats in dit nieuwe onderkomen. Voorlopig is de ingang via het hek naast de Vlierboomschool, bij Vlierboomstraat 366.</p>'
+        slug: 'wethouder-opent-ons-nieuwe-pand-2013'
+        created: @news-date-14
+        modified: @news-date-14
+    news-15: #author: 1
+        title: 'Hoe komt u bij ons nieuwe clubhuis?'
+        bodytext: '<p>Ons offici&euml;le adres is Mient 351 maar onze ingang bevind zich aan de achterkant. Om naar binnen te komen moet u dus naar de Vlierboomstraat gaan en dan naast de school de Vlierboom (te vinden op het adres: Vlierboomstraat 366, 2564 H) is een Hek.</p>\r\n<p>Hier kunt u dan naar binnen gaan vervolgens loopt u helemaal rechtdoor, over het speel plein van de Vlierboom school tot u bij de blauwe deur van de container komt. Die blauwe deur is de ingang van ons nieuwe gebouw. Indien er vragen zijn kunt u contact opnemen met het bestuur: bestuur@brigittavalentijn.nl, <a title="Scouting Brigitta Valentijn Facebook" href="https://www.facebook.com/pages/Scoutinggroep-Brigitta-Valentijn/571733442846535" target="_blank">ons via Facebook contacteren</a>, of reageren op dit nieuws bericht.</p>\r\n<p>Wij hopen u zaterdag te zien.</p>'
+        slug: 'hoe-komt-u-bij-ons-nieuwe-clubhuis-2013'
+        created: @news-date-15
+        modified: @news-date-15
+    news-16: #author: 1
+        title: 'Wethouder Klein opent scoutingpand'
+        bodytext: '<p>Op zaterdag 20 april opende wethouder Karsten Klein het nieuwe pand van Scouting Brigitta Valentijn. Toegejuicht door kinderen, ouders en buurtbewoners ging een grote tros ballonnen de lucht in bij het noodgebouw op het binnenterrein bij basisschool De Vlierboom.</p>\r\n<p>Meer dan 40 jongste kinderen van scouting Brigitta Valentijn liepen met ouders en vrijwilligers op 20 april in optocht van hun oude onderkomen in de Lijsterbesstraat naar de Vlierboomstraat. Daar aangekomen werd nieuwsgierig en goedkeurend de nieuwe huisvesting bekeken. Een stralende zon, spelletjesprogramma, popcorn en limonade zorgden voor een enthousiaste start op deze plek. Ook kinderen en bewoners uit de buurt namen een kijkje.</p>\r\n<p>Brigitta Valentijn is een leuke actieve scoutinggroep zonder uniform. Ze organiseert iedere zaterdag gevarieerde activiteiten voor mensen vanaf 5 jaar. Kinderen en jongeren kunnen altijd langskomen om een keer een kijkje te nemen en mee te doen.</p>'
+        slug: 'wethouder-klein-opent-scoutingpand-2013'
+        created: @news-date-16
+        modified: @news-date-16
+    news-17: #author: 1
+        title: 'BV: En ze leefden nog lang en gelukkig'
+        bodytext: '<p>Op Hemelvaartsdag, donderdag 9 mei, organiseert scoutinggroep Brigitta Valentijn in samenwerking met Fonds1818&lt;24 en Stichting Boschuysen de activiteit &lsquo;BV: En ze leefden nog lang en gelukkig!&rsquo; Iedereen boven de 5 jaar is om 13.00 uur van harte welkom op het Solleveld aan de Monsterseweg in Den Haag om dit spektakel mee te maken.<br /><br />Deze dag vol met spel en avontuur zal om 13.00 uur starten met de premi&egrave;re van de film &lsquo;BV: en ze leefden nog lang en gelukkig! Naast Hans, Grietje, de gelaarsde kat en al je andere favoriete sprookjesfiguren kun je nu eindelijk meer te weten komen over die mysterieuze, grote (!) kabouter Wouter (zie ook de facebookpagina &lsquo;<a href="https://www.facebook.com/pages/BV-En-ze-leefdena-nog-lang-en-gelukkig/450482935031916?fref=ts">BV: en ze leefden nog lang en gelukkig!</a>&rsquo; ). Na de film zullen we in groepjes, ingedeeld naar leeftijd, door middel van spellen nog veel meer te weten komen over de inwoners van het sprookjesbos. Tussendoor is er natuurlijk nog tijd voor een hapje, een lekker glas limonade en voor wie wil kan er geschminkt worden. Na een enorm spel, gespeeld door alle aanwezige samen, sluiten we de middag om 17.00 uur af. <br /><br />Voor iedereen die nieuwsgierig is wat de Brigitta Valentijn zoal doet, is dit donderdagmiddagprogramma een leuk moment om een kijkje te nemen. Zowel kinderen als volwassenen zijn van harte welkom en dankzij de financi&euml;le steun van Stichting Boschuysen en Fonds1818&lt;24 is de entree niet meer dan 1 euro. <br /><br />De Brigitta Valentijn, een eigentijdse scoutinggroep zonder uniform, organiseert iedere zaterdag leuke, gevarieerde activiteiten voor mensen vanaf 5 jaar in het gebouw Mient 351 (op het binnenterrein van de Vlierboomschool, vanaf 13 mei zijn we ook echt bereikbaar via de Mient ). Kinderen kunnen altijd langskomen om een keer een kijkje te nemen en mee te doen.<br />Wil je meer weten, bel 070-3651563 (vraag naar Merel).</p>'
+        slug: 'bv-en-ze-leefden-nog-lang-en-gelukkig-2013'
+        created: @news-date-17
+        modified: @news-date-17
+    news-18: #author: 1
+        title: 'Duingebied omgetoverd tot sprookjesbos'
+        bodytext: '<p>Op Hemelvaartsdag 9 mei speelden meer dan 130 kinderen en volwassenen in een tijdelijk sprookjesbos op Solleveld aan de Monsterseweg in Den Haag. De zon scheen, de omgeving was prachtig en iedereen had het geweldig naar zijn zin.&nbsp; <br /><br />Scoutinggroep Brigitta Valentijn organiseerde dit spektakel in samenwerking met Fonds1818&lt;24 en Stichting Boschuysen. De deelnemers kwamen uit heel Den Haag er op af. In de film betoverden de heks en de boze wolf Kabouter Wouter tot mensengrootte. Er moest gezocht worden naar een jarige sprookjesfiguur, er kwamen waterpistolen en modder aan te pas en alle zintuigen en lenigheid waren nodig om levensgroot twister te spelen met je voeten in het meel, de suiker en appelstroop. In het grote eindspel verzamelde iedereen vier kleurenstippen op neus, wangen en kin om een favoriete sprookjesfiguur te bemachtigen. Moe en voldaan, met schmink en verfvegen in het gezicht trok men weer op huis aan.</p>'
+        slug: 'duingebied-omgetoverd-tot-sprookjesbos-2013'
+        created: @news-date-18
+        modified: @news-date-18
+    news-19: #author: 1
+        title: 'GGW en Kabouter Wouter de film'
+        bodytext: '<p>Na een geweldig ggw, en een prachtige film. staan nu alle foto''s op de website. Klik <a title="ggw 2013" href="../../fotoboek/algemeen/Groot+Groeps+Weekend+2013.html" target="_blank">hier</a> voor het foto album. Ook staat de Kabouter Wouter film op youtube en kun je <a title="Kabouter Wouter de film" href="http://www.youtube.com/playlist?list=PL9_GfjYavLLCQ-ksqfUM3gaLJiGVHhBvT" target="_blank">hier</a> belijken.</p>'
+        slug: 'ggw-en-kabouter-wouter-de-film-2013'
+        created: @news-date-19
+        modified: @news-date-19
+    news-20: #author: 1
+        title: 'Ingang veranderd'
+        bodytext: '<p>Zoals al op onze website te zien was zijn wij 13 mei van ingang veranderd. We hebben de afgelopen paar weken na de verhuizing tijdelijk de ingang gebruikt via de Vlierboomstraat. Vanaf nu is de definitieve ingang via het hek naast Mient 351.<br /><br />Via dat hek kom je op een speelplaats. Daar loop je door en dan ga je aan het einde naar rechts (dan heb je links de woonhuizen). Zodra je op het grasveldje komt ga je naar rechts door de houten poort en kom je op ons speelterrein en bij de grote toegangsdeur.</p>'
+        slug: 'ingang-veranderd-2013'
+        created: @news-date-20
+        modified: @news-date-20
+    news-21: #author: 1
+        title: 'Sponsorloop'
+        bodytext: '<p>Op zaterdag 29 juni houden wij een sponsorloop als financi&euml;le actie voor de kampen. Wij draaien dan gewoon van 12.30-14.30. We draaien wel op een andere locatie, namelijk in het park naast het Rode Kruis ziekenhuis, bij de kruising tussen de Fahrenheitstraat en de Segbroeklaan.</p>\r\n<p>Alle kinderen hebben een lijst gekregen waarop zij de sponsors kunnen bijhouden. Wij willen u natuurlijk vragen om de kinderen te helpen met het zoeken en bijhouden van sponsors!! Hierbij geldt natuurlijk; hoe meer sponsors hoe beter! Als u hier verder vragen over heeft kunt u deze altijd stellen aan een staflid of even mailen naar bevers@brigittavalentijn.nl</p>\r\n<p>Als u uw lijst bent kwijt geraakt kun u <a title="Sponsorloop formulier" href="../../uploads/Sponsorloop.docx" target="_blank">HIER</a> een nieuwe downloaden.</p>\r\n<p>Op zaterdag de 29e is iedereen natuurlijk ook uitgenodigd om de kinderen te komen aanmoedigen!</p>'
+        slug: 'sponsorloop-2013'
+        created: @news-date-21
+        modified: @news-date-21
+    news-22: #author: 1
+        title: 'Start seizoen 2013-2014'
+        bodytext: '<p>Beste ouders en leden,</p>\r\n<p>Het is weer bijna zover: Het nieuwe seizoen gaat weer beginnen.<br />We beginnen op 7 September met de laatste keer in huidige formatie draaien, de week hierop (14 September) zal het overvliegen plaats vinden. Dan gaan de leden die oud genoeg zijn van groep wisselen.<br /><br />Meer informatie over het overvliegen zal nog volgen. Wij hopen dat jullie een fijne vakantie gehad hebben en weer zin hebben om weer naar scouting te komen. Wij hebben er in iedergeval heel veel zin in.<br /><br />Tot zaterdag!</p>'
+        slug: 'start-seizoen-2013-2014'
+        created: @news-date-22
+        modified: @news-date-22
+    news-23: #author: 1
+        title: 'Spectaculaire start van het nieuwe seizoen'
+        bodytext: '<p>Op zaterdag 14 september luidt scouting Brigitta Valentijn het seizoen 2013-2014 in. Kinderen en nieuwe vrijwilligers leggen een symbolisch parcours af en klimmen/glijden hun nieuwe groep in.</p>\r\n<p>Scoutinggroep Brigitta Valentijn begint het nieuwe seizoen altijd met een bijzondere activiteit. Op 14 september tussen 12.30-14.00 uur wordt er &lsquo;in-, over- en uitgevlogen&rsquo;. Nieuwe kinderen en vrijwilligers worden welkom geheten, de oudste kinderen vliegen over naar de volgende leeftijdsgroep en ook zullen enkele kinderen en vrijwilligers uitvliegen. Dit is een bijzonder moment waarvoor ouders, buurtgenoten en ge&iuml;nteresseerden van harte welkom zijn. De activiteit vindt plaats bij het onderkomen van Brigitta Valentijn op het binnenterrein van basisschool de Vlierboom, toegang via het hek aan de Vlierboomstraat 366.</p>'
+        slug: 'spectaculaire-start-van-het-nieuwe-seizoen-2013'
+        created: @news-date-23
+        modified: @news-date-23
+    news-24: #author: 1
+        title: 'Voorzitter gezocht!'
+        bodytext: '<p><span class="null">Helaas vertrekt onze gewaardeerde voorzitter en daarom zijn we dringend op zoek naar een opvolger. Wie wil deze rol vervullen, of ken je iemand die dit goed zou kunnen doen? Reacties zijn zeer welkom: bestuur@brigittavalentijn.nl of geef het door aan een bestuurslid.</span></p>'
+        slug: 'voorzitter-gezocht-2013'
+        created: @news-date-24
+        modified: @news-date-24
+    news-25: #author: 1
+        title: 'R/S Helpt bij vredes marathon'
+        bodytext: '<p><img title="De RS bij de vredesmarathond" src="../../uploads/vredesmarathon_rs.png" alt="Vredes marathon RS" width="543" height="305" /></p>\r\n<p>Dit jaar zijn er grote plannen van de Rowan Sherpa&rsquo;s om zich te mengen in verschillende Haagse evenementen. Zondag 22 september, kort na de nieuwe formatie van de groep, hebben we de handen uit de mouwen gestoken tijdens de vredesmarathon. We hebben ons kei harde best gedaan om de dappere renners te voorzien van vocht, fruit en een duwtje in de rug. Met veel plezier kijken we terug op deze dag en hopelijk mogen er nog vele leuke evenementen opzoek zijn naar een enthousiast team vrijwilligers.</p>'
+        slug: 'rowan-sherpas-helpt-bij-vredes-marathon-2013'
+        created: @news-date-25
+        modified: @news-date-25
+    news-26: #author: 1
+        title: 'Grote rommelmarkt'
+        bodytext: '<p>Op zaterdag 26 oktober organiseren Vrienden van Brigitta Valentijn een gezellige rommelmarkt in het noodgebouw op het schoolplein van de Vlierboomschool. De opbrengst is voor het zomerkamp van de kinderen.<br /><br />Op zoek naar speelgoed en andere decembercadeaus? Lekker neuzen voor kleine prijsjes? De rommelmarkt is van 10.00-14.30 uur aan de Vlierboomstraat (via hek bij nr 366) en er is voor iedereen wat te vinden. Er is gelegenheid voor koffiedrinken met wat lekkers. Regelmatig vindt ook een loterij plaats met mooie prijzen. <br /><br />De opbrengst van de rommelmarkt, die wordt georganiseerd door Vrienden van Brigitta Valentijn, is voor het zomerkamp van meer dan 75 kinderen en jongeren. <br /><br />Heeft u voor ons spullen voor de verkoop zoals oud speelgoed, kinderkleding, boeken, snuisterijen? Dan kunt u hierover bellen tot 24 oktober met 06-20126441.</p>'
+        slug: 'grote-rommelmarkt-2013'
+        created: @news-date-26
+        modified: @news-date-26
+    news-27: #author: 1
+        title: 'Rommelmarkt weer groot succes'
+        bodytext: '<div style="line-height: 21px; color: #444444; font-family: Calibri, sans-serif;"><span style="font-size: 11pt;">Ook dit jaar weer wisten veel mensen onze rommelmarkt te vinden.&nbsp;</span><span style="font-size: 11pt;">De opbrengst was ruim 900 euro!&nbsp;</span></div>\r\n<div style="line-height: 21px; color: #444444; font-family: Calibri, sans-serif;">&nbsp;</div>\r\n<div style="line-height: 21px; color: #444444; font-family: Calibri, sans-serif;"><span style="font-size: 11pt;">We hebben heel veel spullen binnengekregen om te verkopen en gelukkig waren er veel bezoeke</span><span style="font-size: 11pt;">rs die hier ook inter</span><span style="font-size: 11pt;">esse in had.&nbsp;</span></div>\r\n<div style="line-height: 21px; color: #444444; font-family: Calibri, sans-serif;"><span style="font-size: 11pt;"><br /></span><span style="font-size: 11pt;">Hartelijk dank aan alle donateurs, vervoerders, verkopers, kopers, vrijwilligers en iedereen die heeft meegedacht en wilde helpen. </span></div>\r\n<div style="line-height: 21px; color: #444444; font-family: Calibri, sans-serif;"><span style="font-size: 11pt;">&nbsp;</span><img style="color: #0099cc; font-family: arial, Arial; font-size: 11pt;" src="../../../fThumb/modules/view/tools/fotoboek/Algemeen/Rommelmarkt%202013/DSCN1764.JPG" alt="DSCN1764.JPG" width="429" height="322" /></div>\r\n<div style="line-height: 21px; color: #444444; font-family: Calibri, sans-serif;">&nbsp;</div>\r\n<div style="line-height: 21px; color: #444444; font-family: Calibri, sans-serif;">&nbsp;</div>\r\n<div style="line-height: 21px; color: #444444; font-family: Calibri, sans-serif;"></div>'
+        slug: 'rommelmarkt-weer-groot-succes-2013'
+        created: @news-date-27
+        modified: @news-date-27
+    news-28: #author: 1
+        title: 'Multicultiman komt zaterdag langs'
+        bodytext: '<p><span style="color: #444444; font-family: Calibri; line-height: 21.111112594604492px;">Aanstaande zaterdag staat er iets bijzonders te gebeuren bij de BV, Muliticultiman komt ons namelijk een bezoekje brengen. Dit betekend dat de hele dag in het teken staat van diversiteit en andere culturen ! We hopen jullie allemaal zaterdag te zien om Multicultiman een warm Hollands onthaal te geven.</span></p>'
+        slug: 'multicultiman-komt-zaterdag-langs-2013'
+        created: @news-date-28
+        modified: @news-date-28
+    news-29: #author: 1
+        title: 'Old Brigitta Valentijn had a farm'
+        bodytext: '<p>Op <strong>zaterdag 9 november</strong> van <strong>12:30 tot 14:30</strong> uur organiseren we op <strong>kinderboerderij De Gagelhoeve</strong> aan de Mient een leuke speelactiviteit voor de bevers en esta&rsquo;s en alle andere kinderen van 5-11 jaar. De kinderen zullen tijdens deze dag met behulp van allerlei spellen een mysterie moeten oplossen. Twee fantasieboeren hebben hulp nodig van de kinderen omdat ze aan &lsquo;geheugenverlies&rsquo; lijden en niet meer weten hoe ze hun boerderij moeten onderhouden. Spelenderwijs raak je zo bekend met de dagelijkse taken op een boerderij en het onderhoud en verzorgen van de GreenCourt. <br />Alle kinderen en volwassenen, ook buiten de vereniging, zijn van harte welkom mee te doen aan deze middagactiviteit.</p>'
+        slug: 'old-brigitta-valentijn-had-a-farm-2013'
+        created: @news-date-29
+        modified: @news-date-29
+    news-30: #author: 1
+        title: '14 december was er Vossenjacht'
+        bodytext: '<p>Vossenjacht! Vreemde figuren liepen op straat rond in de Appelstraat en omgeving. Scouting Brigitta Valentijn zette de buurt op stelten. Bevers, esta&rsquo;s, mercators, kinderen uit de buurt en ook ouders deden mee. <br /><br />Hoe meer zielen, hoe meer vreugde bij deze buurtactiviteit. En dat betekende dat ook via het lezen van het bericht in de kranten ouders en kinderen mee kwamen doen. Er is gestart met een groot puzzelspel.&nbsp; Daarna zwermden kinderen en volwassenen&nbsp; de wijk in op zoek naar vossen. <br />Het was prachtig weer en de vossen, zoals&nbsp; een heks, een wolf, Adriaan (van Bassie), een indiaan en nog meer, waren best moeilijk om te vinden. Maar natuurlijk waren de kinderen slimmer en losten ze alle vragen op. <br /><br />De foto&rsquo;s zijn elders op de site te bekijken.</p>'
+        slug: '14-december-was-er-vossenjacht-2013'
+        created: @news-date-30
+        modified: @news-date-30
+    news-31: #author: 1
+        title: 'NL DOET: de KampKistenKlus'
+        bodytext: '<p class="MsoNormal">Lieve vrienden, ouders, leden, buren van de BV</p>\r\n<p class="MsoNormal">Op&nbsp;22&nbsp;maart&nbsp;staat heel Nederland in het teken van en voor vrijwilligerswerk. NL Doet! is het motto en iedereen wordt uitgenodigd om een keertje de handen vrijwillig uit te steken. Alle vrijwilligersclubs laten zien wat ze doen en bieden eenmalige vrijwilligersactiviteiten aan.</p>\r\n<p class="MsoNormal">De&nbsp;Brigitta Valentijn doet natuurlijk volop mee!&nbsp;<a href="http://klussen.nldoet.nl/nldoet/klus/?documentid=6394585%20">Klik HIER voor de actie.</a></p>\r\n<p class="MsoNormal">We hebben een dankbare klus klaar staan. Al jaren constateren we dat de kampkisten nodig opgeknapt moeten worden. Deze kisten, waarin we alle keukenspullen en ander kampmateriaal vervoeren moeten geschuurd, gelakt en soms</p>\r\n<p class="MsoNormal">aan hang- en sluitwerk gerepareerd worden. Ook gaan we aan de slag om een opslagkast te maken.</p>\r\n<p class="MsoNormal">Op zaterdag&nbsp;22 maart&nbsp;staan onze materiaalmeesters klaar om u te ontvangen. Ze hebben een flinke voorraad schuurpapier en kwasten en lak klaar staan en wat verder nog meer nodig is.</p>\r\n<p class="MsoNormal">We hebben veel handen nodig, handigheid of kennis van zaken is niet nodig. In een leuke setting, omlijst met muziek, koek en zopie kunt u aan de slag voor zolang als u wilt. Een half uur, anderhalf, maakt niet uit, maar doe wel oude kleren aan. De KampKistenKlus vindt plaats in en rond onze locatie op het binnenterrein van Mient 351 (via hek en schoolplein), op zaterdag&nbsp;22 maart&nbsp;van 12.30-16.30 uur.</p>\r\n<p class="MsoNormal">We hopen dat u ook komt, misschien komt u nog oude BV-bekenden tegen?!</p>\r\n<p class="MsoNormal">Voor aanmelden en meer informatie kunt u terecht bij Micha Zimmermann,&nbsp;<br /> <a href="mailto:Micha995@hotmail.com">Micha995@hotmail.com</a><br /> Telefoon: 0639784994</p>\r\n<p class="MsoNormal">Graag tot ziens</p>\r\n<p class="MsoNormal">Namens kinderen en vrijwilligers van de BV</p>'
+        slug: 'nl-doet-de-kampkistenklus-2014'
+        created: @news-date-31
+        modified: @news-date-31
+    news-32: #author: 10
+        title: 'Pleebeksjow 8 maart'
+        bodytext: '<p>Hallo leden/ouders/verzorgers en vrienden van de BV,</p>\r\n<p><span style="font-size: 11pt;">Zoals jullie inmiddels weten is op 8 maart de jaarlijkse Pleebeksjow. De aanvang van de pleebacksjow is om 19:00 op basisschool de Drie Linden ( Verlengde 2e Braamstraat, 5) Om 19:30 begint de eerste act.</span></p>\r\n<p><span style="font-size: 11pt;">Het thema van de avond wordt: Back to the Future een futurisitsch thema met een retro tintje. De jury bestaat dit jaar uit de 2 nieuwe bestuursleden en de grootste BV-er aller tijden. Genoeg reden dus om langs te komen !&nbsp;</span></p>\r\n<p><span style="font-size: 11pt;">Draaitijden van 8 maart:<br /><br /></span><span style="font-size: 11pt;">Bevers en Esta&rsquo;s: van 14.30 uur tot aan de Pleebeksjow&nbsp;</span></p>\r\n<p>(tussendoortje zelf mee nemen, voor avond eten wordt gezorgd)</p>\r\n<p>Mercators: van 14.30 uur tot aan de Pleebeksjow&nbsp;</p>\r\n<p>(voor avond eten wordt gezorgd)</p>\r\n<p>R/S: de tijden worden later door de staf aan jullie doorgegeven.</p>\r\n<p>Pivo&rsquo;s: wordt later met de groep besproken</p>\r\n<p>&nbsp;</p>\r\n<p>Wie: schrijf je alleen, of als groepje in</p>\r\n<p>Wat: Pleebeksjow</p>\r\n<p>Waar: Basisschool de Drie Linden ( Verlengde 2e Braamstraat , 5)<br /><br /><span style="font-size: 11pt;">Wanneer: 8 maart 2014<br /><br /></span><span style="font-size: 11pt;">Hoe laat: aanvang 19:00 uur, start 19.30</span></p>\r\n<p>Kosten: Tijdens de pleebacksjow kun je consumptiekaarten kopen om de dorst en de honger te stillen. Vergeet dus niet om wat geld mee te nemen. ( hiermee bekostigen wij ook de pleebacksjow) &nbsp;</p>\r\n<p>Inleveren strookje: Het lieft via bvpbsmp3@gmail.com maar het kan ook bij je staflid.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>De Pleebeksjow organisatie&nbsp;</p>\r\n<p>Maarten,Jasper en Lex</p>\r\n<p>&nbsp;</p>\r\n<p>-------------------------------------------------------------------------------------------------------</p>\r\n<p>Naam/Namen:&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;</p>\r\n<p>Speltak:&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;</p>\r\n<p>Artiest:&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;</p>\r\n<p>Lied:&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;</p>\r\n<p>o Ik geef een cd mee, het nummer van het liedje op de cd is :&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;</p>\r\n<p>o Ik stuur een mp3 naar bvpbsmp3@gmail.com</p>'
+        slug: 'pleebeksjow-8-maart-2014'
+        created: @news-date-32
+        modified: @news-date-32
+    news-33: #author: 10
+        title: 'Boerenkooltocht 2014'
+        bodytext: '<p>Beste vrienden van de BV,</p>\r\n<p><span style="font-size: 11pt;">Op zaterdag 29 maart is het weer zover, de boerenkooltocht wordt weer nieuw leven in geblazen ! Dat betekent een lekker eind buiten erop uit en daarna met zijn allen boerenkool eten. Ook alle vrienden van de BV zijn natuurlijk van harte welkom. Onderstaand staan de gegevens voor de speltakken, jullie kunnen zelf kiezen of je de middag of avond wilt meelopen of dat je alleen lekker boerenkool komt eten.</span></p>\r\n<p><span style="font-size: 11pt;">De Esta&rsquo;s, Mercators en Bevers zijn om 14.00 uur welkom op de Nieuwe Lijsterbes, Mient 351 (via hek en schoolplein).&nbsp;</span></p>\r\n<p>De R/S, Pivo&rsquo;s en Stam worden om 17.30 uur verwacht.</p>\r\n<p><span style="font-size: 11pt;">Wat moet je meenemen?</span></p>\r\n<p><span style="font-size: 11pt;">-Goede schoenen.<br /></span><span style="font-size: 11pt;">-Regenkleding, we hopen op zon, maar je weet het natuurlijk nooit.<br /></span><span style="font-size: 11pt;">-Bevers, neem voor de zekerheid een ov-chip kaart mee.<br /></span><span style="font-size: 11pt;">-Mercators, kom allemaal op de fiets.</span></p>\r\n<p><span style="font-size: 11pt;">Om 17.30 uur gaan we lekker boerenkool eten in de grote zaal; ouders zijn van harte welkom om mee te genieten.</span></p>\r\n<p>De Esta&rsquo;s, Bevers en Mercators kunnen om 18.30 uur worden opgehaald. De oudste speltakken gaan dan hun eigen Boerenkooltocht lopen.</p>\r\n<p>Doe je mee? Wil je dan even een mailtje sturen met hoeveel personen je komt en of je mee-eet (geef aan of je vegetarisch bent) naar mercators@brigittavalentijn.nl.</p>\r\n<p><span style="font-size: 11pt;"><br />Als je vragen hebt, kun je die stellen aan:</span></p>\r\n<p><span style="font-size: 11pt;">Daan Peters 06-81481443<br /></span><span style="font-size: 11pt;">Lex Lehmann 06-18225382</span></p>\r\n<p><span style="font-size: 11pt;">Tot 29 Maart,</span></p>\r\n<p><span style="font-size: 11pt;">De Boerenkoolcommissie Lex, Daan en Wesley</span></p>'
+        slug: 'boerenkooltocht-2014'
+        created: @news-date-33
+        modified: @news-date-33
+    news-34: #author: 10
+        title: 'Speelmiddag op stadsboerderij de Gagelhoeve'
+        bodytext: '<p class="MsoNormal"><span style="font-size: 12.0pt; font-family: ''Calibri'',''sans-serif''; color: black; mso-fareast-language: NL;">Scouting Brigitta Valentijn zal op&nbsp;<span style="text-decoration: underline;">zaterdag 17 mei</span>&nbsp;van 12:30 tot 14:30 uur op kinderboerderij de Gagelhoeve aan de Mient nr 210 een leuke speelactiviteit voor kinderen organiseren. Alle kinderen en volwassenen, ook buiten de vereniging, zijn van harte welkom mee te doen aan deze middagactiviteit. De activiteiten van scouting Brigitta Valentijn vinden plaats binnen een verhaal rondom twee boerinnen.</span></p>\r\n<p class="MsoNormal"><span style="color: black; font-family: Calibri, sans-serif; font-size: 12pt;">Het is al een tijdje voorjaar, de lammetjes zijn geboren en nieuwe avonturen staan ons te wachten op kinderboerderij de Gagelhoeve.&nbsp;</span></p>\r\n<p><span style="color: black; font-family: Calibri, sans-serif; font-size: 12pt;">De boeren Gert-Jan en Geert-Jan waren na het avontuur van de vorige keer erg toe aan vakantie.&nbsp;Zij vroegen de kinderen om te helpen met het onderhouden van hun boerderij omdat ze aan &lsquo;geheugenverlies&rsquo; lijden en niet meer weten hoe ze hun boerderij moeten onderhouden.&nbsp;Daarom hebben hun vrouwen Geertruda en Geertruida tijdelijk de boerderij overgenomen. Gert-Jan en Geert-Jan zijn de kinderen wel nog steeds erg dankbaar voor de hulp van vorige keer, en willen daarom graag iets voor terug doen voor de kinderen.&nbsp;</span></p>'
+        slug: 'speelmiddag-op-stadsboerderij-de-gagelhoeve-2014'
+        created: @news-date-34
+        modified: @news-date-34
+    news-35: #author: 10
+        title: 'Regionale Scouting Wedstrijden (RSW) 2014'
+        bodytext: '<p><span style="color: #333333; font-family: ''lucida grande'', tahoma, verdana, arial, sans-serif; font-size: 14px; line-height: 20px;">Op 16, 17, 18 mei gaan onze Mercators meedoen met de Regionale Scouting Wedstrijden (RSW). Ze verblijven op kampeerveld de Haan in Den Haag. Alle informatie staat op:&nbsp;</span><a style="color: #3b5998; cursor: pointer; text-decoration: none;" href="http://www.scoutsdenhaag.nl/" rel="nofollow nofollow" target="_blank">http://www.scoutsdenhaag.nl/</a></p>'
+        slug: 'regionale-scouting-wedstrijden-2014'
+        created: @news-date-35
+        modified: @news-date-35
+    news-36: #author: 10
+        title: 'Scout it Out!'
+        bodytext: '<p><span style="color: #333333; font-family: ''lucida grande'', tahoma, verdana, arial, sans-serif; font-size: 14px; line-height: 20px;">Zaterdag 17 mei staat het centrum van Den Haag geheel in het teken van Scouting met de eerste Scout it Out! Onze Mercators gaan vanuit de RSW aan dit evenement meedoen. Ook wethouder Karsten Klein&nbsp;</span><span style="color: #333333; font-family: ''lucida grande'', tahoma, verdana, arial, sans-serif; font-size: 14px; line-height: 20px;">zal aanwezig zijn om het belang van Scouting in Den Haag&nbsp;</span><span class="text_exposed_show" style="display: inline; color: #333333; font-family: ''lucida grande'', tahoma, verdana, arial, sans-serif; font-size: 14px; line-height: 20px;">te benadrukken.&nbsp;<br /><br />Met diverse activiteiten als Levend Tafelvoetbal en Mini Pionieren, tovert Scouting Den Haag de Hofplaats om in een heus activiteitenplein voor ieder die op zoek is naar een uitdaging. Voor nog eens 800 scouts in alle leeftijden wordt een grote speurtocht georganiseerd door de gehele binnenstad. Wij hebben er zin in!</span></p>\r\n<p>&nbsp;</p>\r\n<p><span class="text_exposed_show" style="display: inline; color: #333333; font-family: ''lucida grande'', tahoma, verdana, arial, sans-serif; font-size: 14px; line-height: 20px;"><span style="color: #0099cc; font-family: arial, Arial; font-size: 15px; line-height: normal;">Om de Scout it Out! mogelijk te maken wordt gebruik gemaakt van de tientallen vrijwilligers die zich op wekelijkse basis inzetten voor Scouting. Tijdens een evenement als dit zie je weer hoeveel vrijwilligers zich inzetten voor onvergetelijke activiteiten voor kinderen, zegt HansBert Griffioen, voorzitter van Scouting Regio Den Haag, apetrots. De 19 scoutinggroepen in regio Den Haag verzorgen wekelijks uitdagende activiteiten aan meer dan 1300 leden. Griffioen: De activiteiten die binnen Scouting worden aangeboden zijn allemaal gericht op de ontwikkeling van de kinderen. Plezier staat bij die activiteiten natuurlijk altijd voorop.</span><br style="color: #0099cc; font-family: arial, Arial; font-size: 15px; line-height: normal;" /><br style="color: #0099cc; font-family: arial, Arial; font-size: 15px; line-height: normal;" /><span style="color: #0099cc; font-family: arial, Arial; font-size: 15px; line-height: normal;">Initiatiefnemers van de Scout it Out!, Lillianne Grootens en Marc Gerner, hebben er alle vertrouwen in dat het soepel zal verlopen. Bij Scouting zijn we gewend om evenementen en activiteiten te organiseren. Die ervaring hebben we gebruikt bij de organisatie van de Scout it Out!, aldus Groottens. Voor kinderen die nog geen lid zijn van Scouting is het evenement bij uitstek geschikt om de mogelijkheden te bekijken en het gevoel van Scouting te kunnen ervaren. Ook nieuwe vrijwilligers zijn van harte welkom. Kortom: voor iedereen de kans om een middag vol uitdagingen en plezier te beleven.</span><br style="color: #0099cc; font-family: arial, Arial; font-size: 15px; line-height: normal;" /><br style="color: #0099cc; font-family: arial, Arial; font-size: 15px; line-height: normal;" /><span style="color: #0099cc; font-family: arial, Arial; font-size: 15px; line-height: normal;">Over Scouting Den Haag</span><br style="color: #0099cc; font-family: arial, Arial; font-size: 15px; line-height: normal;" /><span style="color: #0099cc; font-family: arial, Arial; font-size: 15px; line-height: normal;">Scouting Den Haag is een samenwerkingsverband van 19 scoutinggroepen die een wekelijks een programma verzorgen voor kinderen van 5 tot 18 jaar. Scouting Den Haag is met ruim 1300 leden een van de steden met de meeste scouts in Nederland. Alle aangesloten groepen bieden plaats aan kinderen en jongeren van 5 t/m 23 jaar en aan leidinggevenden van 18 jaar en ouder.</span></span></p>'
+        slug: 'scout-it-out-2014'
+        created: @news-date-36
+        modified: @news-date-36
+    news-37: #author: 10
+        title: '8ste plaats voor de Mercators'
+        bodytext: '<p>16 t/m 18 mei deden de Mercators mee aan de Regionale Scouting Wedstijden en hebben daarbij de wel verdiende 8ste plaats behaald! Zij werden o.a. beoordeeld op samenwerking, koken en kamperen. Gefeliciteerd!</p>'
+        slug: '8ste-plaats-voor-de-mercators-2014'
+        created: @news-date-37
+        modified: @news-date-37
+    news-38: #author: 10
+        title: 'Stafleden gezocht!'
+        bodytext: '<p>Per 1 september zijn wij opzoek naar nieuwe vrijwilligers die op zaterdagmiddag hun tijd willen geven aan kinderen in de leeftijd van 5 t/m 15 jaar en op die manier meer ervaring op willen doen in het werken met kinderen.&nbsp;<span style="font-size: 11pt;">Benieuwd wie er nu staflid is? Kijk dan hier:&nbsp;</span><a style="font-size: 11pt;" href="../../../groepen.html">http://brigittavalentijn.nl/groepen.html</a><span style="font-size: 11pt;">&nbsp;</span></p>\r\n<p>Meer informatie? Bel 0635120340 of stuur een mail naar bestuur@brigittavalentijn.nl.&nbsp;<a href="https://www.facebook.com/brigittavalentijn"><span style="font-size: 11pt;">https://www.facebook.com/brigittavalentijn</span></a></p>'
+        slug: 'stafleden-gezocht-2014'
+        created: @news-date-38
+        modified: @news-date-38
+    news-39: #author: 10
+        title: 'Spons-Or-Loop'
+        bodytext: '<p><span style="font-size: 11pt;">Het einde van het jaar komt in zicht, samen met de kampen. De stafteams&nbsp;</span><span style="font-size: 11pt;">zijn druk bezig met het bedenken van gave activiteiten voor op kamp, helaas&nbsp;</span><span style="font-size: 11pt;">kunnen wij deze leuke activiteit niet uitvoeren zonder geld. Om deze reden&nbsp;</span><span style="font-size: 11pt;">hebben wij voor dit jaar weer een sponsorloop georganiseerd.</span></p>\r\n<p>Een sponsorloop heeft natuurlijk alleen zin als er actief sponsors gezocht&nbsp;<span style="font-size: 11pt;">worden. Hierom hebben wij een sponsor-formulier bijgevoegd. Hierop vul je&nbsp;</span><span style="font-size: 11pt;">de naam van de sponsor in, het bedrag per gelopen rondje, het maximale&nbsp;</span><span style="font-size: 11pt;">bedrag en het adres van de sponsor. De laatste twee vakjes, ''te betalen'' en&nbsp;</span><span style="font-size: 11pt;">''&#10003;'', worden door de staf ingevuld.</span></p>\r\n<p>Enkele tips om sponsor te vinden:</p>\r\n<p>&bull; Bel je familie en kennissen op en vraag lief of zij je willen sponsoren.</p>\r\n<p><span style="font-size: 11pt;">&bull; Ga langs de deuren in de wijk, zet je beste glimlach op, en vraag of ze&nbsp;</span><span style="font-size: 11pt;">je willen sponsoren (Vergeet niet te zeggen dat het voor scouting&nbsp;</span><span style="font-size: 11pt;">is ;) )</span></p>\r\n<p>&bull; Vraag aan bedrijven of ze je willen sponsoren, bijvoorbeeld bij de&nbsp;<span style="font-size: 11pt;">service balie van de Albert Heijn.</span></p>\r\n<p>De sponsorloop zal dit jaar, net als vorig jaar, plaatsvinden in het&nbsp;<span style="font-size: 11pt;">Segbroekpark vlak bij het Rode Kruis. Kruising Segbroeklaan en&nbsp;</span><span style="font-size: 11pt;">Fahrenheitstraat. De middaggroepen verzamelen daar om 12:30 waarbij er&nbsp;</span><span style="font-size: 11pt;">een korte inleiding wordt gegeven.</span></p>\r\n<p>Let op!: Het is toegestaan uw kind te motiveren vanaf de zijlijn.</p>\r\n<p>De datum van de sponsorloop is: 28 juni 2014.</p>\r\n<p>Na afloop is er een moment ingepland dat de kinderen uit kunnen rusten,&nbsp;<span style="font-size: 11pt;">hierbij krijgen zij ook wat te eten en drinken. Hierna sluiten wij de dag af&nbsp;</span><span style="font-size: 11pt;">met een spel.</span></p>\r\n<p>Met vriendelijke groet,</p>\r\n<p>De Sponsorloop-commissie: Koen, Gijs &amp; Jasper</p>'
+        slug: 'stafleden-gezocht-2014'
+        created: @news-date-39
+        modified: @news-date-39
+    news-40: #author: 10
+        title: 'Wij gaan verhuizen!'
+        bodytext: '<div style="mso-element: para-border-div; border: none; border-top: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; padding: 24.0pt 0cm 0cm 0cm;">\r\n<p class="MsoNormal" style="text-align: justify; border: none; mso-border-top-alt: solid windowtext .5pt; padding: 0cm; mso-padding-alt: 24.0pt 0cm 0cm 0cm;"><span style="font-family: ''Calibri'',''sans-serif''; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Zoals u weet loopt 15 juli ons verblijf aan de Mient af. De afgelopen maanden zijn we dan ook druk in overleg geweest met de Gemeente en het is gelukt om goede en permanente locaties te vinden.</span></p>\r\n<p class="MsoNormal" style="text-align: justify; border: none; mso-border-top-alt: solid windowtext .5pt; padding: 0cm; mso-padding-alt: 24.0pt 0cm 0cm 0cm;"><span style="font-family: ''Calibri'',''sans-serif''; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Een eigen groepsruimte zoals we gewend waren bleek er al snel niet meer in te zitten. De Gemeente stoot steeds meer wijkcentra af en in de buurt kwamen we uit op medegebruik of huur in ruimtes van andere verenigingen. Totdat de gemeente met het aanbod kwam aan de <strong>Wijndaelerweg 12</strong>. Ook al is dit ver uit de buurt, we vonden het de moeite van het bekijken waard. Dat bleek ook bij ons eerste bezoek. De omgeving van het huis is om van te dromen als scoutinggroep. Het terrein om de huizen is al flink, maar van het terrein af ga je linksom park Ockenburgh in, waar je geweldig scoutingspel kan spelen, en rechtsom loop je binnen 10 minuten naar het strand. Bovendien krijgen de gebouwen een permanente scouting bestemming en de Brigitta/Valentijn kan er dus ook permanent in blijven. Onze grote droom, een eigen clubhuis, werd ons zo in de schoot geworden. Het bestuur is echter ook van mening dat de Brigitta/Valentijn hoort in de Bomen/vruchtenbuurt en die connectie willen we graag behouden. Daarom hebben we die gezocht en gevonden op het <strong>Stokroosveld</strong> bij handbalclub Hermes. Deze club speelt op zondag, dus op zaterdag is hun ruimte beschikbaar. </span></p>\r\n<p class="MsoNormal" style="text-align: justify; border: none; mso-border-top-alt: solid windowtext .5pt; padding: 0cm; mso-padding-alt: 24.0pt 0cm 0cm 0cm;"><span style="font-family: ''Calibri'',''sans-serif''; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><br />De Gemeente gaat akkoord met beide opties! En dat maakt voor ons het hoogst haalbare plaatje compleet. De Bevers en de Esta&rsquo;s kunnen met ingang van het nieuwe seizoen terecht op het Stokroosveld en de Mercator, Rowan/Sherpa&rsquo;s en Pivo&rsquo;s aan de Wijndaelerweg. </span></p>\r\n<p class="MsoNormal" style="text-align: justify; border: none; mso-border-top-alt: solid windowtext .5pt; padding: 0cm; mso-padding-alt: 24.0pt 0cm 0cm 0cm;"><span style="font-family: ''Calibri'',''sans-serif''; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><br />12 juli gaan wij al het materiaal verhuizen van de Mient naar de Wijndaelerweg. Deze locatie zal het komend seizoen worden opgeknapt m.b.v. een subsidie van de Gemeente Den Haag, aangevuld door fondsen. De komende maand worden offertes opgevraagd en hiermee worden fondsen aangeschreven. De bedoeling is dat een deel van de exploitatie na het opknappen wordt terugverdiend door verhuur aan andere scoutinggroepen. </span></p>\r\n<p class="MsoNormal" style="text-align: justify; border: none; mso-border-top-alt: solid windowtext .5pt; padding: 0cm; mso-padding-alt: 24.0pt 0cm 0cm 0cm;"><span style="font-family: ''Calibri'',''sans-serif''; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Doordat al ons materiaal vanaf 12 juli op de Wijndaelerweg staat zullen voor het zomerkamp de <strong>Mercators en Esta&rsquo;s op 19 juli vertrekken</strong> vanaf de Wijndaelerweg en ook daar, samen met de Bevers, aankomen op <strong>26 juli</strong>. U kunt dan ook meteen de locatie zien en helpen met in en uitladen.</span></p>\r\n<p class="MsoNormal" style="text-align: justify; border: none; mso-border-top-alt: solid windowtext .5pt; padding: 0cm; mso-padding-alt: 24.0pt 0cm 0cm 0cm;"><span style="font-family: ''Calibri'',''sans-serif''; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Zowel de 1<sup>e</sup> keer draaien na de zomer, op&nbsp; <strong>13 september</strong>, als het overvliegen op <strong>20 september</strong> doen we met alle groepen op het stokroosveld (ingang Zonnebloemstraat). Exacte tijden en andere momenten volgen in een latere informatiebrief.&nbsp;</span></p>\r\n</div>'
+        slug: 'wij-gaan-verhuizen-2014'
+        created: @news-date-40
+        modified: @news-date-40

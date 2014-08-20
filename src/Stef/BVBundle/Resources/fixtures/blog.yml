@@ -1,0 +1,23 @@
+DateTime (local):
+    news-date-1:
+        __construct: ['2014-07-01']
+
+Stef\BVBundle\Entity\Blog:
+    StefBVBundle-Blog-1:
+        title: 'A day with blah'
+        blog: 'e5645646'
+        image: 'beach.jpg'
+        author: 'dsyph3r'
+        tags: 'symfony2, php, paradise, symblog'
+        created: @news-date-1
+        updated: @news-date-1
+    StefBVBundle-Blog-2:
+        id: 1
+        title: 'meeeh'
+        author: dsyph3r
+        blog: '5rw5425'
+        image: beach.jpg
+        tags: 'symfony2, php, paradise, symblog'
+        created: '2014-07-01T00:00:00+0200'
+        updated: '2014-07-01T00:00:00+0200'
+

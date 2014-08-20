@@ -1,0 +1,43 @@
+Stef\BVBundle\Entity\User:
+  user-blogger-jasper:
+      id: 1
+      username: Jasper
+      email: jasper@bv.tmp
+      enabled: 1
+      locked: 0
+      expired: 0
+      credentialsExpired: 0
+      roles: ["ROLE_ADMIN"]
+      salt: 7w68mk6qr7wooow0ww4kgcscww4gwk4
+      password: vXNfGce2DduJa+JDtQFXYJYCGADX+grWYuCD7Xyi1hJ0Jl96BBal7a/w6qHzwkzSDmvPbaxzNSvqCW/ywf5eCg== # 1234
+  user-blogger-esther:
+      id: 10
+      username: Esther
+      email: esther@bv.tmp
+      enabled: 1
+      locked: 0
+      expired: 0
+      credentialsExpired: 0
+      roles: ["ROLE_ADMIN"]
+      salt: 7w68mk6qr7wooow0ww4kgcscww4gwk4
+      password: vXNfGce2DduJa+JDtQFXYJYCGADX+grWYuCD7Xyi1hJ0Jl96BBal7a/w6qHzwkzSDmvPbaxzNSvqCW/ywf5eCg== # 1234
+  user-admin-stephan:
+      username: Stephan
+      email: stephan@bv.tmp
+      enabled: 1
+      locked: 0
+      expired: 0
+      credentialsExpired: 0
+      roles: ["ROLE_ADMIN"]
+      salt: 7w68mk6qr7wooow0ww4kgcscww4gwk4
+      password: vXNfGce2DduJa+JDtQFXYJYCGADX+grWYuCD7Xyi1hJ0Jl96BBal7a/w6qHzwkzSDmvPbaxzNSvqCW/ywf5eCg== # 1234
+  user-admin-maarten:
+      username: Maarten
+      email: maarten@bv.tmp
+      enabled: 1
+      locked: 0
+      expired: 0
+      credentialsExpired: 0
+      roles: ["ROLE_ADMIN"]
+      salt: 7w68mk6qr7wooow0ww4kgcscww4gwk4
+      password: vXNfGce2DduJa+JDtQFXYJYCGADX+grWYuCD7Xyi1hJ0Jl96BBal7a/w6qHzwkzSDmvPbaxzNSvqCW/ywf5eCg== # 1234

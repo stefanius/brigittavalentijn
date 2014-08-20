@@ -2,11 +2,13 @@
 
 namespace Stef\BVBundle\Controller;
 
+use Faker\Provider\cs_CZ\DateTime;
 use Stef\BVBundle\Entity\Enquiry;
+use Stef\BVBundle\Entity\Notfound;
 use Stef\BVBundle\Form\EnquiryType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class PageController extends Controller
+class PageController extends BaseController
 {
     public function indexAction()
     {
@@ -28,16 +30,43 @@ class PageController extends Controller
             $form->bindRequest($request);
 
             if ($form->isValid()) {
-                // Perform some action, such as sending an email
 
-                // Redirect - This is important to prevent users re-posting
-                // the form if they refresh the page
-                return $this->redirect($this->generateUrl('BloggerBlogBundle_contact'));
+                return $this->redirect($this->generateUrl('stef_bvbundle_contact'));
             }
         }
 
         return $this->render('StefBVBundle:Page:contact.html.twig', array(
             'form' => $form->createView()
+        ));
+    }
+
+    public function viewPageAction($slug)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $page = $em->getRepository('StefBVBundle:Page')->findOneBySlug($slug);
+
+        if (!$page) {
+            $notfound = new Notfound();
+            $notfound->setFixed(false);
+            $notfound->setCreated(new \DateTime('now'));
+            $notfound->setModified(new \DateTime('now'));
+            $notfound->setSlug($slug);
+
+            $em->persist($notfound);
+            $em->flush();
+
+            throw $this->createNotFoundException('Unable to find Page.');
+        }
+
+        $twig = $page->getTwig();
+
+        if (empty($twig)){
+            $twig = 'StefBVBundle:Page:default.html.twig';
+        }
+
+        return $this->render($twig, array(
+            'page'      => $page,
         ));
     }
 }
