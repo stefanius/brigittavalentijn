@@ -66,13 +66,13 @@ stef_bvbundle_news_show:
 #Admin page
 stef_bvbundle_admin_add_page:
     pattern:  /cms/pages/add
-    defaults: { _controller: StefBVBundle:AdminPage:add }
+    defaults: { _controller: StefBVBundle:AdminPage:create }
     requirements:
         _method:  GET|POST
 
 stef_bvbundle_admin_edit_page:
     pattern:  /cms/pages/{id}
-    defaults: { _controller: StefBVBundle:AdminPage:edit }
+    defaults: { _controller: StefBVBundle:AdminPage:update }
     requirements:
         _method:  GET|POST
 
@@ -85,13 +85,13 @@ stef_bvbundle_admin_index_page:
 #Admin news
 stef_bvbundle_admin_add_news:
     pattern:  /cms/news/add
-    defaults: { _controller: StefBVBundle:AdminNews:add }
+    defaults: { _controller: StefBVBundle:AdminNews:create }
     requirements:
         _method:  GET|POST
 
 stef_bvbundle_admin_edit_news:
     pattern:  /cms/news/{id}
-    defaults: { _controller: StefBVBundle:AdminNews:edit }
+    defaults: { _controller: StefBVBundle:AdminNews:update }
     requirements:
         _method:  GET|POST
 

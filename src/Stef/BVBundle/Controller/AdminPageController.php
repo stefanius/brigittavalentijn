@@ -3,15 +3,15 @@
 namespace Stef\BVBundle\Controller;
 
 use Stef\BVBundle\Entity\Page;
+use Stef\CrudContract\Controller\CrudInterface;
 use Symfony\Component\HttpFoundation\Request;
 
-class AdminPageController extends BaseController implements AdminControllerInterface
+class AdminPageController extends BaseController implements CrudInterface
 {
     /**
-     * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @inheritdoc
      */
-    public function addAction(Request $request)
+    public function createAction(Request $request)
     {
         $page = new Page();
         $form = $this->getPageManager()->createPageForm($this, $page);
@@ -34,11 +34,17 @@ class AdminPageController extends BaseController implements AdminControllerInter
     }
 
     /**
-     * @param Request $request
-     * @param $id
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @inheritdoc
      */
-    public function editAction(Request $request, $id)
+    public function readAction(Request $request, $id)
+    {
+        // TODO: Implement readAction() method.
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function updateAction(Request $request, $id)
     {
         $page = $this->getRepository('StefBVBundle:Page')->findOneById($id);
 
@@ -63,9 +69,17 @@ class AdminPageController extends BaseController implements AdminControllerInter
     }
 
     /**
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @inheritdoc
      */
-    public function indexAction()
+    public function deleteAction(Request $request, $id)
+    {
+        // TODO: Implement deleteAction() method.
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function indexAction(Request $request)
     {
         $pages = $this->getRepository('StefBVBundle:Page')->findAll();
 

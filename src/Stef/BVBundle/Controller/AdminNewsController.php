@@ -3,15 +3,16 @@
 namespace Stef\BVBundle\Controller;
 
 use Stef\BVBundle\Entity\News;
+use Stef\CrudContract\Controller\CrudInterface;
 use Symfony\Component\HttpFoundation\Request;
 
-class AdminNewsController extends BaseController implements AdminControllerInterface
+class AdminNewsController extends BaseController implements CrudInterface
 {
+
     /**
-     * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @inheritdoc
      */
-    public function addAction(Request $request)
+    public function createAction(Request $request)
     {
         $news = new News();
         $form = $this->getNewsManager()->createNewsForm($this, $news);
@@ -34,11 +35,17 @@ class AdminNewsController extends BaseController implements AdminControllerInter
     }
 
     /**
-     * @param Request $request
-     * @param $id
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @inheritdoc
      */
-    public function editAction(Request $request, $id)
+    public function readAction(Request $request, $id)
+    {
+        // TODO: Implement readAction() method.
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function updateAction(Request $request, $id)
     {
         $news = $this->getRepository('StefBVBundle:News')->findOneById($id);
 
@@ -63,9 +70,17 @@ class AdminNewsController extends BaseController implements AdminControllerInter
     }
 
     /**
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @inheritdoc
      */
-    public function indexAction()
+    public function deleteAction(Request $request, $id)
+    {
+        // TODO: Implement deleteAction() method.
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function indexAction(Request $request)
     {
         $newsitems = $this->getRepository('StefBVBundle:News')->findAll();
 
