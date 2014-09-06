@@ -1,6 +1,6 @@
 <?php
 
-namespace Stef\BVBundle\Controller;
+namespace Stef\BVAdminBundle\Controller;
 
 use Stef\BVBundle\Entity\News;
 use Stef\CrudContract\Controller\CrudInterface;
@@ -8,7 +8,6 @@ use Symfony\Component\HttpFoundation\Request;
 
 class AdminNewsController extends BaseController implements CrudInterface
 {
-
     /**
      * @inheritdoc
      */
@@ -88,6 +87,4 @@ class AdminNewsController extends BaseController implements CrudInterface
             'newsitems' => $newsitems
         ]);
     }
-
-
 }

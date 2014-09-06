@@ -1,6 +1,6 @@
 <?php
 
-namespace Stef\BVBundle\Controller;
+namespace Stef\BVAdminBundle\Controller;
 
 use Stef\BVBundle\Entity\Page;
 use Stef\CrudContract\Controller\CrudInterface;
