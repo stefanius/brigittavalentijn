@@ -63,44 +63,6 @@ stef_bvbundle_news_show:
     requirements:
         _method:  GET
 
-#Admin page
-stef_bvbundle_admin_add_page:
-    pattern:  /cms/pages/add
-    defaults: { _controller: StefBVBundle:AdminPage:create }
-    requirements:
-        _method:  GET|POST
-
-stef_bvbundle_admin_edit_page:
-    pattern:  /cms/pages/{id}
-    defaults: { _controller: StefBVBundle:AdminPage:update }
-    requirements:
-        _method:  GET|POST
-
-stef_bvbundle_admin_index_page:
-    pattern:  /cms/pages
-    defaults: { _controller: StefBVBundle:AdminPage:index }
-    requirements:
-        _method:  GET
-
-#Admin news
-stef_bvbundle_admin_add_news:
-    pattern:  /cms/news/add
-    defaults: { _controller: StefBVBundle:AdminNews:create }
-    requirements:
-        _method:  GET|POST
-
-stef_bvbundle_admin_edit_news:
-    pattern:  /cms/news/{id}
-    defaults: { _controller: StefBVBundle:AdminNews:update }
-    requirements:
-        _method:  GET|POST
-
-stef_bvbundle_admin_index_news:
-    pattern:  /cms/news
-    defaults: { _controller: StefBVBundle:AdminNews:index }
-    requirements:
-        _method:  GET
-
 #Webpages - Pages (last resort, if anything else is not true)
 stef_bvbundle_view_page:
     pattern:  /{slug}

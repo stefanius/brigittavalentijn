@@ -21,3 +21,8 @@ provision:
 	bash /vagrant/dev-setup/install.sh
 	make create-database
 	make load-fixtures
+
+create-fixtures:
+	php app/console stef:fixture:generate:bv-blog
+	php app/console stef:fixture:generate:bv-news
+	php app/console stef:fixture:generate:bv-page

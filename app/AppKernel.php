@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Stef\BVBundle\StefBVBundle(),
             new Stef\GenerateFixturesBundle\StefGenerateFixturesBundle(),
+            new Stef\BVAdminBundle\StefBVAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

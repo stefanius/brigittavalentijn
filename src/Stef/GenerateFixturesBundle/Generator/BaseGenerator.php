@@ -111,7 +111,6 @@ abstract class BaseGenerator implements TypeGeneratorInterface
                 $this->options->get('entity_classname'),
                 $entity->getId())
             ] = $fixture;
-
         }
 
         $this->fixtureData = $fixtures;
