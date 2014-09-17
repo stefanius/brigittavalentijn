@@ -24,11 +24,11 @@ class AdminPageController extends BaseController implements CrudInterface
 
                 $this->getPageManager()->savePageObject($page);
 
-                return $this->redirect($this->generateUrl('stef_bvbundle_admin_add_page'));
+                return $this->redirect($this->generateUrl('stef_bvadminbundle_add_page'));
             }
         }
 
-        return $this->render('StefBVBundle:Admin:page.add.html.twig', [
+        return $this->render('StefBVBundle:Page:page.add.html.twig', [
             'form' => $form->createView()
         ]);
     }

@@ -24,11 +24,11 @@ class AdminNewsController extends BaseController implements CrudInterface
 
                 $this->getNewsManager()->saveNewsObject($news);
 
-                return $this->redirect($this->generateUrl('stef_bvbundle_admin_index_news'));
+                return $this->redirect($this->generateUrl('stef_bvadminbundle_index_news'));
             }
         }
 
-        return $this->render('StefBVBundle:Admin:news.add.html.twig', [
+        return $this->render('StefBVAdminBundle:News:news.add.html.twig', [
             'form' => $form->createView()
         ]);
     }
@@ -58,11 +58,11 @@ class AdminNewsController extends BaseController implements CrudInterface
                 $news->setId($id);
                 $this->getNewsManager()->saveNewsObject($news);
 
-                return $this->redirect($this->generateUrl('stef_bvbundle_admin_index_news'));
+                return $this->redirect($this->generateUrl('stef_bvadminbundle_index_news'));
             }
         }
 
-        return $this->render('StefBVBundle:Admin:news.edit.html.twig', [
+        return $this->render('StefBVAdminBundle:News:news.edit.html.twig', [
             'form' => $form->createView(),
             'page' => $news
         ]);
@@ -83,7 +83,7 @@ class AdminNewsController extends BaseController implements CrudInterface
     {
         $newsitems = $this->getRepository('StefBVBundle:News')->findAll();
 
-        return $this->render('StefBVBundle:Admin:news.index.html.twig', [
+        return $this->render('StefBVAdminBundle:News:news.index.html.twig', [
             'newsitems' => $newsitems
         ]);
     }

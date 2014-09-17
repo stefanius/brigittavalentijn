@@ -1,9 +1,9 @@
 <?php
 
-namespace Stef\BVBundle\Manager;
+namespace Stef\BVAdminBundle\Manager;
 
 use Stef\BVBundle\Entity\News;
-use Stef\BVBundle\Form\NewsType;
+use Stef\BVAdminBundle\Form\NewsType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class NewsManager {

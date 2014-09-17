@@ -1,10 +1,9 @@
 <?php
 
-namespace Stef\BVBundle\Manager;
+namespace Stef\BVAdminBundle\Manager;
 
-use Faker\Provider\cs_CZ\DateTime;
 use Stef\BVBundle\Entity\Page;
-use Stef\BVBundle\Form\PageType;
+use Stef\BVAdminBundle\Form\PageType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class PageManager {

@@ -12,7 +12,6 @@ class BVFixture extends AbstractFixture
     public function load(ObjectManager $manager)
     {
         $loader = new Yaml();
-
         $finder = new Finder();
         $fixtures = $finder
             ->in(__DIR__. '/../../Resources/fixtures/')

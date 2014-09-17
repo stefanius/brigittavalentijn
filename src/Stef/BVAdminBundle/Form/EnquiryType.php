@@ -1,6 +1,6 @@
 <?php
 
-namespace Stef\BVBundle\Form;
+namespace Stef\BVAdminBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

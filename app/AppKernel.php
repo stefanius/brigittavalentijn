@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new Stef\BVBundle\StefBVBundle(),
             new Stef\GenerateFixturesBundle\StefGenerateFixturesBundle(),
             new Stef\BVAdminBundle\StefBVAdminBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
