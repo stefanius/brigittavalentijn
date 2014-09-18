@@ -1,15 +1,9 @@
-{% extends 'StefBVBundle::layout.html.twig' %}
+{% extends 'StefBVAdminBundle::form.html.twig' %}
+{% set pagetitle = 'Pagina bewerken' %}
 
-{% block title %}Contact{% endblock%}
+{% block form %}
 
-{% block body %}
-    <header>
-        <h1>Contact symblog</h1>
-    </header>
-
-    <p>Want to contact symblog?</p>
-
-    <form action="{{ path('stef_bvbundle_admin_edit_page', { 'id': page.id }) }}" method="post" {{ form_enctype(form) }} class="blogger">
+    <form action="{{ path('stef_bvadminbundle_edit_page', { 'id': page.id }) }}" method="post" {{ form_enctype(form) }} class="blogger">
         {{ form_errors(form) }}
 
         {{ form_row(form.title) }}

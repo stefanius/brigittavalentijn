@@ -28,7 +28,7 @@ class AdminPageController extends BaseController implements CrudInterface
             }
         }
 
-        return $this->render('StefBVBundle:Page:page.add.html.twig', [
+        return $this->render('StefBVAdminBundle:Page:page.add.html.twig', [
             'form' => $form->createView()
         ]);
     }
@@ -58,11 +58,11 @@ class AdminPageController extends BaseController implements CrudInterface
                 $page->setId($id);
                 $this->getPageManager()->savePageObject($page);
 
-                return $this->redirect($this->generateUrl('stef_bvbundle_admin_index_page'));
+                return $this->redirect($this->generateUrl('stef_bvadminbundle_index_page'));
             }
         }
 
-        return $this->render('StefBVBundle:Admin:page.edit.html.twig', [
+        return $this->render('StefBVAdminBundle:Page:page.edit.html.twig', [
             'form' => $form->createView(),
             'page' => $page
         ]);
@@ -83,10 +83,8 @@ class AdminPageController extends BaseController implements CrudInterface
     {
         $pages = $this->getRepository('StefBVBundle:Page')->findAll();
 
-        return $this->render('StefBVBundle:Admin:page.index.html.twig', [
+        return $this->render('StefBVAdminBundle:Page:page.index.html.twig', [
             'pages' => $pages
         ]);
     }
-
-
 }

@@ -13,7 +13,21 @@ class PageType extends AbstractType
     {
         $builder->add('title');
         $builder->add('slug');
-        $builder->add('bodytext');
+        $builder->add('bodytext', 'ckeditor', array(
+            'config' => array(
+                'toolbar' => array(
+                    array(
+                        'name'  => 'basicitems',
+                        'items' => array('Source'),
+                    ),
+                    array(
+                        'name'  => 'basicstyles',
+                        'items' => array('Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'),
+                    ),
+                ),
+                'uiColor' => '#ffffff'
+            )
+        ));
         $builder->add('twig', 'text', ['data' => 'StefBVBundle:Page:default.html.twig']);
     }
 

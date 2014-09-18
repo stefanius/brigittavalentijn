@@ -1,15 +1,12 @@
-{% extends 'StefBVBundle::layout.html.twig' %}
+{% extends 'StefBVAdminBundle::form.html.twig' %}
+{% set pagetitle = 'Nieuwsitem overzicht' %}
 
-{% block title %}Contact{% endblock%}
-
-{% block body %}
-    <header>
-        <h1>Contact symblog</h1>
-    </header>
+{% block form %}
 
     <ul>
         {% for news in newsitems %}
             <li><a href="{{ path('stef_bvadminbundle_edit_news', { 'id': news.id }) }}">{{ news.title|e }}</a></li>
         {% endfor %}
     </ul>
+
 {% endblock %}

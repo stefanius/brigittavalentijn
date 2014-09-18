@@ -1,13 +1,7 @@
-{% extends 'StefBVBundle::layout.html.twig' %}
+{% extends 'StefBVAdminBundle::form.html.twig' %}
+{% set pagetitle = 'Pagina toevoegen' %}
 
-{% block title %}Contact{% endblock%}
-
-{% block body %}
-    <header>
-        <h1>Contact symblog</h1>
-    </header>
-
-    <p>Want to contact symblog?</p>
+{% block form %}
 
     <form action="{{ path('stef_bvadminbundle_add_page') }}" method="post" {{ form_enctype(form) }} class="blogger">
         {{ form_errors(form) }}

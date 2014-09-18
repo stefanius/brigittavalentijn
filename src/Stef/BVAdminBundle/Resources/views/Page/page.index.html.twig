@@ -1,15 +1,12 @@
-{% extends 'StefBVBundle::layout.html.twig' %}
+{% extends 'StefBVAdminBundle::form.html.twig' %}
+{% set pagetitle = 'Pagina overzicht' %}
 
-{% block title %}Contact{% endblock%}
-
-{% block body %}
-    <header>
-        <h1>Contact symblog</h1>
-    </header>
+{% block form %}
 
     <ul>
         {% for page in pages %}
             <li><a href="{{ path('stef_bvadminbundle_edit_page', { 'id': page.id }) }}">{{ page.title|e }}</a></li>
         {% endfor %}
     </ul>
+
 {% endblock %}
