@@ -21,7 +21,7 @@ class AdminPageController extends BaseController implements CrudInterface
             $form->handleRequest($request);
 
             if ($form->isValid()) {
-
+                $page->setSlug($this->getFullpathSlugifier()->manipulate($page->getSlug()));
                 $this->getPageManager()->savePageObject($page);
 
                 return $this->redirect($this->generateUrl('stef_bvadminbundle_add_page'));
@@ -56,6 +56,7 @@ class AdminPageController extends BaseController implements CrudInterface
 
             if ($form->isValid()) {
                 $page->setId($id);
+                $page->setSlug($this->getFullpathSlugifier()->manipulate($page->getSlug()));
                 $this->getPageManager()->savePageObject($page);
 
                 return $this->redirect($this->generateUrl('stef_bvadminbundle_index_page'));

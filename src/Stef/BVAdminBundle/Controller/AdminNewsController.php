@@ -21,7 +21,7 @@ class AdminNewsController extends BaseController implements CrudInterface
             $form->handleRequest($request);
 
             if ($form->isValid()) {
-
+                $news->setSlug($this->getSlugifier()->manipulate($news->getTitle()));
                 $this->getNewsManager()->saveNewsObject($news);
 
                 return $this->redirect($this->generateUrl('stef_bvadminbundle_index_news'));
@@ -46,6 +46,9 @@ class AdminNewsController extends BaseController implements CrudInterface
      */
     public function updateAction(Request $request, $id)
     {
+        /**
+         * @var News
+         */
         $news = $this->getRepository('StefBVBundle:News')->findOneById($id);
 
         $form = $this->getNewsManager()->createNewsForm($this, $news);

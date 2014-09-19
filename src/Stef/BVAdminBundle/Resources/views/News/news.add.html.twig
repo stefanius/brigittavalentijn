@@ -7,7 +7,7 @@
         {{ form_errors(form) }}
 
         {{ form_row(form.title) }}
-        {{ form_row(form.slug) }}
+        {{ form_row(form.slug, {value : 'Auto Generated', 'type' : 'hidden', 'label' : false}) }}
         {{ form_row(form.bodytext) }}
 
         <input type="submit" value="Opslaan" />

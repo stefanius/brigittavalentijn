@@ -5,7 +5,7 @@ namespace Stef\StringManipulation\Tests\Manipulators;
 use Stef\StringManipulation\Manipulators\FullpathSlugManipulator;
 use Stef\StringManipulation\Manipulators\SlugManipulator;
 
-class FullpathSlugManipulatorTest extends \PHPUnit_Framework_TestCase{
+class FullpathSlugManipulatorTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @dataProvider provider

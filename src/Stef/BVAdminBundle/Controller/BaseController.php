@@ -29,4 +29,14 @@ class BaseController extends Controller
     {
         return new NewsManager($this->getEntityManager());
     }
+
+    protected function getSlugifier()
+    {
+        return $this->get("slugifier");
+    }
+
+    protected function getFullpathSlugifier()
+    {
+        return $this->get("fullpath_slugifier");
+    }
 }
