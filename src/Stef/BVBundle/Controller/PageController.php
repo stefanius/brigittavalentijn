@@ -12,7 +12,7 @@ class PageController extends BaseController
 {
     public function indexAction()
     {
-        return $this->render('StefBVBundle:Page:index.html.twig');
+        return $this->render('StefBVBundle:Default:index.html.twig');
     }
 
     public function aboutAction()

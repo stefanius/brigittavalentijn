@@ -1,0 +1,12 @@
+<div class="item {{ car.active }}">
+
+    {% if car.imageurl is defined %}
+        <img src="{{ car.imageurl }}" alt="{{ car.imagealt }}">
+    {% endif %}
+    <div class="container">
+        <div class="carousel-caption">
+            <h1>{{ car.h1 }}</h1>
+            {{ car.body|raw}}
+        </div>
+    </div>
+</div>

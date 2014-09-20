@@ -19,6 +19,9 @@ sudo apt-get -y install php5-mysql
 sudo apt-get -y install php5-xdebug
 sudo apt-get -y install php-pear
 sudo apt-get -y install zsh
+sudo apt-get -y install npm
+sudo npm install -g nodejs
+sudo npm install -g less
 
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password password'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password password'
