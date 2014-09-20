@@ -1,0 +1,17 @@
+{% extends 'StefBVAdminBundle::form.html.twig' %}
+{% set pagetitle = 'Pagina bewerken' %}
+
+{% block form %}
+
+    <form action="{{ path('stef_bvadminbundle_edit_page', { 'id': page.id }) }}" method="post" {{ form_enctype(form) }} class="blogger">
+        {{ form_errors(form) }}
+
+        {{ form_row(form.title) }}
+        {{ form_row(form.slug) }}
+        {{ form_row(form.bodytext) }}
+
+        {{ form_rest(form) }}
+
+        <input type="submit" value="Submit" />
+    </form>
+{% endblock %}

@@ -1,17 +1,17 @@
-stef_bvbundle_admin_add_news:
+stef_bvadminbundle_add_news:
     pattern:  /cms/news/add
-    defaults: { _controller: StefBVBundle:AdminNews:create }
+    defaults: { _controller: StefBVAdminBundle:AdminNews:create }
     requirements:
         _method:  GET|POST
 
-stef_bvbundle_admin_edit_news:
+stef_bvadminbundle_edit_news:
     pattern:  /cms/news/{id}
-    defaults: { _controller: StefBVBundle:AdminNews:update }
+    defaults: { _controller: StefBVAdminBundle:AdminNews:update }
     requirements:
         _method:  GET|POST
 
-stef_bvbundle_admin_index_news:
+stef_bvadminbundle_index_news:
     pattern:  /cms/news
-    defaults: { _controller: StefBVBundle:AdminNews:index }
+    defaults: { _controller: StefBVAdminBundle:AdminNews:index }
     requirements:
         _method:  GET

@@ -1,6 +1,6 @@
 <?php
 
-namespace Stef\BVBundle\Controller;
+namespace Stef\BVAdminBundle\Controller;
 
 use Stef\BVBundle\Entity\Page;
 use Stef\CrudContract\Controller\CrudInterface;
@@ -21,14 +21,14 @@ class AdminPageController extends BaseController implements CrudInterface
             $form->handleRequest($request);
 
             if ($form->isValid()) {
-
+                $page->setSlug($this->getFullpathSlugifier()->manipulate($page->getSlug()));
                 $this->getPageManager()->savePageObject($page);
 
-                return $this->redirect($this->generateUrl('stef_bvbundle_admin_add_page'));
+                return $this->redirect($this->generateUrl('stef_bvadminbundle_add_page'));
             }
         }
 
-        return $this->render('StefBVBundle:Admin:page.add.html.twig', [
+        return $this->render('StefBVAdminBundle:Page:page.add.html.twig', [
             'form' => $form->createView()
         ]);
     }
@@ -56,13 +56,14 @@ class AdminPageController extends BaseController implements CrudInterface
 
             if ($form->isValid()) {
                 $page->setId($id);
+                $page->setSlug($this->getFullpathSlugifier()->manipulate($page->getSlug()));
                 $this->getPageManager()->savePageObject($page);
 
-                return $this->redirect($this->generateUrl('stef_bvbundle_admin_index_page'));
+                return $this->redirect($this->generateUrl('stef_bvadminbundle_index_page'));
             }
         }
 
-        return $this->render('StefBVBundle:Admin:page.edit.html.twig', [
+        return $this->render('StefBVAdminBundle:Page:page.edit.html.twig', [
             'form' => $form->createView(),
             'page' => $page
         ]);
@@ -83,10 +84,8 @@ class AdminPageController extends BaseController implements CrudInterface
     {
         $pages = $this->getRepository('StefBVBundle:Page')->findAll();
 
-        return $this->render('StefBVBundle:Admin:page.index.html.twig', [
+        return $this->render('StefBVAdminBundle:Page:page.index.html.twig', [
             'pages' => $pages
         ]);
     }
-
-
 }

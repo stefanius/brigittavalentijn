@@ -1,0 +1,12 @@
+{% extends 'StefBVAdminBundle::form.html.twig' %}
+{% set pagetitle = 'Nieuwsitem overzicht' %}
+
+{% block form %}
+
+    <ul>
+        {% for news in newsitems %}
+            <li><a href="{{ path('stef_bvadminbundle_edit_news', { 'id': news.id }) }}">{{ news.title|e }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

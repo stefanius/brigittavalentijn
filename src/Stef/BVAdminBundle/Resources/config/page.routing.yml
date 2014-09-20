@@ -1,17 +1,17 @@
-stef_bvbundle_admin_add_page:
+stef_bvadminbundle_add_page:
     pattern:  /cms/pages/add
-    defaults: { _controller: StefBVBundle:AdminPage:create }
+    defaults: { _controller: StefBVAdminBundle:AdminPage:create }
     requirements:
         _method:  GET|POST
 
-stef_bvbundle_admin_edit_page:
+stef_bvadminbundle_edit_page:
     pattern:  /cms/pages/{id}
-    defaults: { _controller: StefBVBundle:AdminPage:update }
+    defaults: { _controller: StefBVAdminBundle:AdminPage:update }
     requirements:
         _method:  GET|POST
 
-stef_bvbundle_admin_index_page:
+stef_bvadminbundle_index_page:
     pattern:  /cms/pages
-    defaults: { _controller: StefBVBundle:AdminPage:index }
+    defaults: { _controller: StefBVAdminBundle:AdminPage:index }
     requirements:
         _method:  GET
