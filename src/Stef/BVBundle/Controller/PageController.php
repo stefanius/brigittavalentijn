@@ -12,7 +12,21 @@ class PageController extends BaseController
 {
     public function indexAction()
     {
-        return $this->render('StefBVBundle:Default:index.html.twig');
+        /**
+         * var
+         */
+        $qb = $this->getRepository('StefBVBundle:News')->createQueryBuilder('n');
+
+        $qb->select('n')
+            ->orderBy('n.id', 'DESC')
+            ->setMaxResults(4);
+
+
+        $newsitems = $qb->getQuery()->getResult();
+
+        return $this->render('StefBVBundle:Default:index.html.twig', [
+            'newsitems' => $newsitems
+        ]);
     }
 
     public function aboutAction()

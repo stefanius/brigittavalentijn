@@ -1,0 +1,3 @@
+<h2 class="featurette-heading"><a href="{{ path('stef_bvbundle_news_show', { 'slug': newsitem.slug }) }}">{{ newsitem.title }}</a></h2>
+<p class="lead">{{ newsitem.bodytext|length > 200 ? newsitem.bodytext|slice(0, 200)|striptags ~ '...' : newsitem.bodytext|striptags }}</p>
+
