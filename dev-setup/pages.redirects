@@ -1,0 +1,3 @@
+#Pages
+rewrite ^/fotoboek.html /fotoalbum permanent;
+rewrite ^/fotoboek/* /fotoalbum permanent;

@@ -1,0 +1,17 @@
+{% extends 'StefBVBundle::layout.html.twig' %}
+
+{% block title %}{{ news.title }}{% endblock %}
+
+{% block body %}
+    <article class="news">
+        <header>
+            <div class="date"><time datetime="{{ news.created|date('c') }}">{{ news.created|date('l, F j, Y') }}</time></div>
+            <h2>{{ news.title }}</h2>
+        </header>
+
+        <div>
+            <p>{{ news.created|date }}</p>
+            <p>{{ news.bodytext|raw }}</p>
+        </div>
+    </article>
+{% endblock %}
