@@ -1,3 +1,6 @@
 #Pages
 rewrite ^/fotoboek.html /fotoalbum permanent;
 rewrite ^/fotoboek/* /fotoalbum permanent;
+
+rewrite ^/overdebv.html /over-ons permanent;
+rewrite ^/meerbv.html /over-ons permanent;
