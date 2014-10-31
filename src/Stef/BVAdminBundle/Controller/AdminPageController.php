@@ -82,7 +82,7 @@ class AdminPageController extends BaseController implements CrudInterface
      */
     public function indexAction(Request $request)
     {
-        $pages = $this->getRepository('StefBVBundle:Page')->findAll();
+        $pages = $this->getRepository('StefBVBundle:Page')->findBy(array(), array('slug' => 'ASC'));;
 
         return $this->render('StefBVAdminBundle:Page:page.index.html.twig', [
             'pages' => $pages

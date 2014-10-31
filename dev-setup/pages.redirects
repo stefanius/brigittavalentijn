@@ -1,6 +1,30 @@
 #Pages
+
+#Misc -> redirect to index
+rewrite ^/gastenboek.html / permanent;
+rewrite ^/index_2.html / permanent;
+
+#photo-related
 rewrite ^/fotoboek.html /fotoalbum permanent;
 rewrite ^/fotoboek/* /fotoalbum permanent;
 
+#about-us related
 rewrite ^/overdebv.html /over-ons permanent;
 rewrite ^/meerbv.html /over-ons permanent;
+rewrite ^/overdebv/algemeneInformatie.html /over-ons permanent;
+rewrite ^/groepen.html /over-ons/speltakken permanent;
+rewrite ^/groepen.html /over-ons/speltakken permanent;
+rewrite ^/groepen/stam.html /over-ons/speltakken/stam permanent;
+rewrite ^/groepen/bevers.html /over-ons/speltakken/bevers permanent;
+rewrite ^/groepen/rs.html /over-ons/speltakken/explorers permanent;
+rewrite ^/groepen/pivo.html /over-ons/speltakken/explorers permanent;
+rewrite ^/groepen/pivos.html /over-ons/speltakken/explorers permanent;
+
+#redirect old downloads
+rewrite ^/(.+).docx /downloads permanent;
+rewrite ^/(.+).xlsx /downloads permanent;
+rewrite ^/(.+).doc /downloads permanent;
+rewrite ^/(.+).xls /downloads permanent;
+
+#TEMP only until login is fixed
+#rewrite ^/cms/* / permanent;

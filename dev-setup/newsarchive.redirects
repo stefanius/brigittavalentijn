@@ -56,3 +56,17 @@ rewrite ^/nieuws/2015/09/archief.html /nieuws/archief/2015 permanent;
 rewrite ^/nieuws/2015/10/archief.html /nieuws/archief/2015 permanent;
 rewrite ^/nieuws/2015/11/archief.html /nieuws/archief/2015 permanent;
 rewrite ^/nieuws/2015/12/archief.html /nieuws/archief/2015 permanent;
+
+#nieuwsarchief zoder jaartal
+rewrite ^/nieuws/*/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/01/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/02/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/03/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/04/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/05/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/06/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/07/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/09/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/10/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/11/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/12/archief.html /nieuws/archief/2014 permanent;
