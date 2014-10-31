@@ -3,10 +3,13 @@
 
 {% block form %}
 
-    <ul>
+    <table>
         {% for page in pages %}
-            <li><a href="{{ path('stef_bvadminbundle_edit_page', { 'id': page.id }) }}">{{ page.title|e }}</a></li>
+            <tr>
+                <td><a href="{{ path('stef_bvadminbundle_edit_page', { 'id': page.id }) }}">{{ page.slug|e }}</a></td>
+                <td><a href="{{ path('stef_bvadminbundle_edit_page', { 'id': page.id }) }}">{{ page.title|e }}</a></td>
+            </tr>
         {% endfor %}
-    </ul>
+    </table>
 
 {% endblock %}
