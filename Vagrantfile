@@ -32,10 +32,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.ssh.forward_agent = true
 
-  config.vm.synced_folder ".", "/vagrant", :nfs => false,
+  config.vm.synced_folder "salt/roots/", "/srv/"
+
+  config.vm.synced_folder "homedir/", "/home/vagrant/", :nfs => false,
       owner: "vagrant",
       group: "www-data",
-      mount_options: ["dmode=775,fmode=664"]
+  ## Set your salt configs here
+  config.vm.provision :salt do |salt|
+
+    ## Minion config is set to ``file_client: local`` for masterless
+    salt.minion_config = "salt/minion"
 
   config.vm.provider :virtualbox do |vb|
 
