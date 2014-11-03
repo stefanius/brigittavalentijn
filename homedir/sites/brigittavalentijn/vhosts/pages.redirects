@@ -7,10 +7,13 @@ rewrite ^/index_2.html / permanent;
 #photo-related
 rewrite ^/fotoboek.html /fotoalbum permanent;
 rewrite ^/fotoboek/* /fotoalbum permanent;
+rewrite ^/foto/* /fotoalbum permanent;
 
 #about-us related
 rewrite ^/overdebv.html /over-ons permanent;
 rewrite ^/meerbv.html /over-ons permanent;
+rewrite ^/contact.html /over-ons/contact permanent;
+rewrite ^/contact /over-ons/contact permanent;
 rewrite ^/overdebv/algemeneInformatie.html /over-ons permanent;
 rewrite ^/groepen.html /over-ons/speltakken permanent;
 rewrite ^/groepen.html /over-ons/speltakken permanent;

@@ -6,7 +6,7 @@ server {
     error_log   /var/log/nginx/brigittavalentijn/error.log;
 
     rewrite_log on;
-    root        /vagrant/web;
+    root        /home/vagrant/sites/brigittavalentijn/public_html/web;
 
     location / {
         # try to serve file directly, fallback to app.php
