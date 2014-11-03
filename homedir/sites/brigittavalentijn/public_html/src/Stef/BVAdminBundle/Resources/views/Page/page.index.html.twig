@@ -1,0 +1,15 @@
+{% extends 'StefBVAdminBundle::form.html.twig' %}
+{% set pagetitle = 'Pagina overzicht' %}
+
+{% block form %}
+
+    <table>
+        {% for page in pages %}
+            <tr>
+                <td><a href="{{ path('stef_bvadminbundle_edit_page', { 'id': page.id }) }}">{{ page.slug|e }}</a></td>
+                <td><a href="{{ path('stef_bvadminbundle_edit_page', { 'id': page.id }) }}">{{ page.title|e }}</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

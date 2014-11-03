@@ -21,7 +21,7 @@ server {
         fastcgi_param HTTPS off;
     }
 
-	include /vagrant/dev-setup/redirects.vhost;
+	include /vagrant/dev-setup/*.redirects;
 
     # Static files.
     # Set expire headers, Turn off access log
@@ -36,7 +36,7 @@ server {
         add_header Cache-Control public;
     }
 
-    # Deny access to .htaccess files,
+    # Deny access to .htaccess   files,
     # git & svn repositories, etc
     location ~ /(\.ht|\.git|\.svn) {
         deny  all;

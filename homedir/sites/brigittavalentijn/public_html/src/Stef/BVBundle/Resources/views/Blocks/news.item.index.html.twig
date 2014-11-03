@@ -1,0 +1,23 @@
+{% if position is not defined %}
+    {% set position = 'odd' %}
+{% endif %}
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    {% if position == 'odd' %}
+        <div class="col-md-7">
+            {% include 'StefBVBundle:Blocks:news.item.index.content.html.twig' with {newsitem : newsitem} %}
+        </div>
+        <div class="col-md-5">
+            {% include 'StefBVBundle:Blocks:news.item.index.picture.html.twig' with {newsitem : newsitem} %}
+        </div>
+    {% else %}
+        <div class="col-md-5">
+            {% include 'StefBVBundle:Blocks:news.item.index.picture.html.twig' with {newsitem : newsitem} %}
+        </div>
+        <div class="col-md-7">
+            {% include 'StefBVBundle:Blocks:news.item.index.content.html.twig' with {newsitem : newsitem} %}
+        </div>
+    {% endif %}
+</div>
