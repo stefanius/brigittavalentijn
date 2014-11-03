@@ -34,9 +34,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.synced_folder "salt/roots/", "/srv/"
 
-  config.vm.synced_folder "homedir/", "/home/vagrant/", :nfs => false,
+  config.vm.synced_folder "sites/", "/home/vagrant/sites/", :nfs => false,
       owner: "vagrant",
-      group: "www-data"
+      group: "www-data",
+      mount_options: ["dmode=775,fmode=664"]
 
   config.vm.provision :salt do |salt|
 
@@ -48,21 +49,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         salt.pillar({
           "mysql" => {
             "server" => {
-                "root_password" => "false",
+                "root_password" => "password",
+                "user" => "mysql",
                 "mysqld" => {
                     "bind-address" => "127.0.0.1",
                     "port" => "3307"
-                },
-                "user" => {
-                    "0" => {
-                        "name" => "frank",
-                        "password" => "somepass",
-                        "host" => "localhost"
-                    }
                 }
             }
           }
         })
+
 
     salt.verbose = true
     salt.log_level = "all"
