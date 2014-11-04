@@ -14,8 +14,14 @@ rewrite ^/mysqli.mysqli / permanent;
 rewrite ^/mysqli.close / permanent;
 
 #photo-related
-rewrite ^/foto/mercator/maxima/maxima.htm /fotoalbum permanent;
-rewrite ^/foto/mercator/merkrakers/hudo/hudo.htm /fotoalbum permanent;
+rewrite ^/foto/mercator /fotoalbum permanent;
+rewrite ^/foto/mercator* /fotoalbum permanent;
+rewrite ^/foto/divers /fotoalbum permanent;
+rewrite ^/foto/divers/* /fotoalbum permanent;
+rewrite ^/foto/bever /fotoalbum permanent;
+rewrite ^/foto/bever/* /fotoalbum permanent;
+rewrite ^/foto/esta /fotoalbum permanent;
+rewrite ^/foto/esta/* /fotoalbum permanent;
 rewrite ^/fotoboek.html /fotoalbum permanent;
 rewrite ^/fotoboek/* /fotoalbum permanent;
 
@@ -23,18 +29,22 @@ rewrite ^/fotoboek/* /fotoalbum permanent;
 rewrite ^/overdebv.html /over-ons permanent;
 rewrite ^/meerbv.html /over-ons permanent;
 rewrite ^/contact.html /over-ons/contact permanent;
+rewrite ^/htm/waar.htm /over-ons/adres permanent;
 rewrite ^/contact /over-ons/contact permanent;
+rewrite ^/meerbv/gastenboek.html /over-ons/contact permanent;
 rewrite ^/overdebv/algemeneInformatie.html /over-ons permanent;
 rewrite ^/groepen.html /over-ons/speltakken permanent;
 rewrite ^/groepen.html /over-ons/speltakken permanent;
 rewrite ^/groepen/stam.html /over-ons/speltakken/stam permanent;
 rewrite ^/groepen/bevers.html /over-ons/speltakken/bevers permanent;
 rewrite ^/groepen/estas.html /over-ons/speltakken/estas permanent;
+rewrite ^/groepen/estaklusje.html /over-ons/speltakken/estas permanent;
 rewrite ^/meerbv/estaweekend.html /over-ons/speltakken/estas permanent;
 rewrite ^/groepen/mercators.html /over-ons/speltakken/mercators permanent;
 rewrite ^/groepen/rs.html /over-ons/speltakken/explorers permanent;
 rewrite ^/groepen/pivo.html /over-ons/speltakken/explorers permanent;
 rewrite ^/groepen/pivos.html /over-ons/speltakken/explorers permanent;
+
 
 #redirect old downloads
 rewrite ^/(.+).docx /downloads permanent;
@@ -44,4 +54,4 @@ rewrite ^/(.+).xls /downloads permanent;
 rewrite ^/(.+).swf /downloads permanent;
 
 #TEMP only until login is fixed
-rewrite ^/cms/* / permanent;
+#rewrite ^/cms/* / permanent;
