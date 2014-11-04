@@ -2,8 +2,8 @@ server {
     listen      80;
     server_name brigittavalentijn.dev;
 
-    access_log  /var/log/nginx/brigittavalentijn/access.log;
-    error_log   /var/log/nginx/brigittavalentijn/error.log;
+    access_log  /var/log/nginx/brigittavalentijn.access.log;
+    error_log   /var/log/nginx/brigittavalentijn.error.log;
 
     rewrite_log on;
     root        /home/vagrant/sites/brigittavalentijn/public_html/web;

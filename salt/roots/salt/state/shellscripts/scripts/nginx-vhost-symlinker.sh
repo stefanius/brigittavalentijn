@@ -2,7 +2,7 @@
 
 NGINX_VHOST_PATH=/etc/nginx/sites-enabled/
 
-find / -name "*.vhost" | while read file; do
+find /home/ -name "*.vhost" | while read file; do
 
 SYMLINK=${NGINX_VHOST_PATH}$(basename $file)
 

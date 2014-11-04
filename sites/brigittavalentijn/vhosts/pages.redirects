@@ -3,11 +3,21 @@
 #Misc -> redirect to index
 rewrite ^/gastenboek.html / permanent;
 rewrite ^/index_2.html / permanent;
+rewrite ^/index_2.htm / permanent;
+rewrite ^/jill / permanent;
+rewrite ^/jlll / permanent;
+rewrite ^/jill/* / permanent;
+rewrite ^/jlll/* / permanent;
+rewrite ^/dex/* / permanent;
+rewrite ^/dev/* / permanent;
+rewrite ^/mysqli.mysqli / permanent;
+rewrite ^/mysqli.close / permanent;
 
 #photo-related
+rewrite ^/foto/mercator/maxima/maxima.htm /fotoalbum permanent;
+rewrite ^/foto/mercator/merkrakers/hudo/hudo.htm /fotoalbum permanent;
 rewrite ^/fotoboek.html /fotoalbum permanent;
 rewrite ^/fotoboek/* /fotoalbum permanent;
-rewrite ^/foto/* /fotoalbum permanent;
 
 #about-us related
 rewrite ^/overdebv.html /over-ons permanent;
@@ -19,6 +29,9 @@ rewrite ^/groepen.html /over-ons/speltakken permanent;
 rewrite ^/groepen.html /over-ons/speltakken permanent;
 rewrite ^/groepen/stam.html /over-ons/speltakken/stam permanent;
 rewrite ^/groepen/bevers.html /over-ons/speltakken/bevers permanent;
+rewrite ^/groepen/estas.html /over-ons/speltakken/estas permanent;
+rewrite ^/meerbv/estaweekend.html /over-ons/speltakken/estas permanent;
+rewrite ^/groepen/mercators.html /over-ons/speltakken/mercators permanent;
 rewrite ^/groepen/rs.html /over-ons/speltakken/explorers permanent;
 rewrite ^/groepen/pivo.html /over-ons/speltakken/explorers permanent;
 rewrite ^/groepen/pivos.html /over-ons/speltakken/explorers permanent;
@@ -28,6 +41,7 @@ rewrite ^/(.+).docx /downloads permanent;
 rewrite ^/(.+).xlsx /downloads permanent;
 rewrite ^/(.+).doc /downloads permanent;
 rewrite ^/(.+).xls /downloads permanent;
+rewrite ^/(.+).swf /downloads permanent;
 
 #TEMP only until login is fixed
-#rewrite ^/cms/* / permanent;
+rewrite ^/cms/* / permanent;

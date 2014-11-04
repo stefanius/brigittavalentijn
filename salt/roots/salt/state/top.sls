@@ -7,5 +7,6 @@ vagrant:
      - php.fpm
      - php.curl
      - php.json
+     - php.mysql
      - nginx
      - afterscripts.symlink_nginx
