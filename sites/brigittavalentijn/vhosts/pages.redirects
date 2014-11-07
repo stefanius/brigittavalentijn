@@ -54,4 +54,4 @@ rewrite ^/(.+).xls /downloads permanent;
 rewrite ^/(.+).swf /downloads permanent;
 
 #TEMP only until login is fixed
-#rewrite ^/cms/* / permanent;
+rewrite ^/cms/* / permanent;

@@ -3,11 +3,36 @@
 #Nieuwsberichten 2012
 rewrite ^/nieuws/1.html /nieuws/overvliegen-2012 permanent;
 rewrite ^/nieuws/4.html /nieuws/nieuwe-website-2012 permanent;
+rewrite ^/nieuws/5.html /nieuws/rommelmarkt-20-oktober-2012 permanent;
 
 #Nieuwsberichten 2013
 rewrite ^/nieuws/9.html /nieuws/playbackshow-2013 permanent;
 rewrite ^/nieuws/10.html /nieuws/huisvesting-2013 permanent;
 rewrite ^/nieuws/11.html /nieuws/grandioze-pleebeksjow-2013 permanent;
+rewrite ^/nieuws/13.html /nieuws/website-update-2013 permanent;
+rewrite ^/nieuws/14.html /nieuws/aanmelden-ggw-2013 permanent;
+rewrite ^/nieuws/15.html /nieuws/aanstaande-zaterdag-nl-doet-2013 permanent;
+rewrite ^/nieuws/16.html /nieuws/opbrengst-jantje-beton-2013 permanent;
+rewrite ^/nieuws/17.html /nieuws/ook-de-bv-deed-mee-met-nl-Doet-2013 permanent;
+rewrite ^/nieuws/18.html /nieuws/kabouter-wouter-is-weer-bereikbaar-2013 permanent;
+rewrite ^/nieuws/19.html /nieuws/kabouter-wouter-journaal-rusland-2013 permanent;
+rewrite ^/nieuws/21.html /nieuws/hoe-komt-u-bij-ons-nieuwe-clubhuis-2013 permanent;
+rewrite ^/nieuws/22.html /nieuws/wethouder-opent-ons-nieuwe-pand-2013 permanent;
+rewrite ^/nieuws/23.html /nieuws/wethouder-klein-opent-scoutingpand-2013 permanent;
+rewrite ^/nieuws/24.html /nieuws/bv-en-ze-leefden-nog-lang-en-gelukkig-2013 permanent;
+rewrite ^/nieuws/25.html /nieuws/duingebied-omgetoverd-tot-sprookjesbos-2013 permanent;
+rewrite ^/nieuws/26.html /nieuws/ggw-en-kabouter-wouter-de-film-2013 permanent;
+rewrite ^/nieuws/27.html /nieuws/ingang-veranderd-2013 permanent;
+rewrite ^/nieuws/28.html /nieuws/sponsorloop-2013 permanent;
+rewrite ^/nieuws/29.html /nieuws/start-seizoen-2013-2014 permanent;
+rewrite ^/nieuws/30.html /nieuws/spectaculaire-start-van-het-nieuwe-seizoen-2013 permanent;
+rewrite ^/nieuws/31.html /nieuws/voorzitter-gezocht-2013 permanent;
+rewrite ^/nieuws/33.html /nieuws/rowan-sherpas-helpt-bij-vredes-marathon-2013 permanent;
+rewrite ^/nieuws/34.html /nieuws/grote-rommelmarkt-2013 permanent;
+rewrite ^/nieuws/35.html /nieuws/rommelmarkt-weer-groot-succes-2013 permanent;
+rewrite ^/nieuws/36.html /nieuws/multicultiman-komt-zaterdag-langs-2013 permanent;
+rewrite ^/nieuws/37.html /nieuws/old-brigitta-valentijn-had-a-farm-2013 permanent;
+rewrite ^/nieuws/38.html /nieuws/14-december-was-er-vossenjacht-2013 permanent;
 
 #Nieuwsberichten
 rewrite ^/nieuws/39.html /nieuws/nl-doet-de-kampkistenklus-2014 permanent;
