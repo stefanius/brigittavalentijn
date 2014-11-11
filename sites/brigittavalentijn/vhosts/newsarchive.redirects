@@ -30,6 +30,7 @@ rewrite ^/nieuws/2013/12/archief.html /nieuws/archief/2013 permanent;
 
 #nieuwsarchief 2014
 rewrite ^/nieuws/2014/*/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/2014/* /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/2014/01/archief.html /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/2014/02/archief.html /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/2014/03/archief.html /nieuws/archief/2014 permanent;

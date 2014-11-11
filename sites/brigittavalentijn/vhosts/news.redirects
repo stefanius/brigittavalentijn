@@ -21,6 +21,8 @@ rewrite ^/nieuws/22.html /nieuws/wethouder-opent-ons-nieuwe-pand-2013 permanent;
 rewrite ^/nieuws/23.html /nieuws/wethouder-klein-opent-scoutingpand-2013 permanent;
 rewrite ^/nieuws/24.html /nieuws/bv-en-ze-leefden-nog-lang-en-gelukkig-2013 permanent;
 rewrite ^/nieuws/25.html /nieuws/duingebied-omgetoverd-tot-sprookjesbos-2013 permanent;
+rewrite ^/nieuws/fotoboek/algemeen/Groot* /nieuws/duingebied-omgetoverd-tot-sprookjesbos-2013 permanent;
+rewrite ^/nieuws/fotoboek/algemeen/groot* /nieuws/duingebied-omgetoverd-tot-sprookjesbos-2013 permanent;
 rewrite ^/nieuws/26.html /nieuws/ggw-en-kabouter-wouter-de-film-2013 permanent;
 rewrite ^/nieuws/27.html /nieuws/ingang-veranderd-2013 permanent;
 rewrite ^/nieuws/28.html /nieuws/sponsorloop-2013 permanent;
@@ -34,6 +36,15 @@ rewrite ^/nieuws/36.html /nieuws/multicultiman-komt-zaterdag-langs-2013 permanen
 rewrite ^/nieuws/37.html /nieuws/old-brigitta-valentijn-had-a-farm-2013 permanent;
 rewrite ^/nieuws/38.html /nieuws/14-december-was-er-vossenjacht-2013 permanent;
 
-#Nieuwsberichten
+#Nieuwsberichten 2014
 rewrite ^/nieuws/39.html /nieuws/nl-doet-de-kampkistenklus-2014 permanent;
+rewrite ^/nieuws/40.html /nieuws/pleebeksjow-8-maart-2014 permanent;
+rewrite ^/nieuws/41.html /nieuws/boerenkooltocht-2014 permanent;
+rewrite ^/nieuws/42.html /nieuws/speelmiddag-op-stadsboerderij-de-gagelhoeve-2014 permanent;
+rewrite ^/nieuws/43.html /nieuws/regionale-scouting-wedstrijden-2014 permanent;
+rewrite ^/nieuws/44.html /nieuws/scout-it-out-2014 permanent;
+rewrite ^/nieuws/45.html /nieuws/8ste-plaats-voor-de-mercators-2014 permanent;
+rewrite ^/nieuws/46.html /nieuws/stafleden-gezocht-2014 permanent;
+rewrite ^/nieuws/47.html /nieuws/nl-doet-de-kampkistenklus-2014 permanent;
+rewrite ^/nieuws/48.html /nieuws/wij-gaan-verhuizen-2014 permanent;
 

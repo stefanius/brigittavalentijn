@@ -1,9 +1,12 @@
 #Pages
 
 #Misc -> redirect to index
-rewrite ^/gastenboek.html / permanent;
+rewrite ^/lib/flash/wordlist.txt / permanent;
+rewrite ^/wordlist.txt / permanent;
 rewrite ^/index_2.html / permanent;
 rewrite ^/index_2.htm / permanent;
+rewrite ^/index.html / permanent;
+rewrite ^/index.htm / permanent;
 rewrite ^/jill / permanent;
 rewrite ^/jlll / permanent;
 rewrite ^/jill/* / permanent;
@@ -12,6 +15,7 @@ rewrite ^/dex/* / permanent;
 rewrite ^/dev/* / permanent;
 rewrite ^/mysqli.mysqli / permanent;
 rewrite ^/mysqli.close / permanent;
+rewrite ^/nav/staf01.htm / permanent;
 
 #photo-related
 rewrite ^/foto/mercator /fotoalbum permanent;
@@ -24,6 +28,7 @@ rewrite ^/foto/esta /fotoalbum permanent;
 rewrite ^/foto/esta/* /fotoalbum permanent;
 rewrite ^/fotoboek.html /fotoalbum permanent;
 rewrite ^/fotoboek/* /fotoalbum permanent;
+rewrite ^/modules/view/frontend/fotoboek.view.php /fotoalbum permanent;
 
 #about-us related
 rewrite ^/overdebv.html /over-ons permanent;
@@ -32,6 +37,8 @@ rewrite ^/contact.html /over-ons/contact permanent;
 rewrite ^/htm/waar.htm /over-ons/adres permanent;
 rewrite ^/contact /over-ons/contact permanent;
 rewrite ^/meerbv/gastenboek.html /over-ons/contact permanent;
+rewrite ^/2/gastenboek.html /over-ons/contact permanent;
+rewrite ^/gastenboek.html /over-ons/contact permanent;
 rewrite ^/overdebv/algemeneInformatie.html /over-ons permanent;
 rewrite ^/groepen.html /over-ons/speltakken permanent;
 rewrite ^/groepen.html /over-ons/speltakken permanent;
