@@ -1,13 +1,16 @@
 <?php
 
-namespace Stef\StringManipulation\Tests\Manipulators;
+namespace Stef\SlugManipulation\Manipulation\Tests\Manipulators;
 
-use Stef\StringManipulation\Manipulators\FullpathSlugManipulator;
-use Stef\StringManipulation\Manipulators\SlugManipulator;
+use Stef\SlugManipulation\Manipulators\FullPathSlugManipulator;
+use Stef\SlugManipulation\Manipulators\SlugManipulator;
 
-class FullpathSlugManipulatorTest extends \PHPUnit_Framework_TestCase {
+class FullPathSlugManipulatorTest extends \PHPUnit_Framework_TestCase {
 
     /**
+     * @param $string
+     * @param $expected
+     *
      * @dataProvider provider
      */
     public function testSlugManipulator($string, $expected) {

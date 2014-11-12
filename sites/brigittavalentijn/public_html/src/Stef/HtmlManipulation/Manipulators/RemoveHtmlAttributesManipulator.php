@@ -1,8 +1,10 @@
 <?php
 
-namespace Stef\StringManipulation\Manipulators;
+namespace Stef\HtmlManipulation\Manipulators;
 
-class RemoveHtmlAttributesManipulator extends AbstractManipulator
+use Stef\Manipulation\Manipulators\AbstractStringManipulator;
+
+class RemoveHtmlAttributesManipulator extends AbstractStringManipulator
 {
     protected function run($string)
     {
@@ -14,7 +16,7 @@ class RemoveHtmlAttributesManipulator extends AbstractManipulator
        // exit;
         $xmlReader = $this->createXmlReader($string);
         var_dump($xmlReader);
-        exit;
+       // exit;
         $string = trim($string);
         $string = preg_replace("/[^a-zA-Z0-9_| -]/", ' ', $string);
         $string = preg_replace("/[| -]+/", '-', $string);

@@ -1,15 +1,17 @@
 <?php
 
-namespace Stef\StringManipulation\Manipulators;
+namespace Stef\SlugManipulation\Manipulators;
 
-class FullpathSlugManipulator extends AbstractManipulator{
+use Stef\Manipulation\Manipulators\AbstractStringManipulator;
+
+class FullPathSlugManipulator extends AbstractStringManipulator{
 
     /**
-     * @var AbstractManipulator
+     * @var AbstractStringManipulator
      */
     protected $slugManipulator;
 
-    function __construct(AbstractManipulator $manipulator)
+    function __construct(AbstractStringManipulator $manipulator)
     {
         $this->slugManipulator = $manipulator;
     }

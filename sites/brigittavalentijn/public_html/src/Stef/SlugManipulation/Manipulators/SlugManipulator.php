@@ -1,8 +1,10 @@
 <?php
 
-namespace Stef\StringManipulation\Manipulators;
+namespace Stef\SlugManipulation\Manipulators;
 
-class SlugManipulator extends AbstractManipulator{
+use Stef\Manipulation\Manipulators\AbstractStringManipulator;
+
+class SlugManipulator extends AbstractStringManipulator{
     protected function run($string)
     {
         $string = iconv('UTF-8', 'ASCII//TRANSLIT', $string);

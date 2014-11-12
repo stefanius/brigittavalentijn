@@ -1,8 +1,8 @@
 <?php
 
-namespace Stef\StringManipulation\Tests\Manipulators;
+namespace Stef\SlugManipulation\Tests\Manipulators;
 
-use Stef\StringManipulation\Manipulators\SlugManipulator;
+use Stef\SlugManipulation\Manipulators\SlugManipulator;
 
 class SlugManipulatorTest extends \PHPUnit_Framework_TestCase{
 

@@ -1,7 +1,7 @@
 services:
     slugifier:
-        class:     Stef\StringManipulation\Manipulators\SlugManipulator
+        class:     Stef\SlugManipulation\Manipulators\SlugManipulator
 
     fullpath_slugifier:
-        class:     Stef\StringManipulation\Manipulators\FullpathSlugManipulator
+        class:     Stef\SlugManipulation\Manipulators\FullpathSlugManipulator
         arguments: ["@slugifier"]

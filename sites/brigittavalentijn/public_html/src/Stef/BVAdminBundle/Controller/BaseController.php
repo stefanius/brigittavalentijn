@@ -35,7 +35,7 @@ class BaseController extends Controller
         return $this->get("slugifier");
     }
 
-    protected function getFullpathSlugifier()
+    protected function getFullPathSlugifier()
     {
         return $this->get("fullpath_slugifier");
     }
