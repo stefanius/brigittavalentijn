@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6568cb6ff3be19ca861ddcf5a145e53b",
+    "hash": "5fc3225ad41e373a560c2ad7e59bbfef",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -2726,6 +2726,112 @@
             "time": "2014-11-11 20:23:25"
         },
         {
+            "name": "stef/generate-fixtures-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefanius/generate-fixtures-bundle.git",
+                "reference": "9e63c079a39ed84c196fded8ac6fb0f640b469ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefanius/generate-fixtures-bundle/zipball/9e63c079a39ed84c196fded8ac6fb0f640b469ca",
+                "reference": "9e63c079a39ed84c196fded8ac6fb0f640b469ca",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-fixtures-bundle": "~2.2",
+                "doctrine/inflector": "dev-master",
+                "php": ">=5.4",
+                "symfony/symfony": "~2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stef\\GenerateFixturesBundle\\": "src/Stef/GenerateFixturesBundle/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Stefanius",
+                    "email": "sgrootveld@gmail.com"
+                }
+            ],
+            "description": "Generate fixtures  for use with Alice!",
+            "support": {
+                "source": "https://github.com/stefanius/generate-fixtures-bundle/tree/master",
+                "issues": "https://github.com/stefanius/generate-fixtures-bundle/issues"
+            },
+            "time": "2014-11-14 19:27:58"
+        },
+        {
+            "name": "stef/manipulation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefanius/manipulation.git",
+                "reference": "d8b8a7b4fadf8220c386259543a10b381ec1d1a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefanius/manipulation/zipball/d8b8a7b4fadf8220c386259543a10b381ec1d1a5",
+                "reference": "d8b8a7b4fadf8220c386259543a10b381ec1d1a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stef\\Manipulation\\": "src/Stef/Manipulation/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Stefanius",
+                    "email": "sgrootveld@gmail.com"
+                }
+            ],
+            "description": "Basic classes for manipulate values. You can build your own by inherit this package",
+            "time": "2014-11-12 20:44:15"
+        },
+        {
+            "name": "stef/slug-manipulation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefanius/slug-manipulation.git",
+                "reference": "f78dc60891b2f0f0251d8ea8bac3b753e2a06899"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefanius/slug-manipulation/zipball/f78dc60891b2f0f0251d8ea8bac3b753e2a06899",
+                "reference": "f78dc60891b2f0f0251d8ea8bac3b753e2a06899",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "stef/manipulation": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stef\\SlugManipulation\\": "src/Stef/SlugManipulation/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Stefanius",
+                    "email": "sgrootveld@gmail.com"
+                }
+            ],
+            "description": "Slugify your text!",
+            "time": "2014-11-13 19:17:45"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.3.0",
             "source": {
@@ -3276,7 +3382,10 @@
         "doctrine/inflector": 20,
         "jms/serializer-bundle": 20,
         "jms/di-extra-bundle": 20,
-        "stef/crud-contract": 20
+        "stef/crud-contract": 20,
+        "stef/manipulation": 20,
+        "stef/slug-manipulation": 20,
+        "stef/generate-fixtures-bundle": 20
     },
     "prefer-stable": false,
     "platform": {
