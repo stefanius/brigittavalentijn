@@ -26,3 +26,10 @@ create-fixtures:
 	php app/console stef:fixture:generate:bv-blog
 	php app/console stef:fixture:generate:bv-news
 	php app/console stef:fixture:generate:bv-page
+
+test:
+	php bin/phpunit -c app/
+
+restart-nginx:
+	sudo service nginx stop
+	sudo service nginx start
