@@ -1,0 +1,40 @@
+<nav id="nav" class="skel-layers-fixed">
+
+    {% block navbar_left %}
+        <div class="left">
+            <img class="logo" src="{{ asset('images/bv-logo-1.png') }}"/>
+        </div>
+    {% endblock %}
+
+    {% block navbar_right %}
+        <div class="right">
+            <img class="logo" src="{{ asset('images/bv-logo-1.png') }}" style="visibility: hidden;"/>
+        </div>
+    {% endblock %}
+
+    {% block navbar_center %}
+        <ul class="center">
+            <li class="current"><a href="/">Home</a></li>
+            <li><a href="http://brigittavalentijn.nl/over-ons">Over ons</a></li>
+            <li><a href="http://brigittavalentijn.nl/over-ons/adres">Adres</a></li>
+           <!-- <li>
+
+                <a href="">Speltakken</a>
+                <ul>
+                    <li><a href="#">De Bevers</a></li>
+                    <li><a href="#">De Esta's</a></li>
+                    <li>
+                        <a href="">De Mercators</a>
+                        <ul>
+                            <li><a href="#">De Bevers</a></li>
+                            <li><a href="#">De Esta's</a></li>
+                            <li><a href="#">De Mercators</a></li>
+                            <li><a href="#">exploos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">exploos</a></li>
+                </ul>
+            </li>-->
+        </ul>
+    {% endblock %}
+</nav>

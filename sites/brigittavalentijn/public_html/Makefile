@@ -33,3 +33,12 @@ test:
 restart-nginx:
 	sudo service nginx stop
 	sudo service nginx start
+
+gen-entities:
+	php app/console doctrine:generate:entities StefBVBundle
+
+cache-clear:
+	rm app/cache/dev -rf
+	rm app/cache/prod -rf
+	rm app/cache/test -rf
+	rm app/cache/dev.old -rf

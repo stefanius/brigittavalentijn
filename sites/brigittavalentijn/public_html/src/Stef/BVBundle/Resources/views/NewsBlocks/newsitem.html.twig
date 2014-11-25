@@ -1,0 +1,17 @@
+{% set url = path('stef_bvbundle_news_show', { 'slug': news.slug })  %}
+
+<div class="3u">
+    <section class="box feature">
+        <a href="{{ url }}" class="image featured">
+            {% if news.picture is null %}
+                <i class="fa fa-smile-o fa-6"></i>
+            {% else %}
+                <img src="{{ asset(news.picture) }}" alt="{{ news.title }}">
+            {% endif %}
+        </a>
+        <h3><a href="{{ url }}">{{ news.title }}</a></h3>
+        <p>
+            {{ news.bodytext|length > 200 ? news.bodytext|slice(0, 200)|striptags ~ '...' : news.bodytext|striptags }}
+        </p>
+    </section>
+</div>

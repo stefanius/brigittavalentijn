@@ -1,10 +1,23 @@
-{% extends '::base.html.twig' %}
+<!DOCTYPE html>
+<html class="global desktop">
 
-{% block stylesheets %}
-    {{ parent() }}
-    <link href="{{ asset('/css/blog.css') }}" type="text/css" rel="stylesheet" />
-{% endblock %}
+    {% include 'StefBVBundle:HeadSection:head.html.twig' %}
 
-{% block sidebar %}
-    Sidebar content
-{% endblock %}
+    <body class="homepage">
+        <div id="skel-layers-wrapper" class="bodyfix">
+            {% block head %}
+                {% include 'StefBVBundle:Blocks:index.header.html.twig' %}
+            {% endblock %}
+
+            {% block navbar %}
+                {% include 'StefBVBundle:Blocks:navbar.html.twig' %}
+            {% endblock %}
+
+            {% block body %}
+                <h1>Body Content Placeholder</h1>
+            {% endblock %}
+
+            {% include 'StefBVBundle:Blocks:footer.html.twig' %}
+        </div>
+    </body>
+</html>

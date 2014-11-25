@@ -28,6 +28,12 @@ class News
     protected $slug;
 
     /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $picture;
+
+
+    /**
      * @ORM\Column(type="text")
      */
     protected $bodytext;
@@ -136,5 +142,28 @@ class News
     public function getTitle()
     {
         return $this->title;
+    }
+
+    /**
+     * Set picture
+     *
+     * @param string $picture
+     * @return News
+     */
+    public function setPicture($picture)
+    {
+        $this->picture = $picture;
+
+        return $this;
+    }
+
+    /**
+     * Get picture
+     *
+     * @return string 
+     */
+    public function getPicture()
+    {
+        return $this->picture;
     }
 }
