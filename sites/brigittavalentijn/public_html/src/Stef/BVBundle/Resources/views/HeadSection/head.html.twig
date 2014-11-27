@@ -3,7 +3,12 @@
     <meta name="viewport" content="user-scalable=yes,width=device-width,height=device-height,initial-scale=1">
     <meta name="viewport" content="initial-scale=1">
     <style type="text/css">@-ms-viewport{width:device-width;}</style>
-    <title>Scoutinggroep Brigitta / Valentijn</title>
+
+    {% if page.title is defined %}
+        <title>{{ page.title }} | Brigitta / Valentijn</title>
+    {% else %}
+        <title>Scoutinggroep Brigitta / Valentijn</title>
+    {% endif %}
 
     {% include 'StefBVBundle:HeadSection:description.html.twig' %}
     {% include 'StefBVBundle:HeadSection:robots.html.twig' %}

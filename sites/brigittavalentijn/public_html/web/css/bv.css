@@ -39,3 +39,11 @@
     height: 3.01em;
     max-height: 3.01em;
 }
+
+.news-feature-cropped {
+    position: relative;
+    width: 263px;
+    height: 167px;
+    overflow: hidden;
+    border: 1px #0d365c solid;
+}

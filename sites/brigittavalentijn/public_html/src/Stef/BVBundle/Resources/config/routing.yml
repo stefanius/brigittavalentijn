@@ -1,5 +1,3 @@
-
-
 #example pages
 stef_bvbundle_homepage:
     pattern:  /
@@ -26,8 +24,6 @@ stef_bvbundle_blog_show:
         _method:  GET
         id: \d+
 
-
-
 #Webpages - News
 stef_bvbundle_news_archive_current_year_show:
     pattern:  /nieuws/archief
@@ -38,6 +34,12 @@ stef_bvbundle_news_archive_current_year_show:
 stef_bvbundle_news_archive_show:
     pattern:  /nieuws/archief/{year}
     defaults: { _controller: StefBVBundle:News:showArchive }
+    requirements:
+        _method:  GET
+
+stef_bvbundle_news_archive_index:
+    pattern:  /nieuws
+    defaults: { _controller: StefBVBundle:News:showMainNewsPage }
     requirements:
         _method:  GET
 

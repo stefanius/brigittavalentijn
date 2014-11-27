@@ -6,7 +6,7 @@
             {% if news.picture is null %}
                 <i class="fa fa-smile-o fa-6"></i>
             {% else %}
-                <img src="{{ asset(news.picture) }}" alt="{{ news.title }}">
+                <img class="news-feature-cropped" src="{{ asset(news.picture) }}" alt="{{ news.title }}">
             {% endif %}
         </a>
         <h3><a href="{{ url }}">{{ news.title }}</a></h3>
