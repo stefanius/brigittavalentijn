@@ -17,6 +17,13 @@ rewrite ^/mysqli.mysqli / permanent;
 rewrite ^/mysqli.close / permanent;
 rewrite ^/nav/staf01.htm / permanent;
 
+#misc
+rewrite ^/galgje.htm /spelletjes permanent;
+rewrite ^/galgje.html /spelletjes permanent;
+rewrite ^/overdebv/keertjekijken.html /word-lid permanent;
+rewrite ^/overdebv/contributie.html /word-lid permanent;
+rewrite ^/meerBV.html /over-ons permanent;
+
 #photo-related
 rewrite ^/foto/mercator /fotoalbum permanent;
 rewrite ^/foto/mercator* /fotoalbum permanent;
@@ -38,6 +45,7 @@ rewrite ^/htm/waar.htm /over-ons/adres permanent;
 rewrite ^/contact /over-ons/contact permanent;
 rewrite ^/meerbv/gastenboek.html /over-ons/contact permanent;
 rewrite ^/2/gastenboek.html /over-ons/contact permanent;
+rewrite ^/3/gastenboek.html /over-ons/contact permanent;
 rewrite ^/gastenboek.html /over-ons/contact permanent;
 rewrite ^/overdebv/algemeneInformatie.html /over-ons permanent;
 rewrite ^/groepen.html /over-ons/speltakken permanent;
@@ -51,7 +59,11 @@ rewrite ^/groepen/mercators.html /over-ons/speltakken/mercators permanent;
 rewrite ^/groepen/rs.html /over-ons/speltakken/explorers permanent;
 rewrite ^/groepen/pivo.html /over-ons/speltakken/explorers permanent;
 rewrite ^/groepen/pivos.html /over-ons/speltakken/explorers permanent;
+rewrite ^/meerbv/* /over-ons permanent;
 
+#redirect all v2 and v3 pages to index
+rewrite ^/v2/* / permanent;
+rewrite ^/v3/* / permanent;
 
 #redirect old downloads
 rewrite ^/(.+).docx /downloads permanent;

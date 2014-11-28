@@ -1,5 +1,6 @@
 #nieuwsarchief 2012
 rewrite ^/nieuws/2012/*/archief.html /nieuws/archief/2012 permanent;
+rewrite ^/nieuws/2012/* /nieuws/archief/2012 permanent;
 rewrite ^/nieuws/2012/01/archief.html /nieuws/archief/2012 permanent;
 rewrite ^/nieuws/2012/02/archief.html /nieuws/archief/2012 permanent;
 rewrite ^/nieuws/2012/03/archief.html /nieuws/archief/2012 permanent;
@@ -15,6 +16,7 @@ rewrite ^/nieuws/2012/12/archief.html /nieuws/archief/2012 permanent;
 
 #nieuwsarchief 2013
 rewrite ^/nieuws/2013/*/archief.html /nieuws/archief/2013 permanent;
+rewrite ^/nieuws/2013/* /nieuws/archief/2013 permanent;
 rewrite ^/nieuws/2013/01/archief.html /nieuws/archief/2013 permanent;
 rewrite ^/nieuws/2013/02/archief.html /nieuws/archief/2013 permanent;
 rewrite ^/nieuws/2013/03/archief.html /nieuws/archief/2013 permanent;
@@ -46,6 +48,7 @@ rewrite ^/nieuws/2014/12/archief.html /nieuws/archief/2014 permanent;
 
 #nieuwsarchief 2015
 rewrite ^/nieuws/2015/*/archief.html /nieuws/archief/2015 permanent;
+rewrite ^/nieuws/2015/* /nieuws/archief/2015 permanent;
 rewrite ^/nieuws/2015/01/archief.html /nieuws/archief/2015 permanent;
 rewrite ^/nieuws/2015/02/archief.html /nieuws/archief/2015 permanent;
 rewrite ^/nieuws/2015/03/archief.html /nieuws/archief/2015 permanent;
@@ -67,7 +70,11 @@ rewrite ^/nieuws/04/archief.html /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/05/archief.html /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/06/archief.html /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/07/archief.html /nieuws/archief/2014 permanent;
+rewrite ^/nieuws/08/archief.html /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/09/archief.html /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/10/archief.html /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/11/archief.html /nieuws/archief/2014 permanent;
 rewrite ^/nieuws/12/archief.html /nieuws/archief/2014 permanent;
+
+#archief.html
+rewrite ^archief.html /nieuws/archief permanent;

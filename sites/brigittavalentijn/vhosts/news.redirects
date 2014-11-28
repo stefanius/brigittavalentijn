@@ -1,5 +1,3 @@
-
-
 #Nieuwsberichten 2012
 rewrite ^/nieuws/1.html /nieuws/overvliegen-2012 permanent;
 rewrite ^/nieuws/4.html /nieuws/nieuwe-website-2012 permanent;
@@ -48,3 +46,26 @@ rewrite ^/nieuws/46.html /nieuws/stafleden-gezocht-2014 permanent;
 rewrite ^/nieuws/47.html /nieuws/nl-doet-de-kampkistenklus-2014 permanent;
 rewrite ^/nieuws/48.html /nieuws/wij-gaan-verhuizen-2014 permanent;
 
+#latest news
+rewrite ^/nieuws/49.html /nieuws permanent;
+rewrite ^/nieuws/50.html /nieuws permanent;
+rewrite ^/nieuws/51.html /nieuws permanent;
+rewrite ^/nieuws/52.html /nieuws permanent;
+rewrite ^/nieuws/53.html /nieuws permanent;
+rewrite ^/nieuws/54.html /nieuws permanent;
+rewrite ^/nieuws/55.html /nieuws permanent;
+rewrite ^/nieuws/56.html /nieuws permanent;
+rewrite ^/nieuws/57.html /nieuws permanent;
+rewrite ^/nieuws/58.html /nieuws permanent;
+rewrite ^/nieuws/59.html /nieuws permanent;
+rewrite ^/nieuws/60.html /nieuws permanent;
+
+#Prehistoric newspages - lost in the cloud - redirect to main news
+rewrite ^/v3/index.php/nieuws* /nieuws permanent;
+rewrite ^/v3/index.php/nieuws/* /nieuws permanent;
+rewrite ^/v2/index.php/nieuws* /nieuws permanent;
+rewrite ^/v2/index.php/nieuws/* /nieuws permanent;
+rewrite ^/v3/nieuws* /nieuws permanent;
+rewrite ^/v3/nieuws/* /nieuws permanent;
+rewrite ^/v2/nieuws* /nieuws permanent;
+rewrite ^/v2/nieuws/* /nieuws permanent;
