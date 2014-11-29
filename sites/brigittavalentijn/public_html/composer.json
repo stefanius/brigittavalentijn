@@ -1,8 +1,8 @@
 {
-    "name": "symfony/framework-standard-edition",
-    "license": "MIT",
+    "name": "setf/brigittavalentijn",
+    "license": "Not decided yet",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Website and CMS for the youth Scouting Brigitta / Valentijn - The Hague - Netherlands",
     "autoload": {
         "psr-0": { "": "src/" }
     },
@@ -52,6 +52,7 @@
         "stef/crud-contract": "dev-master",
         "stef/manipulation": "dev-master",
         "stef/slug-manipulation": "dev-master",
+        "stef/key-value-manipulation": "dev-master",
         "stef/generate-fixtures-bundle": "dev-master"
     },
     "scripts": {
