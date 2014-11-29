@@ -13,6 +13,7 @@ class PageType extends AbstractType
     {
         $builder->add('title');
         $builder->add('slug');
+        $builder->add('jsonSettings');
         $builder->add('bodytext', 'ckeditor', array(
             'config' => array(
                 'toolbar' => array(

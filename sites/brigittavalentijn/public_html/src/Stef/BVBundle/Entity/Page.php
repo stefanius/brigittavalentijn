@@ -28,6 +28,11 @@ class Page
     protected $slug;
 
     /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    protected $kvSettings;
+
+    /**
      * @ORM\Column(type="text")
      */
     protected $bodytext;
@@ -157,5 +162,30 @@ class Page
     public function getTwig()
     {
         return $this->twig;
+    }
+
+
+
+    /**
+     * Set kvSettings
+     *
+     * @param string $kvSettings
+     * @return Page
+     */
+    public function setKvSettings($kvSettings)
+    {
+        $this->kvSettings = $kvSettings;
+
+        return $this;
+    }
+
+    /**
+     * Get kvSettings
+     *
+     * @return string 
+     */
+    public function getKvSettings()
+    {
+        return $this->kvSettings;
     }
 }

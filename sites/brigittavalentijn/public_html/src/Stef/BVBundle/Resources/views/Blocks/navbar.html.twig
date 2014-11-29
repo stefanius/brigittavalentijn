@@ -1,5 +1,7 @@
 {% if current is not defined %}
     {% set current = app.request.getPathInfo|trim('/') %}
+    {% set current_splitted = current|split('/') %}
+    {% set current = current_splitted[0] %}
 {% endif %}
 
 <nav id="nav" class="skel-layers-fixed">
@@ -21,7 +23,7 @@
             <li {{ current == "" ? 'class="current"' }}><a href="/">Home</a></li>
             <li {{ current == "nieuws" ? 'class="current"' }}><a href="/nieuws">Nieuws</a></li>
             <li {{ current == "over-ons" ? 'class="current"' }}><a href="http://brigittavalentijn.nl/over-ons">Over ons</a></li>
-            <li {{ current == "adres" ? 'class="current"' }}><a href="http://brigittavalentijn.nl/over-ons/adres">Adres</a></li>
+            <li {{ current == "spelletjes" ? 'class="current"' }}><a href="http://brigittavalentijn.nl/spelletjes">Spelletjes</a></li>
            <!-- <li>
 
                 <a href="">Speltakken</a>
