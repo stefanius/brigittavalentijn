@@ -8,6 +8,7 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
+            /*Symfony / Doctrine / Sensio Core */
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
@@ -16,16 +17,22 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
-            new FOS\UserBundle\FOSUserBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            /*Braincrafted */
+            new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
+            /* FOS*/
+            new FOS\UserBundle\FOSUserBundle(),
+            /* JMS */
             //new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             //new JMS\AopBundle\JMSAopBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
+            /* Ivory */
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Ivory\GoogleMapBundle\IvoryGoogleMapBundle(),
+            /* Stefanius */
             new Stef\BVBundle\StefBVBundle(),
             new Stef\GenerateFixturesBundle\StefGenerateFixturesBundle(),
             new Stef\BVAdminBundle\StefBVAdminBundle(),
-            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
