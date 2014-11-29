@@ -24,7 +24,7 @@ class PageController extends BaseController
 
         $newsitems = $qb->getQuery()->getResult();
 
-        /** @var Ivory\GoogleMapBundle\Model\Map */
+        /** @var /Ivory/GoogleMapBundle/Model/Map */
         $map = $this->get('ivory_google_map.map');
 
         return $this->render('StefBVBundle:Default:index.html.twig', [
