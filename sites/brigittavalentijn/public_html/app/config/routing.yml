@@ -1,3 +1,7 @@
+stef_simple_cms:
+    resource: "@StefSimpleCmsBundle/Resources/config/routing.yml"
+    prefix:   /
+
 #user mgmt
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
@@ -17,10 +21,6 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
-
-#AdminBundle
-bv_admin_bundle_routing:
-    resource: "@StefBVAdminBundle/Resources/config/routing.yml"
 
 stef_bv:
     resource: "@StefBVBundle/Resources/config/routing.yml"

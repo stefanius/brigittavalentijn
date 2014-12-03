@@ -2,8 +2,8 @@
 
 namespace Stef\BVBundle\Controller;
 
-use Stef\BVAdminBundle\Manager\NewsManager;
-use Stef\BVAdminBundle\Manager\PageManager;
+use Stef\SimpleCmsBundle\Manager\NewsManager;
+use Stef\SimpleCmsBundle\Manager\PageManager;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class BaseController extends Controller
@@ -18,5 +18,21 @@ class BaseController extends Controller
         $em = $this->getEntityManager();
 
         return $em->getRepository($repository);
+    }
+
+    /**
+     * @return PageManager
+     */
+    protected function getPageManager()
+    {
+        return $this->get('stef_simple_cms.page_manager');
+    }
+
+    /**
+     * @return NewsManager
+     */
+    protected function getNewsManager()
+    {
+        return $this->get('stef_simple_cms.news_manager');
     }
 }

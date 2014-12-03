@@ -1,5 +1,0 @@
-stef_bvadminbundle_cms_index:
-    pattern:  /cms
-    defaults: { _controller: StefBVAdminBundle:Admin:index }
-    requirements:
-        _method:  GET|POST
