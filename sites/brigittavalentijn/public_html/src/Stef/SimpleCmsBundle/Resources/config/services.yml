@@ -5,7 +5,7 @@
 #      - [name: "basicstyles", items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']]
 #    uiColor: '#ffffff'
 parameters:
-    fuz_tools.twig.asset_exists_extension.class: Stef\SimpleCmsBundle\Twig\Extension\AssetExistsExtension
+    stef_simple_cms.twig.asset_exists_extension.class: Stef\SimpleCmsBundle\Twig\Extension\AssetExistsExtension
 
 services:
     stef.slugifier:
@@ -56,7 +56,23 @@ services:
         arguments: ["@stef_simple_cms.entity_mapper", "@stef_simple_cms.crud_renderer", "@stef_simple_cms.form_options", "@stef_simple_cms.form_factory"]
 
     stef_simple_cms.twig.asset_exists_extension:
-        class: '%fuz_tools.twig.asset_exists_extension.class%'
+        class: '%stef_simple_cms.twig.asset_exists_extension.class%'
         arguments: ['@kernel']
         tags:
           - { name: twig.extension }
+
+    stef_key_value.to_array:
+        class: Stef\KeyValueManipulation\Manipulators\KeyValueToArrayManipulator
+        arguments: [':', ';']
+
+    stef_key_value.to_json:
+        class: Stef\KeyValueManipulation\Manipulators\KeyValueToJsonManipulator
+        arguments: [':', ';']
+
+    stef_key_value.to_parameterbag:
+        class: Stef\KeyValueManipulation\Manipulators\KeyValueToParameterBagManipulator
+        arguments: [':', ';']
+
+    stef_simple_cms.key_value_parser:
+        class: Stef\SimpleCmsBundle\KeyValueParser\Parser
+        arguments: ['@stef_key_value.to_array', '@stef_key_value.to_json', '@stef_key_value.to_parameterbag']
