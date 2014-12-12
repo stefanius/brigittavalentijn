@@ -93,13 +93,20 @@ abstract class AbstractObjectManager {
 
     public function getLatestEntries($maxResults)
     {
-
         $qb = $this->om->getRepository($this->repoName)->createQueryBuilder('e');
 
         $qb->select('e')
             ->orderBy('e.id', 'DESC')
             ->setMaxResults($maxResults);
 
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getAllRecords()
+    {
+        $qb = $this->om->getRepository($this->repoName)->createQueryBuilder('e');
+
+        $qb->select('e');
 
         return $qb->getQuery()->getResult();
     }

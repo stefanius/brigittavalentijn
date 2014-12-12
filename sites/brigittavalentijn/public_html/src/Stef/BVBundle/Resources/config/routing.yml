@@ -50,6 +50,13 @@ stef_bvbundle_news_show:
         _method:  GET
 
 #Webpages - Pages (last resort, if anything else is not true)
+stef_bvbundle_sitemaps:
+    pattern:  /sitemaps/{mappingKey}.xml
+    defaults: { _controller: StefBVBundle:Sitemap:generate }
+    requirements:
+        _method:  GET
+        _format:  xml
+
 stef_bvbundle_view_page:
     pattern:  /{slug}
     defaults: { _controller: StefBVBundle:Page:viewPage }

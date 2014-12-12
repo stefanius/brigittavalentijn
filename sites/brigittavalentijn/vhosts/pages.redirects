@@ -58,7 +58,7 @@ rewrite ^/meerbv/estaweekend.html /over-ons/speltakken/estas permanent;
 rewrite ^/groepen/mercators.html /over-ons/speltakken/mercators permanent;
 rewrite ^/groepen/rs.html /over-ons/speltakken/explorers permanent;
 rewrite ^/groepen/pivo.html /over-ons/speltakken/explorers permanent;
-rewrite ^/groepen/pivos.html /over-ons/speltakken/explorers permanent;
+rewrite ^/groepen/pivos.html /over-ons/spephpltakken/explorers permanent;
 rewrite ^/meerbv/* /over-ons permanent;
 
 #redirect all v2 and v3 pages to index
