@@ -4,6 +4,7 @@ namespace Stef\BVBundle\Controller;
 
 use Ivory\GoogleMap\Map;
 use Stef\SimpleCmsBundle\KeyValueParser\Parser;
+use Stef\SimpleCmsBundle\Manager\DictionaryManager;
 use Stef\SimpleCmsBundle\Manager\NewsManager;
 use Stef\SimpleCmsBundle\Manager\PageManager;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -20,6 +21,14 @@ class BaseController extends Controller
         $em = $this->getEntityManager();
 
         return $em->getRepository($repository);
+    }
+
+    /**
+     * @return DictionaryManager
+     */
+    protected function getDictionaryManager()
+    {
+        return $this->get('stef_simple_cms.dictionary_manager');
     }
 
     /**

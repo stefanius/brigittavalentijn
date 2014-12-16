@@ -24,6 +24,7 @@
             <li {{ current == "nieuws" ? 'class="current"' }}><a href="/nieuws">Nieuws</a></li>
             <li {{ current == "over-ons" ? 'class="current"' }}><a href="http://brigittavalentijn.nl/over-ons">Over ons</a></li>
             <li {{ current == "spelletjes" ? 'class="current"' }}><a href="http://brigittavalentijn.nl/spelletjes">Spelletjes</a></li>
+            <li {{ current == "begrippenlijst" or current|slice(0,15) == "begrippenlijst-" ? 'class="current"' }}><a href="http://brigittavalentijn.nl/begrippenlijst">Begrippenlijst</a></li>
            <!-- <li>
 
                 <a href="">Speltakken</a>

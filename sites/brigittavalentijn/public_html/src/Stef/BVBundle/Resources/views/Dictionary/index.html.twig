@@ -1,0 +1,34 @@
+{% extends 'StefBVBundle::layout.html.twig' %}
+
+{% block body %}
+
+    <div id="main-wrapper">
+        <div id="main" class="container">
+            {% if letter == null %}
+                <h1>Begrippenlijst</h1>
+            {% else %}
+                <h1>Begrippenlijst - {{ letter }}</h1>
+            {% endif %}
+            <div class="alphabet">
+                <ul>
+                    {% for alphabet in 'a'|upper..'z'|upper %}
+                        <li style="width: 2.75em;"><a href="{{ path('stef_bvbundle_dictionary_alphabetic_index', { 'letter': alphabet|lower }) }}">{{ alphabet }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            {% if letter == null %}
+                {% include 'StefBVBundle:Dictionary:noletter.html.twig' %}
+            {% else %}
+                {% include 'StefBVBundle:Dictionary:' ~ letter ~ '.html.twig' %}
+            {% endif %}
+
+            <ul>
+                {% for word in wordlist %}
+                    <li><a href="{{ path('stef_bvbundle_dictionary_item', { 'slug': word.slug }) }}">{{ word.title }}</a></li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+{% endblock %}

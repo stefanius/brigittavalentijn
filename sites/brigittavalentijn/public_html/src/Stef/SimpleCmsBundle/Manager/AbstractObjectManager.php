@@ -110,4 +110,25 @@ abstract class AbstractObjectManager {
 
         return $qb->getQuery()->getResult();
     }
+
+    public function simpleQueryBuilding(array $params)
+    {
+        $qb = $this->om->getRepository($this->repoName)->createQueryBuilder('e');
+
+        $qb->select('e');
+
+        if (array_key_exists('where', $params)) {
+            $qb->where($params['where']);
+        }
+
+        if (array_key_exists('param', $params)) {
+            $qb->setParameter($params['param'][0], $params['param'][1]);
+        }
+
+        if (array_key_exists('orderby', $params)) {
+            $qb->orderBy($params['orderby']);
+        }
+
+        return $qb->getQuery()->getResult();
+    }
 }

@@ -43,30 +43,6 @@ class PageController extends BaseController
             $adapter = new Adapter($map);
             $map = $adapter->buildMap($pageOptions);
 
-            /*
-            $marker = new Marker();
-
-            $marker->setPrefixJavascriptVariable('marker_');
-            $marker->setPosition(52.356442, 4.996120, true);
-            $marker->setAnimation(Animation::DROP);
-
-            $marker->setOption('clickable', false);
-            $marker->setOption('flat', true);
-            $marker->setOptions(array(
-                'clickable' => false,
-                'flat'      => true,
-            ));
-
-
-            $map->setStylesheetOptions(array(
-                'width'  => '100%',
-                'height' => '700px',
-            ));
-
-            */
-
-            //$map->addMarker($marker);
-            //$map->setCenter(52.356442, 4.996120);
 
             $extra['map'] = $map;
         }
@@ -78,7 +54,8 @@ class PageController extends BaseController
         }
 
         return $this->render($twig, array_merge($extra, [
-                'page'  => $page
+                'page'  => $page,
+                'pageOptions' => $pageOptions->all()
             ])
 
         );
