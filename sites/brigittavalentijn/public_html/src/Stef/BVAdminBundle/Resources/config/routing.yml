@@ -1,8 +1,0 @@
-bv_admin_bundle_routing_cms:
-    resource: "@StefBVAdminBundle/Resources/config/cms.routing.yml"
-
-bv_admin_bundle_routing_news:
-    resource: "@StefBVAdminBundle/Resources/config/news.routing.yml"
-
-bv_admin_bundle_routing_page:
-    resource: "@StefBVAdminBundle/Resources/config/page.routing.yml"

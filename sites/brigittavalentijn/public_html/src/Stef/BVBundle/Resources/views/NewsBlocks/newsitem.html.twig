@@ -5,13 +5,15 @@
         <a href="{{ url }}" class="image featured">
             {% if news.picture is null %}
                 <i class="fa fa-smile-o fa-6"></i>
-            {% else %}
+            {% elseif asset_exists(asset(news.picture)) %}
                 <img class="news-feature-cropped" src="{{ asset(news.picture) }}" alt="{{ news.title }}">
+            {% else %}
+                <i class="fa fa-smile-o fa-6"></i>
             {% endif %}
         </a>
         <h3><a href="{{ url }}">{{ news.title }}</a></h3>
         <p>
-            {{ news.bodytext|length > 200 ? news.bodytext|slice(0, 200)|striptags ~ '...' : news.bodytext|striptags }}
+            {{ news.body|length > 200 ? news.body|slice(0, 200)|striptags ~ '...' : news.body|striptags }}
         </p>
     </section>
 </div>

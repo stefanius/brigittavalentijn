@@ -2,27 +2,17 @@
 
 namespace Stef\BVBundle\Controller;
 
-use Faker\Provider\cs_CZ\DateTime;
-use Stef\BVBundle\Entity\Enquiry;
-use Stef\BVBundle\Entity\Notfound;
-use Stef\BVBundle\Form\EnquiryType;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Ivory\GoogleMap\Overlays\Animation;
+use Ivory\GoogleMap\Overlays\Marker;
+use Stef\BVBundle\GoogleMapsAdapter\Adapter;
+use Stef\BVBundle\GoogleMapsAdapter\AdapterSettings;
+use Symfony\Component\HttpFoundation\ParameterBag;
 
 class PageController extends BaseController
 {
     public function indexAction()
     {
-        /**
-         * var
-         */
-        $qb = $this->getRepository('StefBVBundle:News')->createQueryBuilder('n');
-
-        $qb->select('n')
-            ->orderBy('n.id', 'DESC')
-            ->setMaxResults(4);
-
-
-        $newsitems = $qb->getQuery()->getResult();
+        $newsitems = $this->getNewsManager()->getLatestEntries(4);
 
         /** @var /Ivory/GoogleMapBundle/Model/Map */
         $map = $this->get('ivory_google_map.map');
@@ -33,48 +23,28 @@ class PageController extends BaseController
         ]);
     }
 
-    public function aboutAction()
-    {
-        return $this->render('StefBVBundle:Page:about.html.twig');
-    }
-
-    public function contactAction()
-    {
-        $enquiry = new Enquiry();
-        $form = $this->createForm(new EnquiryType(), $enquiry);
-
-        $request = $this->getRequest();
-        if ($request->getMethod() == 'POST') {
-            $form->bindRequest($request);
-
-            if ($form->isValid()) {
-
-                return $this->redirect($this->generateUrl('stef_bvbundle_contact'));
-            }
-        }
-
-        return $this->render('StefBVBundle:Page:contact.html.twig', array(
-            'form' => $form->createView()
-        ));
-    }
-
     public function viewPageAction($slug)
     {
-        $em = $this->getDoctrine()->getManager();
+        $extra = [];
 
-        $page = $em->getRepository('StefBVBundle:Page')->findOneBySlug($slug);
+        $page = $this->getPageManager()->read($slug);
 
-        if (!$page) {
-            $notfound = new Notfound();
-            $notfound->setFixed(false);
-            $notfound->setCreated(new \DateTime('now'));
-            $notfound->setModified(new \DateTime('now'));
-            $notfound->setSlug($slug);
+        //Temp, until Manipulation accepts NULL values
+        if ($page->getKvSettings() !== null && is_string($page->getKvSettings())) {
+            $pageOptions = $this->getKeyValueParser()->parseKeyValuesToParameterBag($page->getKvSettings());
+        } else {
+            $pageOptions = new ParameterBag();
+        }
 
-            $em->persist($notfound);
-            $em->flush();
+        if ($pageOptions->has(AdapterSettings::GOOGLE_MAPS) && $pageOptions->get(AdapterSettings::GOOGLE_MAPS) === true) {
 
-            throw $this->createNotFoundException('Unable to find Page.');
+            $map = $this->getIvoryGoogleMap();
+
+            $adapter = new Adapter($map);
+            $map = $adapter->buildMap($pageOptions);
+
+
+            $extra['map'] = $map;
         }
 
         $twig = $page->getTwig();
@@ -83,8 +53,11 @@ class PageController extends BaseController
             $twig = 'StefBVBundle:Page:default.html.twig';
         }
 
-        return $this->render($twig, array(
-            'page'      => $page,
-        ));
+        return $this->render($twig, array_merge($extra, [
+                'page'  => $page,
+                'pageOptions' => $pageOptions->all()
+            ])
+
+        );
     }
 }

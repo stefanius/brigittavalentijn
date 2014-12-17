@@ -1,26 +1,13 @@
-#user mgmt
-fos_user_security:
-    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+stef_simple_cms_crud:
+    resource: "@StefSimpleCmsBundle/Resources/config/routing/crud.yml"
+    prefix:   /cms
 
-fos_user_profile:
-    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
-    prefix: /profile
+stef_simple_cms_index:
+    resource: "@StefSimpleCmsBundle/Resources/config/routing/index.yml"
+    prefix:   /cms
 
-fos_user_register:
-    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
-    prefix: /register
-
-fos_user_resetting:
-    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
-    prefix: /resetting
-
-fos_user_change_password:
-    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
-    prefix: /profile
-
-#AdminBundle
-bv_admin_bundle_routing:
-    resource: "@StefBVAdminBundle/Resources/config/routing.yml"
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
 stef_bv:
     resource: "@StefBVBundle/Resources/config/routing.yml"

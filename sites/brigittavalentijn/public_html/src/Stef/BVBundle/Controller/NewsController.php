@@ -6,16 +6,14 @@ use Doctrine\ORM\QueryBuilder;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Doctrine\ORM\EntityManager;
 
-class NewsController extends Controller
+class NewsController extends BaseController
 {
     /**
      * Show a news entry
      */
     public function showAction($slug)
     {
-        $em = $this->getDoctrine()->getManager();
-
-        $news = $em->getRepository('StefBVBundle:News')->findOneBySlug($slug);
+        $news = $this->getNewsManager()->read($slug);
 
         if (!$news) {
             throw $this->createNotFoundException('Unable to find News post.');

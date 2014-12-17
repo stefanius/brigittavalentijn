@@ -13,3 +13,12 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    app.version: 0.0.1
+    app.title: Scoutinggroep Brigitta / Valentijn
+    app.cmstitle: BV Backoffice
+    app.http_entrypoint: http://brigittavalentijn.nl
+    app.twitter_name: "scoutingbv"
+    app.twitter_url: https://twitter.com/scoutingbv
+    app.facebook_url: https://www.facebook.com/brigittavalentijn
+    app.googleplus_url: https://www.facebook.com/brigittavalentijn

@@ -1,6 +1,7 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: "@StefSimpleCmsBundle/Resources/config/config.yml" }
 
 framework:
     #esi:             ~
@@ -20,7 +21,7 @@ framework:
     trusted_proxies: ~
     session:
         handler_id: session.handler.native_file
-        save_path: "%kernel.root_dir%/sessions"
+        save_path: null
     fragments:       ~
     http_method_override: true
 
@@ -37,7 +38,7 @@ assetic:
     #java: /usr/bin/java
     filters:
         less:
-            node: /usr/bin/nodejs
+            node: /usr/bin/node
             node_paths: [/usr/local/lib/node_modules]
             apply_to: "\.less$"
         cssrewrite: ~

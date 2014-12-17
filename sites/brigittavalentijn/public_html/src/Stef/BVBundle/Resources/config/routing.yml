@@ -1,30 +1,10 @@
-#example pages
-stef_bvbundle_homepage:
-    pattern:  /
-    defaults: { _controller: StefBVBundle:Page:index }
+stef_bvbundle_sitemaps:
+    pattern:  /sitemaps/{mappingKey}.xml
+    defaults: { _controller: StefBVBundle:Sitemap:generate }
     requirements:
         _method:  GET
+        _format:  xml
 
-stef_bvbundle_about:
-    pattern:  /about
-    defaults: { _controller: StefBVBundle:Page:about }
-    requirements:
-        _method:  GET
-
-stef_bvbundle_contact:
-    pattern:  /contact
-    defaults: { _controller: StefBVBundle:Page:contact }
-    requirements:
-        _method:  GET|POST
-
-stef_bvbundle_blog_show:
-    pattern:  /{id}
-    defaults: { _controller: StefBVBundle:Blog:show }
-    requirements:
-        _method:  GET
-        id: \d+
-
-#Webpages - News
 stef_bvbundle_news_archive_current_year_show:
     pattern:  /nieuws/archief
     defaults: { _controller: StefBVBundle:News:showArchive }
@@ -36,6 +16,25 @@ stef_bvbundle_news_archive_show:
     defaults: { _controller: StefBVBundle:News:showArchive }
     requirements:
         _method:  GET
+
+stef_bvbundle_dictionary_item:
+    pattern:  /begrippenlijst/{slug}
+    defaults: { _controller: StefBVBundle:Dictionary:show }
+    requirements:
+        _method:  GET
+
+stef_bvbundle_dictionary_index:
+    pattern:  /begrippenlijst
+    defaults: { _controller: StefBVBundle:Dictionary:index }
+    requirements:
+        _method:  GET
+
+stef_bvbundle_dictionary_alphabetic_index:
+    pattern:  /begrippenlijst-{letter}
+    defaults: { _controller: StefBVBundle:Dictionary:index }
+    requirements:
+        _method:  GET
+        letter: .+
 
 stef_bvbundle_news_archive_index:
     pattern:  /nieuws
@@ -49,10 +48,16 @@ stef_bvbundle_news_show:
     requirements:
         _method:  GET
 
-#Webpages - Pages (last resort, if anything else is not true)
 stef_bvbundle_view_page:
     pattern:  /{slug}
     defaults: { _controller: StefBVBundle:Page:viewPage }
+    requirements:
+        _method:  GET
+        slug: .+
+
+stef_bvbundle_home_page:
+    pattern:  /
+    defaults: { _controller: StefBVBundle:Page:index }
     requirements:
         _method:  GET
         slug: .+
