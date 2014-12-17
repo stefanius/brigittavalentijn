@@ -3,7 +3,6 @@
 namespace Stef\BVBundle\Controller;
 
 use Doctrine\ORM\QueryBuilder;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Doctrine\ORM\EntityManager;
 
 class NewsController extends BaseController
@@ -36,7 +35,7 @@ class NewsController extends BaseController
 
         $em = $this->getDoctrine()->getManager();
 
-        $qb = $em->getRepository('StefBVBundle:News')->createQueryBuilder('n');
+        $qb = $em->getRepository('StefSimpleCmsBundle:News')->createQueryBuilder('n');
 
         $qb->select('n')
             ->where('n.created LIKE :year')
@@ -65,7 +64,7 @@ class NewsController extends BaseController
         /**
          * @var QueryBuilder
          */
-        $qb = $em->getRepository('StefBVBundle:News')->createQueryBuilder('n');
+        $qb = $em->getRepository('StefSimpleCmsBundle:News')->createQueryBuilder('n');
 
         $qb->select('n')
             ->setMaxResults(20)
