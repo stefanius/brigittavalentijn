@@ -1,6 +1,6 @@
 <?php
 
-namespace Stef\BVBundle\Entity;
+namespace Stef\SimpleCmsBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
