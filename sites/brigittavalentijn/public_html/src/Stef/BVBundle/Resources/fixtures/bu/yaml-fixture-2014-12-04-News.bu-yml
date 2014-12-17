@@ -1,4 +1,4 @@
-Stef\BVBundle\Entity\News:
+Stef\SimpleCmsBundle\Entity\News:
   StefBVBundle-News-1:
     id: 1
     title: 'Overvliegen 2012'

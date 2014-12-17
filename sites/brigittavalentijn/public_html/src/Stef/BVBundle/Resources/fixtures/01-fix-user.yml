@@ -1,4 +1,4 @@
-Stef\BVBundle\Entity\User:
+Stef\SimpleCmsBundle\Entity\User:
   user-blogger-jasper:
       id: 1
       username: Jasper
