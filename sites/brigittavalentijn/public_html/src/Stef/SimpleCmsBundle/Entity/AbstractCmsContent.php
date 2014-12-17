@@ -28,6 +28,11 @@ abstract class AbstractCmsContent {
     protected $body;
 
     /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    protected $description;
+
+    /**
      * @ORM\Column(type="datetime")
      */
     protected $created;
@@ -44,7 +49,7 @@ abstract class AbstractCmsContent {
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getBody()
     {
@@ -52,7 +57,7 @@ abstract class AbstractCmsContent {
     }
 
     /**
-     * @param mixed $body
+     * @param string $body
      */
     public function setBody($body)
     {
@@ -148,4 +153,22 @@ abstract class AbstractCmsContent {
     {
         $this->setModified(new \DateTime());
     }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+
 }
