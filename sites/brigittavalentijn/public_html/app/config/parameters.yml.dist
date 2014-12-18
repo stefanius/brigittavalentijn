@@ -22,3 +22,5 @@ parameters:
     app.twitter_url: https://twitter.com/scoutingbv
     app.facebook_url: https://www.facebook.com/brigittavalentijn
     app.googleplus_url: https://www.facebook.com/brigittavalentijn
+    app.domain ~
+    app.analyticsid ~
