@@ -34,6 +34,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.synced_folder "salt/roots/", "/srv/"
 
+  config.vm.hostname = "brigittavalentijn"
+
   config.vm.synced_folder "sites/", "/home/vagrant/sites/", :nfs => false,
       owner: "vagrant",
       group: "www-data",
