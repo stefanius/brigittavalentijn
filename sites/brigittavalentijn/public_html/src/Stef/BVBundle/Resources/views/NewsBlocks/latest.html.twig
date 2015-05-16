@@ -2,13 +2,13 @@
 	<section class="box blog">
 		<div>
 			<div class="row">
-				{% for news in archive %}
+				{% for news in newsitems %}
 				{% include 'StefBVBundle:NewsBlocks:newsitem.html.twig' %}
 				{% endfor %}
 		`		<div class="3u">
 					<div class="sidebar">
 						<ul class="divided">
-							{% for news in newsitems %}
+							{% for news in archive %}
 								<li><a href="{{ path('stef_bvbundle_news_show', { 'slug': news.slug }) }}">{{ news.title|e }}</a></li>
 							{% endfor %}
 						</ul>
