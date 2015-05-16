@@ -7,7 +7,13 @@
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
+h1
+{
+    color: #78B2B7;
+    padding: 5px;
+    z-index: 1500;
 
+}
 h1, h2, h3, h4, h5, h6
 {
     margin: 0 0 0.5em 0;
@@ -27,7 +33,7 @@ h2.major
 
 h2.major span
 {
-    top: -0.775em;
+    top: -1.9em;
     padding: 0 1.5em 0 1.5em;
 }
 
@@ -201,6 +207,7 @@ ul.actionsmain-wrapper
 
 .content
 {
+    background-color:#ffffff;
 }
 
 .content-left
@@ -220,10 +227,12 @@ ul.actionsmain-wrapper
 #banner-wrapper
 {
     padding: 11em 0;
+    background: url('/images/fabric_of_squares_gray.png');
 }
 
 #main-wrapper
 {
+    background: url('/images/fabric_of_squares_gray.png');
     border-top-width: 35px;
     border-bottom-width: 10px;
 }
@@ -234,12 +243,12 @@ ul.actionsmain-wrapper
 
 #header
 {
-    text-align: center;
-    font-size: 2em;
+    text-align: right;
+    font-size: 1em;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
-    padding: 5em 0 2em 0;
+    padding-top: 0px;
     background: #fff;
     margin: 0 auto;
 }
@@ -261,14 +270,18 @@ ul.actionsmain-wrapper
 }
 
 #header .logo h1,
-#header .logo p
+{
+    text-align: right;
+    color: #D7EBFF;
+}
+header .logo p
 {
     display: inline;
+    color: #C1CAC5;
 }
 
-#header .logo p
+#header h1
 {
-    color: #C1CAC5;
 }
 
 /*********************************************************************************/
@@ -280,8 +293,8 @@ ul.actionsmain-wrapper
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    background-color: rgba(255,255,255,0.95);
+    z-index: 1;
+    background-color: rgba(223,235,247,.90);
     background-image: url('/images/overlay.png');
     width: 100%;
     height: 3.25em;
@@ -326,7 +339,6 @@ ul.actionsmain-wrapper
     position: relative;
     display: block;
     text-decoration: none;
-    color: #6b7770;
     top: -6px;
     padding: 6px 1.5em 0.25em 1.5em;
     border-bottom-left-radius: 6px;
@@ -350,8 +362,8 @@ ul.actionsmain-wrapper
 #nav li.active a,
 #nav li.active span
 {
-    background: #C1CAC5;
-    color: #fff;
+    background: #345F85;
+    color: #78B2B7;
 }
 
 #nav li.current
@@ -366,7 +378,7 @@ ul.actionsmain-wrapper
 
 .dropotron
 {
-    background: #6B7770;
+    background: #345F85;
     color: #fff;
     border-radius: 6px;
     line-height: 2.75em;
@@ -389,7 +401,7 @@ ul.actionsmain-wrapper
 .dropotron li > span
 {
     display: block;
-    color: #D7DAD8;
+    color: #78B2B7;
     text-decoration: none;
     padding: 0 1.25em;
 }
@@ -400,7 +412,7 @@ ul.actionsmain-wrapper
 .dropotron li.active > span
 {
     color: #fff;
-    background: #7B8780;
+    background: #0D365C;
 }
 
 .dropotron li:first-child
@@ -459,6 +471,17 @@ ul.actionsmain-wrapper
 #main
 {
     padding: 6em 0 6em 0;
+    -webkit-box-shadow: -10px 0px 10px 0px #888888, 7px 0px 10px 0px #888888;
+    -moz-box-shadow: -10px 0px 10px 0px #888888, 7px 0px 10px 0px #888888;
+    box-shadow: 10px 0px 10px -7px #888888, -10px 0px 10px -7px #888888;
+    background: #fff;
+}
+
+
+
+#special li
+{
+    color: #D7EBFF;
 }
 
 /*********************************************************************************/
@@ -468,7 +491,17 @@ ul.actionsmain-wrapper
 #footer
 {
     text-align: center;
-    padding: 8em 0 8em 0;
+    border-top: 5px solid #345F85
+}
+.row 200%
+{
+
+    text-align: center;
+    border-top: 5px solid #345F85
+}
+#footer a, h2
+{
+    padding-top:1em;
 }
 
 #footer h2.major

@@ -8,11 +8,11 @@
 		`		<div class="3u">
 					<div class="sidebar">
 						<ul class="divided">
-							{% for news in newsitems %}
+							{% for news in archive %}
 								<li><a href="{{ path('stef_bvbundle_news_show', { 'slug': news.slug }) }}">{{ news.title|e }}</a></li>
 							{% endfor %}
 						</ul>
-						<a href="/nieuws/archief" class="button alt">nieuwsarchief</a>
+						<a href="/nieuws" class="button alt">Meer nieuws</a>
 					</div>
 				</div>
 			</div>
