@@ -22,27 +22,19 @@
         <ul class="center">
             <li {{ current == "" ? 'class="current"' }}><a href="/">Home</a></li>
             <li {{ current == "nieuws" ? 'class="current"' }}><a href="/nieuws">Nieuws</a></li>
-            <li {{ current == "over-ons" ? 'class="current"' }}><a href="http://brigittavalentijn.nl/over-ons">Over ons</a></li>
-            <li {{ current == "spelletjes" ? 'class="current"' }}><a href="http://brigittavalentijn.nl/spelletjes">Spelletjes</a></li>
-           <!-- <li>
-
-                <a href="">Speltakken</a>
+            <li {{ current == "over-ons" ? 'class="current"' }}><a href="/over-ons">Over ons</a></li>
+            <li {{ current == "verhuur" ? 'class="current"' }}>
+                <a href="/over-ons/speltakken">Speltakken</a>
                 <ul>
-                    <li><a href="#">De Bevers</a></li>
-                    <li><a href="#">De Esta's</a></li>
-                    <li>
-                        <a href="">De Mercators</a>
-                        <ul>
-                            <li><a href="#">De Bevers</a></li>
-                            <li><a href="#">De Esta's</a></li>
-                            <li><a href="#">De Mercators</a></li>
-                            <li><a href="#">exploos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">exploos</a></li>
+                    <li><a href="/over-ons/speltakken/bevers">Bevers</a></li>
+                    <li><a href="/over-ons/speltakken/estas">Esta's</a></li>
+                    <li><a href="/over-ons/speltakken/mercators">Mercators</a></li>
+                    <li><a href="/over-ons/speltakken/explorers">Explorers</a></li>
                 </ul>
-            </li>-->
+            </li>
+            <li {{ current == "verhuur" ? 'class="current"' }}><a href="/verhuur">Verhuur</a></li>
         </ul>
     {% endblock %}
+    
 </nav>
 

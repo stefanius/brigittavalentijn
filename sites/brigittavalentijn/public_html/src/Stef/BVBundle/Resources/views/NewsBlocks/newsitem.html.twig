@@ -1,19 +1,25 @@
 {% set url = path('stef_bvbundle_news_show', { 'slug': news.slug })  %}
 
-<div class="3u">
+<div class="9u">
     <section class="box feature">
-        <a href="{{ url }}" class="image featured">
-            {% if news.picture is null %}
-                <i class="fa fa-smile-o fa-6"></i>
-            {% elseif asset_exists(asset(news.picture)) %}
-                <img class="news-feature-cropped" src="{{ asset(news.picture) }}" alt="{{ news.title }}">
-            {% else %}
-                <i class="fa fa-smile-o fa-6"></i>
-            {% endif %}
-        </a>
-        <h3><a href="{{ url }}">{{ news.title }}</a></h3>
-        <p>
-            {{ news.body|length > 200 ? news.body|slice(0, 200)|striptags ~ '...' : news.body|striptags }}
-        </p>
+		<div class="content content-left">
+			<article class="box post">
+				<header><h3><a href="{{ url }}">{{ news.title }}</a></h3></header>
+				<a href="/images/pic01.jpg" class="image featured">
+				{% if news.picture is null %}
+					<i class="fa fa-smile-o fa-6"></i>
+				{% elseif asset_exists(asset(news.picture)) %}
+					<img class="news-feature-cropped" src="{{ asset(news.picture) }}" alt="{{ news.title }}">
+				{% else %}
+					<i class="fa fa-smile-o fa-6"></i>
+				{% endif %}
+				</a> 
+				<p>
+					{{ news.body|length > 500 ? news.body|slice(0, 500)|striptags ~ '...' : news.body|striptags }}
+				</p>
+				<a href="#" class="button">lees verder</a>
+			</article>
+		</div>
     </section>
 </div>
+

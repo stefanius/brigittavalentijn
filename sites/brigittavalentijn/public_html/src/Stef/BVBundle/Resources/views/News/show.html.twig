@@ -1,11 +1,12 @@
 {% extends 'StefBVBundle::layout.html.twig' %}
 
 {% block body %}
-
     <div id="main-wrapper">
         <div id="main" class="container">
-            <h1>{{ news.title }}</h1>
-            {{ news.body|raw }}
-        </div>
+			<div class="12u">
+				<h1>{{ news.title }}</h1>
+				{{ news.body|raw }}
+			</div>
+		</div>
     </div>
 {% endblock %}
