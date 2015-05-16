@@ -12,13 +12,18 @@ class PageController extends BaseController
 {
     public function indexAction()
     {
-        $newsitems = $this->getNewsManager()->getLatestEntries(4);
+        //TODO: Cleanup Quick and Dirty solution.
+        $newsitems = $this->getNewsManager()->getLatestEntries(2);
+        $archive = $this->getNewsManager()->getLatestEntries(10);
+
+        unset($archive[0]);
 
         /** @var /Ivory/GoogleMapBundle/Model/Map */
         $map = $this->get('ivory_google_map.map');
 
         return $this->render('StefBVBundle:Default:index.html.twig', [
             'newsitems' => $newsitems,
+            'archive' => $archive,
             'map' => $map
         ]);
     }
