@@ -1,0 +1,3 @@
+stef_photo_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: StefPhotoBundle:Default:index }

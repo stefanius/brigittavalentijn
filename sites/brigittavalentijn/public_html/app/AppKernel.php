@@ -33,6 +33,7 @@ class AppKernel extends Kernel
             new Stef\BVBundle\StefBVBundle(),
             new Stef\GenerateFixturesBundle\StefGenerateFixturesBundle(),
             new Stef\SimpleCmsBundle\StefSimpleCmsBundle(),
+            new Stef\PhotoBundle\StefPhotoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
