@@ -1,3 +1,11 @@
 stef_photo_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: StefPhotoBundle:Default:index }
+    path:     /fotoalbum
+    defaults: { _controller: StefPhotoBundle:Photo:showAllAlbums }
+
+stef_photo_season:
+    path:     /fotoalbum/{year_1}-{year_2}
+    defaults: { _controller: StefPhotoBundle:Photo:showAllAlbums }
+
+stef_photo_showalbum:
+    path:     /fotoalbum/{year_1}-{year_2}/{album}
+    defaults: { _controller: StefPhotoBundle:Photo:showAlbum }
