@@ -142,7 +142,7 @@ class PhotoController extends BaseController
         return $this->render('StefPhotoBundle:AllAlbums:show.html.twig',
             [
                 'finder' => $finder,
-                'page' => $page,
+                'page'   => $page,
                 'season' => $season
             ]
         );
@@ -158,7 +158,8 @@ class PhotoController extends BaseController
             return $this->redirect($this->generateUrl('stef_photo_homepage'));
         }
 
-        $finder = $this->findFiles($this->getWebDir() . '/photoalbum/' . $season . '/' . $album, 0);
+        $path =  '/photoalbum/' . $season . '/' . $album;
+        $finder = $this->findFiles($this->getWebDir() . $path, 0);
 
         try {
             if ($finder->count() === 0) {
@@ -173,11 +174,13 @@ class PhotoController extends BaseController
         $page->setTitle($album . ' (' . $season . ')');
         $page->setBody("<p>Foto's</p>");
 
-        return $this->render('StefPhotoBundle:AllAlbums:show.html.twig',
+        return $this->render('StefPhotoBundle:Album:show.html.twig',
             [
                 'finder' => $finder,
                 'page' => $page,
-                'season' => $season
+                'season' => $season,
+                'album' => $album,
+                'path' => $path
             ]
         );
     }
