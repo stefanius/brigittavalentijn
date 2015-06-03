@@ -24,3 +24,4 @@ parameters:
     app.googleplus_url: https://www.facebook.com/brigittavalentijn
     app.domain: ~
     app.analyticsid: "UA-35041722-1"
+    app.photoalbum_asses: 'photoalbum/'
