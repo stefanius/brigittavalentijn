@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="global desktop">
+
+    {% include 'StefBVBundle:HeadSection:head_photo.html.twig' %}
+
+    <body class="homepage">
+        <div id="skel-layers-wrapper" class="bodyfix">
+            {% block head %}
+
+            {% endblock %}
+
+            {% block navbar %}
+                {% include 'StefBVBundle:Blocks:navbar.html.twig' %}
+            {% endblock %}
+
+            {% block body %}
+
+            {% endblock %}
+
+            {% include 'StefBVBundle:Blocks:footer.html.twig' %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'StefBVBundle::layout.html.twig' %}
+
+{% block body %}
+
+    <div id="main-wrapper">
+        <div id="main" class="container">
+            <h1>{{ page.title }}</h1>
+            {{ page.body|raw }}
+
+            <ul>
+                {% for dir in finder %}
+                    {% if season is null %}
+                        <li><a href="{{ path('stef_photo_homepage') }}/{{ dir.relativePathname }}">{{ dir.relativePathname }}</a></li>
+                    {% else %}
+                        <li><a href="{{ path('stef_photo_homepage') }}/{{ season }}/{{ dir.relativePathname }}">{{ dir.relativePathname }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
