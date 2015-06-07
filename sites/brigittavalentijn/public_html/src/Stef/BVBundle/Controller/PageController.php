@@ -2,11 +2,13 @@
 
 namespace Stef\BVBundle\Controller;
 
-use Ivory\GoogleMap\Overlays\Animation;
-use Ivory\GoogleMap\Overlays\Marker;
 use Stef\BVBundle\GoogleMapsAdapter\Adapter;
 use Stef\BVBundle\GoogleMapsAdapter\AdapterSettings;
+use Stef\BVBundle\Entity\Contact;
+use Stef\BVBundle\Form\ContactType;
+use Stef\SimpleCmsBundle\Entity\Page;
 use Symfony\Component\HttpFoundation\ParameterBag;
+use Symfony\Component\HttpFoundation\Request;
 
 class PageController extends BaseController
 {
@@ -64,5 +66,41 @@ class PageController extends BaseController
             ])
 
         );
+    }
+
+    public function contactAction(Request $request)
+    {
+        $form = $this->createForm(new ContactType());
+
+        if ($request->isMethod('POST')) {
+            $form->bind($request);
+
+            if ($form->isValid()) {
+                $contact = new Contact();
+                $contact->setEmail($form->get('email')->getData());
+                $contact->setName($form->get('name')->getData());
+                $contact->setReason($form->get('reason')->getData());
+                $contact->setPhone($form->get('phone')->getData());
+                $contact->setIp($request->getClientIp());
+                $contact->setSummary($form->get('summary')->getData());
+                $contact->setModified(new \DateTime());
+                $contact->setCreated(new \DateTime());
+
+                $manager = $this->getContactManager();
+                $manager->persistAndFlush($contact);
+
+                return $this->redirect($this->generateUrl('stef_bvbundle_contact'));
+            }
+        }
+
+        $page = new Page();
+        $page->setDescription('Neem altijd vrijblijven contact op met Scoutinggroep Brigitta / Valentijn!');
+        $page->setTitle('Contact');
+        $page->setBody("Als je meer wilt weten over een lidmaatschap neem dan eens vrijblijvend contact met ons op. Wij vertellen je graag wie we zijn en wat we doen. Als je al lid bent is het vaak beter om je vragen direct aan je eigen spelstaf te stellen.");
+
+        return $this->render('StefBVBundle:Default:contact.html.twig', [
+            'page' => $page,
+            'form' => $form->createView(),
+        ]);
     }
 }

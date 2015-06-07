@@ -3,6 +3,7 @@
 namespace Stef\BVBundle\Controller;
 
 use Ivory\GoogleMap\Map;
+use Stef\BVBundle\Manager\ContactManager;
 use Stef\SimpleCmsBundle\KeyValueParser\Parser;
 use Stef\SimpleCmsBundle\Manager\DictionaryManager;
 use Stef\SimpleCmsBundle\Manager\NewsManager;
@@ -61,5 +62,13 @@ class BaseController extends Controller
     protected function getIvoryGoogleMap()
     {
         return $this->get('ivory_google_map.map');
+    }
+
+    /**
+     * @return ContactManager
+     */
+    protected function getContactManager()
+    {
+        return $this->get('stef_simple_cms.contact_manager');
     }
 }
