@@ -48,6 +48,10 @@ stef_bvbundle_news_show:
     requirements:
         _method:  GET
 
+stef_bvbundle_contact:
+    pattern:  /contact
+    defaults: { _controller: StefBVBundle:Page:contact }
+
 stef_bvbundle_view_page:
     pattern:  /{slug}
     defaults: { _controller: StefBVBundle:Page:viewPage }
