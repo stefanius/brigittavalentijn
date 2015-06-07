@@ -3098,43 +3098,33 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanius/simple-cms-bundle.git",
-                "reference": "200045be112119171463f2b24232ca3fa97d4ab4"
+                "reference": "75d0bcd9de0b71fb5dd145c5201d56903567cb9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanius/simple-cms-bundle/zipball/200045be112119171463f2b24232ca3fa97d4ab4",
-                "reference": "200045be112119171463f2b24232ca3fa97d4ab4",
+                "url": "https://api.github.com/repos/stefanius/simple-cms-bundle/zipball/75d0bcd9de0b71fb5dd145c5201d56903567cb9e",
+                "reference": "75d0bcd9de0b71fb5dd145c5201d56903567cb9e",
                 "shasum": ""
             },
             "require": {
                 "braincrafted/bootstrap-bundle": "~2.0",
-                "doctrine/doctrine-bundle": "~1.2",
-                "doctrine/doctrine-fixtures-bundle": "~2.2",
-                "doctrine/inflector": "dev-master",
-                "doctrine/orm": "v2.4.2",
                 "egeloen/ckeditor-bundle": "~2.0",
                 "egeloen/google-map-bundle": "~2.2",
                 "friendsofsymfony/user-bundle": "~2.0@dev",
                 "incenteev/composer-parameter-handler": "~2.0",
-                "jms/di-extra-bundle": "dev-master",
-                "jms/serializer-bundle": "dev-master",
+                "jms/serializer-bundle": "0.13.*@dev",
                 "jquery/jquery": "1.10.*",
                 "nelmio/alice": "v1.6.0",
                 "php": ">=5.5",
                 "phpunit/phpunit": "~4.1",
-                "sensio/distribution-bundle": "~2.3",
-                "sensio/framework-extra-bundle": "~3.0",
-                "sensio/generator-bundle": "~2.3",
                 "stef/crud-contract": "dev-master",
                 "stef/generate-fixtures-bundle": "dev-master",
                 "stef/key-value-manipulation": "dev-master",
                 "stef/manipulation": "dev-master",
                 "stef/slug-manipulation": "dev-master",
                 "symfony/assetic-bundle": "~2.3",
-                "symfony/filesystem": "2.5.3",
                 "symfony/monolog-bundle": "~2.4",
                 "symfony/swiftmailer-bundle": "~2.3",
-                "symfony/symfony": "~2.5",
                 "twbs/bootstrap": "3.0.*",
                 "twig/extensions": "~1.0"
             },
@@ -3170,7 +3160,7 @@
                 "source": "https://github.com/stefanius/simple-cms-bundle/tree/master",
                 "issues": "https://github.com/stefanius/simple-cms-bundle/issues"
             },
-            "time": "2014-12-20 17:33:38"
+            "time": "2015-06-07 20:31:40"
         },
         {
             "name": "stef/slug-manipulation",
@@ -3769,6 +3759,7 @@
         "stef/simple-cms-bundle": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.5"
     },
