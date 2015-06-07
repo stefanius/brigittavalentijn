@@ -7,7 +7,7 @@
             <h1>{{ page.title }}</h1>
             {{ page.body|raw }}
 
-            <div class="row">
+            <div class="row" style="margin: 0;">
                 {% for file in finder %}
                     {% if '.jpg'|upper in  file.relativePathname|upper %}
                         <div class="col-md-3 col-sm-4 col-xs-6"><div class="img-responsive" style="background-repeat: no-repeat;background-image: url({{ path }}/{{ file.relativePathname|replace({' ': '%20'}) }});width: 20em;height: 15em;padding: 0;margin: 0;background-size: 100% 100%;"> </div></div>
