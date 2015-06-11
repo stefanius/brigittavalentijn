@@ -1,5 +1,0 @@
-#!/bin/bash
-
-BINFOLDER="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-ROOTFOLDER="$(dirname "$BINFOLDER")"
-CONFIGFOLDER="$ROOTFOLDER/configs"
