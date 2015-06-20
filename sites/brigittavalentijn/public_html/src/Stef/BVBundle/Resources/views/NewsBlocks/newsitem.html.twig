@@ -1,26 +1,22 @@
 {% set url = path('stef_bvbundle_news_show', { 'slug': news.slug })  %}
 
-<div class="9u">
-    <section class="box feature">
-		<div class="content content-left">
-			<article class="box post" style="cursor: pointer;" onclick="redirect_to_news_item('{{ url }}')">
-				<header><h3><a href="{{ url }}">{{ news.title }}</a></h3></header>
+    <div class="content content-left">
+        <article class="box post" style="cursor: pointer;" onclick="redirect_to_news_item('{{ url }}')">
+            <header><h3 style="text-align: center;"><a href="{{ url }}">{{ news.title }}</a></h3></header>
 
-				{% if news.picture is null %}
-					<i class="fa fa-smile-o fa-6"></i>
-				{% elseif asset_exists(asset(news.picture)) %}
-					<img class="news-feature-cropped" src="{{ asset(news.picture) }}" alt="{{ news.title }}">
-				{% else %}
-					<i class="fa fa-smile-o fa-6"></i>
-				{% endif %}
+            {% if news.picture is null %}
+                <i class="fa fa-smile-o fa-6"></i>
+            {% elseif asset_exists(asset(news.picture)) %}
+                <img class="news-feature-cropped" src="{{ asset(news.picture) }}" alt="{{ news.title }}">
+            {% else %}
+                <i class="fa fa-smile-o fa-6"></i>
+            {% endif %}
+            <p>
+                {{ news.description }}
+            </p>
+        </article>
+    </div>
 
-				<p>
-					{{ news.description }}
-				</p>
-			</article>
-		</div>
-    </section>
-</div>
 
 <script>
     function redirect_to_news_item(url)
