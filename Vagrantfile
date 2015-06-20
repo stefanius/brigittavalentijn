@@ -32,9 +32,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.ssh.forward_agent = true
 
-  config.vm.synced_folder "salt/roots/", "/srv/"
+  config.vm.hostname = "BrigittaValentijn"
 
-  config.vm.hostname = "brigittavalentijn"
+  config.vm.synced_folder "salt/roots/", "/srv/"
 
   config.vm.synced_folder "sites/", "/home/vagrant/sites/", :nfs => false,
       owner: "vagrant",
@@ -55,7 +55,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                 "user" => "mysql",
                 "mysqld" => {
                     "bind-address" => "127.0.0.1",
-                    "port" => "3307"
+                    "port" => "3309"
                 }
             }
           }

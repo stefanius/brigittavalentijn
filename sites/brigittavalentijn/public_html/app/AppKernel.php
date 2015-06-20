@@ -31,7 +31,6 @@ class AppKernel extends Kernel
             new Ivory\GoogleMapBundle\IvoryGoogleMapBundle(),
             /* Stefanius */
             new Stef\BVBundle\StefBVBundle(),
-            new Stef\GenerateFixturesBundle\StefGenerateFixturesBundle(),
             new Stef\SimpleCmsBundle\StefSimpleCmsBundle(),
             new Stef\PhotoBundle\StefPhotoBundle(),
         );
