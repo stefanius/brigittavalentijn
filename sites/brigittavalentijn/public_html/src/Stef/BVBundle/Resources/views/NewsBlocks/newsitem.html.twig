@@ -9,9 +9,9 @@
             {% elseif asset_exists(asset(news.picture)) %}
                 <img class="news-feature-cropped" src="{{ asset(news.picture) }}" alt="{{ news.title }}">
             {% else %}
-                <i class="fa fa-smile-o fa-6"></i>
+                <img class="news-feature-cropped" src="/images/carousel/slider1.jpg" alt="{{ news.title }}">
             {% endif %}
-            <p>
+            <p style="padding: 2em;">
                 {{ news.description }}
             </p>
         </article>
