@@ -327,8 +327,6 @@ ul.divided
 ul.divided > li
 {
     border-top: solid 2px #e7eae8;
-    padding-top: 2.35em;
-    margin-top: 2.35em;
 }
 
 ul.divided > li:first-child
