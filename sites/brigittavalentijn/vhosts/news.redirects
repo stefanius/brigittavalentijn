@@ -33,6 +33,7 @@ rewrite ^/nieuws/35.html /nieuws/rommelmarkt-weer-groot-succes-2013 permanent;
 rewrite ^/nieuws/36.html /nieuws/multicultiman-komt-zaterdag-langs-2013 permanent;
 rewrite ^/nieuws/37.html /nieuws/old-brigitta-valentijn-had-a-farm-2013 permanent;
 rewrite ^/nieuws/38.html /nieuws/14-december-was-er-vossenjacht-2013 permanent;
+rewrite ^/nieuws/sponsorloop /nieuws/sponsorloop-2013 permanent;
 
 #Nieuwsberichten 2014
 rewrite ^/nieuws/39.html /nieuws/nl-doet-de-kampkistenklus-2014 permanent;

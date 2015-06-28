@@ -16,6 +16,12 @@ rewrite ^/dev/* / permanent;
 rewrite ^/mysqli.mysqli / permanent;
 rewrite ^/mysqli.close / permanent;
 rewrite ^/nav/staf01.htm / permanent;
+rewrite ^/htm/rondernieuws20032004.htm / permanent;
+rewrite ^/%20https://twitter.com/scoutingbv/ / permanent;
+rewrite ^/https://twitter.com/scoutingbv/ / permanent;
+rewrite ^/%20https://twitter.com/scoutingbv / permanent;
+rewrite ^/https://twitter.com/scoutingbv / permanent;
+
 
 #misc
 rewrite ^/galgje.htm /spelletjes permanent;
@@ -65,6 +71,8 @@ rewrite ^/over-ons/locatie-stokroosveld /over-ons/locatie-wijndaelerweg permanen
 #redirect all v2 and v3 pages to index
 rewrite ^/v2/* / permanent;
 rewrite ^/v3/* / permanent;
+rewrite ^/bv2/* / permanent;
+rewrite ^/bv2 / permanent;
 
 #redirect old downloads
 rewrite ^/(.+).docx /downloads permanent;
