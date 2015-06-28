@@ -60,6 +60,7 @@ rewrite ^/groepen/rs.html /over-ons/speltakken/explorers permanent;
 rewrite ^/groepen/pivo.html /over-ons/speltakken/explorers permanent;
 rewrite ^/groepen/pivos.html /over-ons/spephpltakken/explorers permanent;
 rewrite ^/meerbv/* /over-ons permanent;
+rewrite ^/over-ons/locatie-stokroosveld /over-ons/locatie-wijndaelerweg permanent; #Location Stokroosveld is depricated.
 
 #redirect all v2 and v3 pages to index
 rewrite ^/v2/* / permanent;
