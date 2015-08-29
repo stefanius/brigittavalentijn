@@ -3,10 +3,10 @@
 {% block body %}
     <div id="main-wrapper">
         <div id="main" class="container">
-			<div class="12u">
-				<h1>{{ news.title }}</h1>
-				{{ news.body|raw }}
-			</div>
+            <section class="box features bvpage">
+                <h1>{{ news.title }}</h1>
+                {{ news.body|raw }}
+            </section>
 		</div>
     </div>
 {% endblock %}

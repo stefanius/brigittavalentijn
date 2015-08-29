@@ -4,12 +4,14 @@
 
     <div id="main-wrapper">
         <div id="main" class="container">
-            <h1>Overzicht laatste nieuws</h1>
-            <p>Regelmatig plaatsen wij nieuwsberichten op onze website of verspreiden wij ons 'wel en wee' via andere kanalen. Als je een specifiek bericht terugzoekt, bekijk dan ook eens ons rijke <a href="/nieuws/archief">nieuwsarchief</a></p>
-            <p>Heb je sugesties of wil je zelf eens een stukje schrijven over onze groep? Neem dan eens contact op met de helden van public relations!</p>
-            {% for news in newsitems %}
-                <li><a href="{{ path('stef_bvbundle_news_show', { 'slug': news.slug }) }}">{{ news.title|e }}</a></li>
-            {% endfor %}
+            <section class="box features bvpage">
+                <h1>Overzicht laatste nieuws</h1>
+                <p>Regelmatig plaatsen wij nieuwsberichten op onze website of verspreiden wij ons 'wel en wee' via andere kanalen. Als je een specifiek bericht terugzoekt, bekijk dan ook eens ons rijke <a href="/nieuws/archief">nieuwsarchief</a></p>
+                <p>Heb je sugesties of wil je zelf eens een stukje schrijven over onze groep? Neem dan eens contact op met de helden van public relations!</p>
+                {% for news in newsitems %}
+                    <li><a href="{{ path('stef_bvbundle_news_show', { 'slug': news.slug }) }}">{{ news.title|e }}</a></li>
+                {% endfor %}
+            </section>
         </div>
     </div>
 {% endblock %}
